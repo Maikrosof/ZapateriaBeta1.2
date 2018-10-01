@@ -113,6 +113,12 @@
     <Compile Include="Alta_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BuscarCli.Designer.vb">
+      <DependentUpon>BuscarCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarProv.Designer.vb">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alta_Producto.resx">
       <DependentUpon>Alta_Producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCli.resx">
+      <DependentUpon>BuscarCli.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>

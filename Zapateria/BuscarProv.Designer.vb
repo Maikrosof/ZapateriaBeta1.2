@@ -214,7 +214,7 @@ Partial Class BuscarProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(580, 360)
+        Me.ClientSize = New System.Drawing.Size(486, 265)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TextBox7)

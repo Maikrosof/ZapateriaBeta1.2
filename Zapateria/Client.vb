@@ -66,6 +66,7 @@
     End Sub
 
     Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        BuscarCli.Show()
 
     End Sub
 End Class
