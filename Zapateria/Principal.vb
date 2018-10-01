@@ -72,4 +72,9 @@
         Client.Show()
 
     End Sub
+
+    Private Sub BtnProducto_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnProducto.Click
+        Principal_Producto.Show()
+
+    End Sub
 End Class
