@@ -107,6 +107,12 @@
     <Compile Include="AltasProv.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Alta_Producto.Designer.vb">
+      <DependentUpon>Alta_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alta_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarProv.Designer.vb">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Principal_Producto.Designer.vb">
+      <DependentUpon>Principal_Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal_Producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Prov.Designer.vb">
       <DependentUpon>Prov.vb</DependentUpon>
     </Compile>
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="AltasProv.resx">
       <DependentUpon>AltasProv.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alta_Producto.resx">
+      <DependentUpon>Alta_Producto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal_Producto.resx">
+      <DependentUpon>Principal_Producto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prov.resx">
       <DependentUpon>Prov.vb</DependentUpon>
