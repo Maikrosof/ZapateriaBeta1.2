@@ -38,7 +38,7 @@
             Loop Until i = ProveedoresBindingSource.Count 'cantidad de registros, 'funciona como do while, '(pregunta si es el codigo que busca)
             MsgBox("no se encontro el cuit")
         Else
-            MsgBox("el codigo de art esta vacio")
+            MsgBox("el codigo de art esta vacio o mal ingresado")
         End If
     End Sub
 

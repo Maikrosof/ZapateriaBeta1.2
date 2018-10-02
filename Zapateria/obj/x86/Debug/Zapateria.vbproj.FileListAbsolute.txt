@@ -66,3 +66,6 @@ C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug
 C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Prov.resources
 C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.vbproj.GenerateResource.Cache
 C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.BuscarCli.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Empl.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.AltaEmpl.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.BuscarEmpl.resources

@@ -45,7 +45,7 @@
             Loop Until i = ClientesBindingSource.Count 'cantidad de registros, 'funciona como do while, '(pregunta si es el codigo que busca)
             MsgBox("no se encontro el DNI")
         Else
-            MsgBox("El Número de DNI esta vacío")
+            MsgBox("El Número de DNI esta vacío o mal ingresado")
         End If
     End Sub
 End Class

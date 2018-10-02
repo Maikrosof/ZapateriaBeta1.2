@@ -95,6 +95,12 @@
     <Compile Include="AltaCli.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AltaEmpl.Designer.vb">
+      <DependentUpon>AltaEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AltaLoc.Designer.vb">
       <DependentUpon>AltaLoc.vb</DependentUpon>
     </Compile>
@@ -119,6 +125,12 @@
     <Compile Include="BuscarCli.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BuscarEmpl.Designer.vb">
+      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarProv.Designer.vb">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </Compile>
@@ -129,6 +141,12 @@
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
     <Compile Include="Client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empl.Designer.vb">
+      <DependentUpon>Empl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empl.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModElimLoc.Designer.vb">
@@ -187,6 +205,9 @@
     <EmbeddedResource Include="AltaCli.resx">
       <DependentUpon>AltaCli.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaEmpl.resx">
+      <DependentUpon>AltaEmpl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaLoc.resx">
       <DependentUpon>AltaLoc.vb</DependentUpon>
     </EmbeddedResource>
@@ -199,11 +220,17 @@
     <EmbeddedResource Include="BuscarCli.resx">
       <DependentUpon>BuscarCli.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarEmpl.resx">
+      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empl.resx">
+      <DependentUpon>Empl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModElimLoc.resx">
       <DependentUpon>ModElimLoc.vb</DependentUpon>

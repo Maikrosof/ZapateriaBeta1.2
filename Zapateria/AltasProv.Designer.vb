@@ -33,6 +33,7 @@ Partial Class AltasProv
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
         Me.Razon_SocialTextBox = New System.Windows.Forms.TextBox()
         Me.CUITTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
@@ -42,7 +43,7 @@ Partial Class AltasProv
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.CmbLocalidad = New System.Windows.Forms.ComboBox()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
+        Me.Label1 = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         Razon_SocialLabel = New System.Windows.Forms.Label()
         CUITLabel = New System.Windows.Forms.Label()
@@ -53,6 +54,60 @@ Partial Class AltasProv
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(26, 82)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 3
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'Razon_SocialLabel
+        '
+        Razon_SocialLabel.AutoSize = True
+        Razon_SocialLabel.Location = New System.Drawing.Point(26, 108)
+        Razon_SocialLabel.Name = "Razon_SocialLabel"
+        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
+        Razon_SocialLabel.TabIndex = 5
+        Razon_SocialLabel.Text = "Razon Social:"
+        '
+        'CUITLabel
+        '
+        CUITLabel.AutoSize = True
+        CUITLabel.Location = New System.Drawing.Point(26, 134)
+        CUITLabel.Name = "CUITLabel"
+        CUITLabel.Size = New System.Drawing.Size(35, 13)
+        CUITLabel.TabIndex = 7
+        CUITLabel.Text = "CUIT:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(26, 160)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.TabIndex = 9
+        DireccionLabel.Text = "Direccion:"
+        '
+        'NroLabel
+        '
+        NroLabel.AutoSize = True
+        NroLabel.Location = New System.Drawing.Point(26, 186)
+        NroLabel.Name = "NroLabel"
+        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.TabIndex = 11
+        NroLabel.Text = "Nro:"
+        '
+        'TelefonoLabel
+        '
+        TelefonoLabel.AutoSize = True
+        TelefonoLabel.Location = New System.Drawing.Point(26, 212)
+        TelefonoLabel.Name = "TelefonoLabel"
+        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.TabIndex = 13
+        TelefonoLabel.Text = "Telefono:"
         '
         'ZapateriaDataSet
         '
@@ -80,103 +135,53 @@ Partial Class AltasProv
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ID_LocalidadLabel
+        'LocalidadTableAdapter
         '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(12, 51)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 3
-        ID_LocalidadLabel.Text = "ID Localidad:"
-        '
-        'Razon_SocialLabel
-        '
-        Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.Location = New System.Drawing.Point(12, 77)
-        Razon_SocialLabel.Name = "Razon_SocialLabel"
-        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
-        Razon_SocialLabel.TabIndex = 5
-        Razon_SocialLabel.Text = "Razon Social:"
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
         '
         'Razon_SocialTextBox
         '
         Me.Razon_SocialTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Razon_Social", True))
-        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(91, 74)
+        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(105, 105)
         Me.Razon_SocialTextBox.Name = "Razon_SocialTextBox"
         Me.Razon_SocialTextBox.Size = New System.Drawing.Size(121, 20)
         Me.Razon_SocialTextBox.TabIndex = 6
         '
-        'CUITLabel
-        '
-        CUITLabel.AutoSize = True
-        CUITLabel.Location = New System.Drawing.Point(12, 103)
-        CUITLabel.Name = "CUITLabel"
-        CUITLabel.Size = New System.Drawing.Size(35, 13)
-        CUITLabel.TabIndex = 7
-        CUITLabel.Text = "CUIT:"
-        '
         'CUITTextBox
         '
         Me.CUITTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "CUIT", True))
-        Me.CUITTextBox.Location = New System.Drawing.Point(91, 100)
+        Me.CUITTextBox.Location = New System.Drawing.Point(105, 131)
         Me.CUITTextBox.Name = "CUITTextBox"
         Me.CUITTextBox.Size = New System.Drawing.Size(121, 20)
         Me.CUITTextBox.TabIndex = 8
         '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(12, 129)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
-        DireccionLabel.TabIndex = 9
-        DireccionLabel.Text = "Direccion:"
-        '
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(91, 126)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(105, 157)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(121, 20)
         Me.DireccionTextBox.TabIndex = 10
         '
-        'NroLabel
-        '
-        NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(12, 155)
-        NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
-        NroLabel.TabIndex = 11
-        NroLabel.Text = "Nro:"
-        '
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(91, 152)
+        Me.NroTextBox.Location = New System.Drawing.Point(105, 183)
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(121, 20)
         Me.NroTextBox.TabIndex = 12
         '
-        'TelefonoLabel
-        '
-        TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(12, 181)
-        TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
-        TelefonoLabel.TabIndex = 13
-        TelefonoLabel.Text = "Telefono:"
-        '
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(91, 178)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(105, 209)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(121, 20)
         Me.TelefonoTextBox.TabIndex = 14
         '
         'BtnGuardar
         '
-        Me.BtnGuardar.Location = New System.Drawing.Point(29, 242)
+        Me.BtnGuardar.Location = New System.Drawing.Point(29, 268)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
         Me.BtnGuardar.TabIndex = 15
@@ -185,7 +190,7 @@ Partial Class AltasProv
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(143, 242)
+        Me.BtnVolver.Location = New System.Drawing.Point(143, 268)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
         Me.BtnVolver.TabIndex = 16
@@ -197,7 +202,7 @@ Partial Class AltasProv
         Me.CmbLocalidad.DataSource = Me.LocalidadBindingSource
         Me.CmbLocalidad.DisplayMember = "Localidad"
         Me.CmbLocalidad.FormattingEnabled = True
-        Me.CmbLocalidad.Location = New System.Drawing.Point(91, 48)
+        Me.CmbLocalidad.Location = New System.Drawing.Point(105, 79)
         Me.CmbLocalidad.Name = "CmbLocalidad"
         Me.CmbLocalidad.Size = New System.Drawing.Size(121, 21)
         Me.CmbLocalidad.TabIndex = 17
@@ -208,15 +213,22 @@ Partial Class AltasProv
         Me.LocalidadBindingSource.DataMember = "Localidad"
         Me.LocalidadBindingSource.DataSource = Me.ZapateriaDataSet
         '
-        'LocalidadTableAdapter
+        'Label1
         '
-        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(11, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(204, 19)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "Ingrese los datos del Proveedor:"
         '
         'AltasProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(536, 333)
+        Me.ClientSize = New System.Drawing.Size(317, 325)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CmbLocalidad)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnGuardar)
@@ -254,4 +266,5 @@ Partial Class AltasProv
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
     Friend WithEvents CmbLocalidad As System.Windows.Forms.ComboBox
     Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

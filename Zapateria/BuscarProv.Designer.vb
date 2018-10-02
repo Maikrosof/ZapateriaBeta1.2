@@ -43,6 +43,7 @@ Partial Class BuscarProv
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         ID_ProveedorLabel = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         Razon_SocialLabel = New System.Windows.Forms.Label()
@@ -57,7 +58,7 @@ Partial Class BuscarProv
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.Location = New System.Drawing.Point(34, 54)
+        ID_ProveedorLabel.Location = New System.Drawing.Point(13, 82)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
         ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
         ID_ProveedorLabel.TabIndex = 1
@@ -66,7 +67,7 @@ Partial Class BuscarProv
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(34, 80)
+        ID_LocalidadLabel.Location = New System.Drawing.Point(13, 108)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 3
@@ -75,7 +76,7 @@ Partial Class BuscarProv
         'Razon_SocialLabel
         '
         Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.Location = New System.Drawing.Point(34, 106)
+        Razon_SocialLabel.Location = New System.Drawing.Point(13, 134)
         Razon_SocialLabel.Name = "Razon_SocialLabel"
         Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
         Razon_SocialLabel.TabIndex = 5
@@ -84,7 +85,7 @@ Partial Class BuscarProv
         'CUITLabel
         '
         CUITLabel.AutoSize = True
-        CUITLabel.Location = New System.Drawing.Point(34, 132)
+        CUITLabel.Location = New System.Drawing.Point(13, 160)
         CUITLabel.Name = "CUITLabel"
         CUITLabel.Size = New System.Drawing.Size(35, 13)
         CUITLabel.TabIndex = 7
@@ -93,7 +94,7 @@ Partial Class BuscarProv
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(34, 158)
+        DireccionLabel.Location = New System.Drawing.Point(13, 186)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
         DireccionLabel.TabIndex = 9
@@ -102,7 +103,7 @@ Partial Class BuscarProv
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(34, 184)
+        NroLabel.Location = New System.Drawing.Point(13, 212)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
         NroLabel.TabIndex = 11
@@ -111,7 +112,7 @@ Partial Class BuscarProv
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(34, 210)
+        TelefonoLabel.Location = New System.Drawing.Point(13, 238)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
         TelefonoLabel.TabIndex = 13
@@ -145,7 +146,7 @@ Partial Class BuscarProv
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(289, 54)
+        Me.BtnBuscar.Location = New System.Drawing.Point(268, 82)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 52)
         Me.BtnBuscar.TabIndex = 21
@@ -154,7 +155,7 @@ Partial Class BuscarProv
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(289, 175)
+        Me.BtnVolver.Location = New System.Drawing.Point(268, 203)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 52)
         Me.BtnVolver.TabIndex = 22
@@ -163,58 +164,69 @@ Partial Class BuscarProv
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(122, 51)
+        Me.TextBox1.Location = New System.Drawing.Point(101, 79)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 14
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(122, 77)
+        Me.TextBox2.Location = New System.Drawing.Point(101, 105)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 15
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(122, 103)
+        Me.TextBox3.Location = New System.Drawing.Point(101, 131)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 16
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(122, 129)
+        Me.TextBox4.Location = New System.Drawing.Point(101, 157)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 17
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(122, 155)
+        Me.TextBox5.Location = New System.Drawing.Point(101, 183)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
         Me.TextBox5.TabIndex = 18
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(122, 181)
+        Me.TextBox6.Location = New System.Drawing.Point(101, 209)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 20)
         Me.TextBox6.TabIndex = 19
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(122, 207)
+        Me.TextBox7.Location = New System.Drawing.Point(101, 235)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 20
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(281, 19)
+        Me.Label1.TabIndex = 30
+        Me.Label1.Text = " Busqueda por Razon Social de Proveedores"
         '
         'BuscarProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(486, 265)
+        Me.ClientSize = New System.Drawing.Size(495, 297)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.TextBox7)
@@ -252,4 +264,5 @@ Partial Class BuscarProv
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

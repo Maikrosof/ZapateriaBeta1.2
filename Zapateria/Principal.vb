@@ -77,4 +77,8 @@
         Principal_Producto.Show()
 
     End Sub
+
+    Private Sub BtnEmpleados_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEmpleados.Click
+        Empl.Show()
+    End Sub
 End Class
