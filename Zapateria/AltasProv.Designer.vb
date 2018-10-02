@@ -243,6 +243,7 @@ Partial Class AltasProv
         Me.Controls.Add(Me.NroTextBox)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
+        Me.KeyPreview = True
         Me.Name = "AltasProv"
         Me.Text = " "
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

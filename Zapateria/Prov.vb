@@ -20,7 +20,6 @@
 
     Private Sub BtnAtras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAtras.Click
         Me.ProveedoresBindingSource.MovePrevious()
-
     End Sub
 
     Private Sub BtnAdelante_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAdelante.Click
@@ -69,5 +68,21 @@
 
     Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
         BuscarProv.Show()
+    End Sub
+
+    Private Sub Prov_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F1 Then
+            AltasProv.Show()
+        End If
+        If e.KeyCode = Keys.F2 Then
+            Call BtnEliminar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F3 Then
+            BuscarProv.Show()
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Close()
+        End If
+
     End Sub
 End Class
