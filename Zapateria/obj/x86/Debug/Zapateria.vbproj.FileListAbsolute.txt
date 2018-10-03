@@ -73,3 +73,4 @@ C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zap
 C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.BuscarCli.resources
 C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.BuscarEmpl.resources
 C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Empl.resources
+C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Buscar_Productos.resources
