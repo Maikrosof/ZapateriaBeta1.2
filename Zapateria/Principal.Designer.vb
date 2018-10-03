@@ -71,7 +71,7 @@ Partial Class Principal
         Me.BtnVenta.Name = "BtnVenta"
         Me.BtnVenta.Size = New System.Drawing.Size(134, 67)
         Me.BtnVenta.TabIndex = 0
-        Me.BtnVenta.Text = "Ventas"
+        Me.BtnVenta.Text = "Ventas[F1]"
         Me.BtnVenta.UseVisualStyleBackColor = True
         '
         'BtnCompras
@@ -80,7 +80,7 @@ Partial Class Principal
         Me.BtnCompras.Name = "BtnCompras"
         Me.BtnCompras.Size = New System.Drawing.Size(134, 67)
         Me.BtnCompras.TabIndex = 1
-        Me.BtnCompras.Text = "Compras"
+        Me.BtnCompras.Text = "Compras[F2]"
         Me.BtnCompras.UseVisualStyleBackColor = True
         '
         'BtnProducto
@@ -89,7 +89,7 @@ Partial Class Principal
         Me.BtnProducto.Name = "BtnProducto"
         Me.BtnProducto.Size = New System.Drawing.Size(134, 67)
         Me.BtnProducto.TabIndex = 2
-        Me.BtnProducto.Text = "Productos"
+        Me.BtnProducto.Text = "Productos[F3]"
         Me.BtnProducto.UseVisualStyleBackColor = True
         '
         'BtnProveedor
@@ -98,7 +98,7 @@ Partial Class Principal
         Me.BtnProveedor.Name = "BtnProveedor"
         Me.BtnProveedor.Size = New System.Drawing.Size(134, 67)
         Me.BtnProveedor.TabIndex = 3
-        Me.BtnProveedor.Text = "Proveedores"
+        Me.BtnProveedor.Text = "Proveedores[F4]"
         Me.BtnProveedor.UseVisualStyleBackColor = True
         '
         'BtnCliente
@@ -107,7 +107,7 @@ Partial Class Principal
         Me.BtnCliente.Name = "BtnCliente"
         Me.BtnCliente.Size = New System.Drawing.Size(134, 67)
         Me.BtnCliente.TabIndex = 4
-        Me.BtnCliente.Text = "Clientes"
+        Me.BtnCliente.Text = "Clientes[F5]"
         Me.BtnCliente.UseVisualStyleBackColor = True
         '
         'BtnEmpleados
@@ -116,7 +116,7 @@ Partial Class Principal
         Me.BtnEmpleados.Name = "BtnEmpleados"
         Me.BtnEmpleados.Size = New System.Drawing.Size(134, 67)
         Me.BtnEmpleados.TabIndex = 5
-        Me.BtnEmpleados.Text = "Empleados"
+        Me.BtnEmpleados.Text = "Empleados[F6]"
         Me.BtnEmpleados.UseVisualStyleBackColor = True
         '
         'BtnSalir
@@ -125,7 +125,7 @@ Partial Class Principal
         Me.BtnSalir.Name = "BtnSalir"
         Me.BtnSalir.Size = New System.Drawing.Size(134, 47)
         Me.BtnSalir.TabIndex = 6
-        Me.BtnSalir.Text = "Salir"
+        Me.BtnSalir.Text = "Salir[F10]"
         Me.BtnSalir.UseVisualStyleBackColor = True
         '
         'ClientesBindingSource
@@ -234,7 +234,7 @@ Partial Class Principal
         '
         Me.LocalidadesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarLocalidadesToolStripMenuItem, Me.ModificarLocalidadesToolStripMenuItem, Me.MostrarLocalidadesToolStripMenuItem})
         Me.LocalidadesToolStripMenuItem.Name = "LocalidadesToolStripMenuItem"
-        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
+        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LocalidadesToolStripMenuItem.Text = "Localidades"
         '
         'AgregarLocalidadesToolStripMenuItem
@@ -274,6 +274,7 @@ Partial Class Principal
         Me.Controls.Add(Me.BtnCompras)
         Me.Controls.Add(Me.BtnVenta)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.KeyPreview = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Principal"
         Me.Text = "Form1"

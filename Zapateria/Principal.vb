@@ -77,4 +77,31 @@
         Principal_Producto.Show()
 
     End Sub
+
+    Private Sub BtnEmpleados_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEmpleados.Click
+        Empl.Show()
+    End Sub
+
+    Private Sub BtnCompras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCompras.Click
+
+    End Sub
+
+
+    Private Sub Principal_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F3 Then
+            Principal_Producto.Show()
+        End If
+        If e.KeyCode = Keys.F4 Then
+            Prov.Show()
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Client.Show()
+        End If
+        If e.KeyCode = Keys.F6 Then
+            Empl.Show()
+        End If
+        If e.KeyCode = Keys.F10 Then
+            End
+        End If
+    End Sub
 End Class
