@@ -104,9 +104,4 @@
             End
         End If
     End Sub
-
-    Private Sub BtnVenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVenta.Click
-        Ventas.Show()
-
-    End Sub
 End Class
