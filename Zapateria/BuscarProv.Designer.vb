@@ -243,6 +243,7 @@ Partial Class BuscarProv
         Me.Controls.Add(DireccionLabel)
         Me.Controls.Add(NroLabel)
         Me.Controls.Add(TelefonoLabel)
+        Me.KeyPreview = True
         Me.Name = "BuscarProv"
         Me.Text = "BuscarProv"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

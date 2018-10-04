@@ -287,6 +287,7 @@ Partial Class AltaCli
         Me.Controls.Add(Me.TelefonoTextBox)
         Me.Controls.Add(DNILabel)
         Me.Controls.Add(Me.DNITextBox)
+        Me.KeyPreview = True
         Me.Name = "AltaCli"
         Me.Text = "AltaCli"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

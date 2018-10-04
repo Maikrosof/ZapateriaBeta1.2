@@ -77,40 +77,121 @@ Partial Class Client
         CType(Me.ClientesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'ID_ClienteLabel
+        '
+        ID_ClienteLabel.AutoSize = True
+        ID_ClienteLabel.Location = New System.Drawing.Point(12, 93)
+        ID_ClienteLabel.Name = "ID_ClienteLabel"
+        ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
+        ID_ClienteLabel.TabIndex = 27
+        ID_ClienteLabel.Text = "ID Cliente:"
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(12, 119)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 29
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(12, 145)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.TabIndex = 31
+        NombreLabel.Text = "Nombre:"
+        '
+        'ApellidoLabel
+        '
+        ApellidoLabel.AutoSize = True
+        ApellidoLabel.Location = New System.Drawing.Point(12, 171)
+        ApellidoLabel.Name = "ApellidoLabel"
+        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
+        ApellidoLabel.TabIndex = 33
+        ApellidoLabel.Text = "Apellido:"
+        '
+        'Fec_NacimientoLabel
+        '
+        Fec_NacimientoLabel.AutoSize = True
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(12, 198)
+        Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
+        Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
+        Fec_NacimientoLabel.TabIndex = 35
+        Fec_NacimientoLabel.Text = "Fec Nacimiento:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(12, 223)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.TabIndex = 37
+        DireccionLabel.Text = "Direccion:"
+        '
+        'NroLabel
+        '
+        NroLabel.AutoSize = True
+        NroLabel.Location = New System.Drawing.Point(12, 249)
+        NroLabel.Name = "NroLabel"
+        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.TabIndex = 39
+        NroLabel.Text = "Nro:"
+        '
+        'TelefonoLabel
+        '
+        TelefonoLabel.AutoSize = True
+        TelefonoLabel.Location = New System.Drawing.Point(12, 275)
+        TelefonoLabel.Name = "TelefonoLabel"
+        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.TabIndex = 41
+        TelefonoLabel.Text = "Telefono:"
+        '
+        'DNILabel
+        '
+        DNILabel.AutoSize = True
+        DNILabel.Location = New System.Drawing.Point(12, 301)
+        DNILabel.Name = "DNILabel"
+        DNILabel.Size = New System.Drawing.Size(29, 13)
+        DNILabel.TabIndex = 43
+        DNILabel.Text = "DNI:"
+        '
         'BtnEliminar
         '
         Me.BtnEliminar.Location = New System.Drawing.Point(160, 12)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 49)
+        Me.BtnEliminar.Size = New System.Drawing.Size(91, 49)
         Me.BtnEliminar.TabIndex = 26
-        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.Text = "Eliminar[F2]"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(306, 12)
+        Me.BtnBuscar.Location = New System.Drawing.Point(622, 12)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 49)
+        Me.BtnBuscar.Size = New System.Drawing.Size(91, 49)
         Me.BtnBuscar.TabIndex = 25
-        Me.BtnBuscar.Text = "Busqueda"
+        Me.BtnBuscar.Text = "Busqueda[F4]"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(871, 12)
+        Me.BtnVolver.Location = New System.Drawing.Point(828, 12)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 49)
+        Me.BtnVolver.Size = New System.Drawing.Size(91, 49)
         Me.BtnVolver.TabIndex = 24
-        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.Text = "Volver[F5]"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'BtnNuevo
         '
-        Me.BtnNuevo.Location = New System.Drawing.Point(18, 12)
+        Me.BtnNuevo.Location = New System.Drawing.Point(5, 12)
         Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(75, 49)
+        Me.BtnNuevo.Size = New System.Drawing.Size(91, 49)
         Me.BtnNuevo.TabIndex = 23
-        Me.BtnNuevo.Text = "Nuevo"
+        Me.BtnNuevo.Text = "Nuevo[F1]"
         Me.BtnNuevo.UseVisualStyleBackColor = True
         '
         'ZapateriaDataSet
@@ -139,15 +220,6 @@ Partial Class Client
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ID_ClienteLabel
-        '
-        ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.Location = New System.Drawing.Point(12, 93)
-        ID_ClienteLabel.Name = "ID_ClienteLabel"
-        ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
-        ID_ClienteLabel.TabIndex = 27
-        ID_ClienteLabel.Text = "ID Cliente:"
-        '
         'ID_ClienteTextBox
         '
         Me.ID_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "ID_Cliente", True))
@@ -155,15 +227,6 @@ Partial Class Client
         Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
         Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_ClienteTextBox.TabIndex = 28
-        '
-        'ID_LocalidadLabel
-        '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(12, 119)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 29
-        ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'ID_LocalidadTextBox
         '
@@ -173,15 +236,6 @@ Partial Class Client
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_LocalidadTextBox.TabIndex = 30
         '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(12, 145)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
-        NombreLabel.TabIndex = 31
-        NombreLabel.Text = "Nombre:"
-        '
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nombre", True))
@@ -189,15 +243,6 @@ Partial Class Client
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 32
-        '
-        'ApellidoLabel
-        '
-        ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(12, 171)
-        ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
-        ApellidoLabel.TabIndex = 33
-        ApellidoLabel.Text = "Apellido:"
         '
         'ApellidoTextBox
         '
@@ -207,15 +252,6 @@ Partial Class Client
         Me.ApellidoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ApellidoTextBox.TabIndex = 34
         '
-        'Fec_NacimientoLabel
-        '
-        Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(12, 198)
-        Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
-        Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
-        Fec_NacimientoLabel.TabIndex = 35
-        Fec_NacimientoLabel.Text = "Fec Nacimiento:"
-        '
         'Fec_NacimientoDateTimePicker
         '
         Me.Fec_NacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClientesBindingSource, "Fec_Nacimiento", True))
@@ -223,15 +259,6 @@ Partial Class Client
         Me.Fec_NacimientoDateTimePicker.Name = "Fec_NacimientoDateTimePicker"
         Me.Fec_NacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fec_NacimientoDateTimePicker.TabIndex = 36
-        '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(12, 223)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
-        DireccionLabel.TabIndex = 37
-        DireccionLabel.Text = "Direccion:"
         '
         'DireccionTextBox
         '
@@ -241,15 +268,6 @@ Partial Class Client
         Me.DireccionTextBox.Size = New System.Drawing.Size(200, 20)
         Me.DireccionTextBox.TabIndex = 38
         '
-        'NroLabel
-        '
-        NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(12, 249)
-        NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
-        NroLabel.TabIndex = 39
-        NroLabel.Text = "Nro:"
-        '
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nro", True))
@@ -258,15 +276,6 @@ Partial Class Client
         Me.NroTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NroTextBox.TabIndex = 40
         '
-        'TelefonoLabel
-        '
-        TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(12, 275)
-        TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
-        TelefonoLabel.TabIndex = 41
-        TelefonoLabel.Text = "Telefono:"
-        '
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Telefono", True))
@@ -274,15 +283,6 @@ Partial Class Client
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TelefonoTextBox.TabIndex = 42
-        '
-        'DNILabel
-        '
-        DNILabel.AutoSize = True
-        DNILabel.Location = New System.Drawing.Point(12, 301)
-        DNILabel.Name = "DNILabel"
-        DNILabel.Size = New System.Drawing.Size(29, 13)
-        DNILabel.TabIndex = 43
-        DNILabel.Text = "DNI:"
         '
         'DNITextBox
         '
@@ -426,6 +426,7 @@ Partial Class Client
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnNuevo)
+        Me.KeyPreview = True
         Me.Name = "Client"
         Me.Text = " "
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

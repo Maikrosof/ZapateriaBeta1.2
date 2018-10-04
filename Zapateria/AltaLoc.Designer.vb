@@ -162,6 +162,7 @@ Partial Class AltaLoc
         Me.Controls.Add(Me.ZonaTextBox)
         Me.Controls.Add(CPLabel)
         Me.Controls.Add(Me.CPTextBox)
+        Me.KeyPreview = True
         Me.Name = "AltaLoc"
         Me.Text = "AltaLoc"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

@@ -71,4 +71,19 @@
         BuscarEmpl.Show()
 
     End Sub
+
+    Private Sub Empl_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F1 Then
+            AltaEmpl.Show()
+        End If
+        If e.KeyCode = Keys.F2 Then
+            Call BtnEliminar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F4 Then
+            Call BtnBuscar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
 End Class

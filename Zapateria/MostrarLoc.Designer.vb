@@ -39,6 +39,7 @@ Partial Class MostrarLoc
         Me.BtnAtras = New System.Windows.Forms.Button()
         Me.BtnAdelante = New System.Windows.Forms.Button()
         Me.BtnUltimo = New System.Windows.Forms.Button()
+        Me.BtnVolver = New System.Windows.Forms.Button()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         LocalidadLabel = New System.Windows.Forms.Label()
         ZonaLabel = New System.Windows.Forms.Label()
@@ -46,6 +47,42 @@ Partial Class MostrarLoc
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(26, 46)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 1
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'LocalidadLabel
+        '
+        LocalidadLabel.AutoSize = True
+        LocalidadLabel.Location = New System.Drawing.Point(26, 72)
+        LocalidadLabel.Name = "LocalidadLabel"
+        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.TabIndex = 3
+        LocalidadLabel.Text = "Localidad:"
+        '
+        'ZonaLabel
+        '
+        ZonaLabel.AutoSize = True
+        ZonaLabel.Location = New System.Drawing.Point(26, 98)
+        ZonaLabel.Name = "ZonaLabel"
+        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.TabIndex = 5
+        ZonaLabel.Text = "Zona:"
+        '
+        'CPLabel
+        '
+        CPLabel.AutoSize = True
+        CPLabel.Location = New System.Drawing.Point(26, 124)
+        CPLabel.Name = "CPLabel"
+        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.TabIndex = 7
+        CPLabel.Text = "CP:"
         '
         'ZapateriaDataSet
         '
@@ -73,15 +110,6 @@ Partial Class MostrarLoc
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ID_LocalidadLabel
-        '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(26, 46)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 1
-        ID_LocalidadLabel.Text = "ID Localidad:"
-        '
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "ID_Localidad", True))
@@ -89,15 +117,6 @@ Partial Class MostrarLoc
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 2
-        '
-        'LocalidadLabel
-        '
-        LocalidadLabel.AutoSize = True
-        LocalidadLabel.Location = New System.Drawing.Point(26, 72)
-        LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
-        LocalidadLabel.TabIndex = 3
-        LocalidadLabel.Text = "Localidad:"
         '
         'LocalidadTextBox
         '
@@ -107,15 +126,6 @@ Partial Class MostrarLoc
         Me.LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LocalidadTextBox.TabIndex = 4
         '
-        'ZonaLabel
-        '
-        ZonaLabel.AutoSize = True
-        ZonaLabel.Location = New System.Drawing.Point(26, 98)
-        ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
-        ZonaLabel.TabIndex = 5
-        ZonaLabel.Text = "Zona:"
-        '
         'ZonaTextBox
         '
         Me.ZonaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Zona", True))
@@ -123,15 +133,6 @@ Partial Class MostrarLoc
         Me.ZonaTextBox.Name = "ZonaTextBox"
         Me.ZonaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ZonaTextBox.TabIndex = 6
-        '
-        'CPLabel
-        '
-        CPLabel.AutoSize = True
-        CPLabel.Location = New System.Drawing.Point(26, 124)
-        CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
-        CPLabel.TabIndex = 7
-        CPLabel.Text = "CP:"
         '
         'CPTextBox
         '
@@ -152,7 +153,7 @@ Partial Class MostrarLoc
         '
         'BtnAtras
         '
-        Me.BtnAtras.Location = New System.Drawing.Point(78, 186)
+        Me.BtnAtras.Location = New System.Drawing.Point(60, 186)
         Me.BtnAtras.Name = "BtnAtras"
         Me.BtnAtras.Size = New System.Drawing.Size(42, 23)
         Me.BtnAtras.TabIndex = 10
@@ -161,7 +162,7 @@ Partial Class MostrarLoc
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.Location = New System.Drawing.Point(144, 186)
+        Me.BtnAdelante.Location = New System.Drawing.Point(123, 186)
         Me.BtnAdelante.Name = "BtnAdelante"
         Me.BtnAdelante.Size = New System.Drawing.Size(42, 23)
         Me.BtnAdelante.TabIndex = 11
@@ -170,18 +171,28 @@ Partial Class MostrarLoc
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.Location = New System.Drawing.Point(216, 186)
+        Me.BtnUltimo.Location = New System.Drawing.Point(171, 186)
         Me.BtnUltimo.Name = "BtnUltimo"
         Me.BtnUltimo.Size = New System.Drawing.Size(42, 23)
         Me.BtnUltimo.TabIndex = 12
         Me.BtnUltimo.Text = ">>"
         Me.BtnUltimo.UseVisualStyleBackColor = True
         '
+        'BtnVolver
+        '
+        Me.BtnVolver.Location = New System.Drawing.Point(237, 98)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(75, 43)
+        Me.BtnVolver.TabIndex = 13
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = True
+        '
         'MostrarLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 246)
+        Me.ClientSize = New System.Drawing.Size(366, 255)
+        Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnUltimo)
         Me.Controls.Add(Me.BtnAdelante)
         Me.Controls.Add(Me.BtnAtras)
@@ -194,6 +205,7 @@ Partial Class MostrarLoc
         Me.Controls.Add(Me.ZonaTextBox)
         Me.Controls.Add(CPLabel)
         Me.Controls.Add(Me.CPTextBox)
+        Me.KeyPreview = True
         Me.Name = "MostrarLoc"
         Me.Text = "MostrarLoc"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -214,4 +226,5 @@ Partial Class MostrarLoc
     Friend WithEvents BtnAtras As System.Windows.Forms.Button
     Friend WithEvents BtnAdelante As System.Windows.Forms.Button
     Friend WithEvents BtnUltimo As System.Windows.Forms.Button
+    Friend WithEvents BtnVolver As System.Windows.Forms.Button
 End Class

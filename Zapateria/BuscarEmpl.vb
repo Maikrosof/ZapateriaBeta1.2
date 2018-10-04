@@ -50,4 +50,13 @@
             MsgBox("El Número de DNI esta vacío o mal ingresado")
         End If
     End Sub
+
+    Private Sub BuscarEmpl_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call BtnBuscar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
 End Class

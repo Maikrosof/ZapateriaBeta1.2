@@ -37,4 +37,13 @@
     Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
         Close()
     End Sub
+
+    Private Sub AltaLoc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call BtnGuardar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
 End Class

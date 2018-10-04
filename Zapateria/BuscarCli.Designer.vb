@@ -285,6 +285,7 @@ Partial Class BuscarCli
         Me.Controls.Add(NroLabel)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(DNILabel)
+        Me.KeyPreview = True
         Me.Name = "BuscarCli"
         Me.Text = "BuscarCli"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

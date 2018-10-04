@@ -67,32 +67,6 @@ Partial Class BuscarEmpl
         CType(Me.EmpleadosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ZapateriaDataSet
-        '
-        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
-        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'EmpleadosBindingSource
-        '
-        Me.EmpleadosBindingSource.DataMember = "Empleados"
-        Me.EmpleadosBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'EmpleadosTableAdapter
-        '
-        Me.EmpleadosTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.EmpleadosTableAdapter = Me.EmpleadosTableAdapter
-        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
-        Me.TableAdapterManager.MarcasTableAdapter = Nothing
-        Me.TableAdapterManager.ProductosTableAdapter = Nothing
-        Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentasTableAdapter = Nothing
-        '
         'ID_EmpLabel
         '
         ID_EmpLabel.AutoSize = True
@@ -191,6 +165,32 @@ Partial Class BuscarEmpl
         CargoLabel.Size = New System.Drawing.Size(38, 13)
         CargoLabel.TabIndex = 21
         CargoLabel.Text = "Cargo:"
+        '
+        'ZapateriaDataSet
+        '
+        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
+        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EmpleadosBindingSource
+        '
+        Me.EmpleadosBindingSource.DataMember = "Empleados"
+        Me.EmpleadosBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'EmpleadosTableAdapter
+        '
+        Me.EmpleadosTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ClientesTableAdapter = Nothing
+        Me.TableAdapterManager.EmpleadosTableAdapter = Me.EmpleadosTableAdapter
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Nothing
+        Me.TableAdapterManager.ProductosTableAdapter = Nothing
+        Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
         'BtnVolver
         '
@@ -327,6 +327,7 @@ Partial Class BuscarEmpl
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Fec_ContrLabel)
         Me.Controls.Add(CargoLabel)
+        Me.KeyPreview = True
         Me.Name = "BuscarEmpl"
         Me.Text = "BuscarEmpl"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

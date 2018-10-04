@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ModElimLoc
+Partial Class ElimLoc
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -40,6 +40,7 @@ Partial Class ModElimLoc
         Me.BtnAdelante = New System.Windows.Forms.Button()
         Me.BtnAtras = New System.Windows.Forms.Button()
         Me.BtnPrincipio = New System.Windows.Forms.Button()
+        Me.BtnVolver = New System.Windows.Forms.Button()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         LocalidadLabel = New System.Windows.Forms.Label()
         ZonaLabel = New System.Windows.Forms.Label()
@@ -47,6 +48,42 @@ Partial Class ModElimLoc
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(45, 27)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 1
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'LocalidadLabel
+        '
+        LocalidadLabel.AutoSize = True
+        LocalidadLabel.Location = New System.Drawing.Point(45, 53)
+        LocalidadLabel.Name = "LocalidadLabel"
+        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.TabIndex = 3
+        LocalidadLabel.Text = "Localidad:"
+        '
+        'ZonaLabel
+        '
+        ZonaLabel.AutoSize = True
+        ZonaLabel.Location = New System.Drawing.Point(45, 79)
+        ZonaLabel.Name = "ZonaLabel"
+        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.TabIndex = 5
+        ZonaLabel.Text = "Zona:"
+        '
+        'CPLabel
+        '
+        CPLabel.AutoSize = True
+        CPLabel.Location = New System.Drawing.Point(45, 105)
+        CPLabel.Name = "CPLabel"
+        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.TabIndex = 7
+        CPLabel.Text = "CP:"
         '
         'ZapateriaDataSet
         '
@@ -74,15 +111,6 @@ Partial Class ModElimLoc
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ID_LocalidadLabel
-        '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(45, 27)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 1
-        ID_LocalidadLabel.Text = "ID Localidad:"
-        '
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "ID_Localidad", True))
@@ -90,15 +118,6 @@ Partial Class ModElimLoc
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 2
-        '
-        'LocalidadLabel
-        '
-        LocalidadLabel.AutoSize = True
-        LocalidadLabel.Location = New System.Drawing.Point(45, 53)
-        LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
-        LocalidadLabel.TabIndex = 3
-        LocalidadLabel.Text = "Localidad:"
         '
         'LocalidadTextBox
         '
@@ -108,15 +127,6 @@ Partial Class ModElimLoc
         Me.LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LocalidadTextBox.TabIndex = 4
         '
-        'ZonaLabel
-        '
-        ZonaLabel.AutoSize = True
-        ZonaLabel.Location = New System.Drawing.Point(45, 79)
-        ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
-        ZonaLabel.TabIndex = 5
-        ZonaLabel.Text = "Zona:"
-        '
         'ZonaTextBox
         '
         Me.ZonaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Zona", True))
@@ -124,15 +134,6 @@ Partial Class ModElimLoc
         Me.ZonaTextBox.Name = "ZonaTextBox"
         Me.ZonaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ZonaTextBox.TabIndex = 6
-        '
-        'CPLabel
-        '
-        CPLabel.AutoSize = True
-        CPLabel.Location = New System.Drawing.Point(45, 105)
-        CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
-        CPLabel.TabIndex = 7
-        CPLabel.Text = "CP:"
         '
         'CPTextBox
         '
@@ -187,11 +188,21 @@ Partial Class ModElimLoc
         Me.BtnPrincipio.Text = "<<"
         Me.BtnPrincipio.UseVisualStyleBackColor = True
         '
-        'ModElimLoc
+        'BtnVolver
+        '
+        Me.BtnVolver.Location = New System.Drawing.Point(279, 83)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(75, 39)
+        Me.BtnVolver.TabIndex = 17
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = True
+        '
+        'ElimLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(427, 193)
+        Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnUltimo)
         Me.Controls.Add(Me.BtnAdelante)
         Me.Controls.Add(Me.BtnAtras)
@@ -205,7 +216,8 @@ Partial Class ModElimLoc
         Me.Controls.Add(Me.ZonaTextBox)
         Me.Controls.Add(CPLabel)
         Me.Controls.Add(Me.CPTextBox)
-        Me.Name = "ModElimLoc"
+        Me.KeyPreview = True
+        Me.Name = "ElimLoc"
         Me.Text = "ModElimLoc"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -226,4 +238,5 @@ Partial Class ModElimLoc
     Friend WithEvents BtnAdelante As System.Windows.Forms.Button
     Friend WithEvents BtnAtras As System.Windows.Forms.Button
     Friend WithEvents BtnPrincipio As System.Windows.Forms.Button
+    Friend WithEvents BtnVolver As System.Windows.Forms.Button
 End Class

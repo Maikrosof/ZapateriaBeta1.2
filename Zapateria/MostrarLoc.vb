@@ -32,4 +32,16 @@
         Me.LocalidadBindingSource.MoveLast()
 
     End Sub
+
+    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+        Close()
+
+    End Sub
+
+    Private Sub MostrarLoc_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F5 Then
+            Close()
+        End If
+
+    End Sub
 End Class

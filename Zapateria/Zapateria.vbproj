@@ -149,10 +149,10 @@
     <Compile Include="Empl.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModElimLoc.Designer.vb">
-      <DependentUpon>ModElimLoc.vb</DependentUpon>
+    <Compile Include="ElimLoc.Designer.vb">
+      <DependentUpon>ElimLoc.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModElimLoc.vb">
+    <Compile Include="ElimLoc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MostrarLoc.Designer.vb">
@@ -232,8 +232,8 @@
     <EmbeddedResource Include="Empl.resx">
       <DependentUpon>Empl.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModElimLoc.resx">
-      <DependentUpon>ModElimLoc.vb</DependentUpon>
+    <EmbeddedResource Include="ElimLoc.resx">
+      <DependentUpon>ElimLoc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MostrarLoc.resx">
       <DependentUpon>MostrarLoc.vb</DependentUpon>

@@ -45,22 +45,28 @@
     Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
 
         Dim fila, CodConsulta, aux As Integer
-        CodConsulta = InputBox("Ingrese el CUIT del Proveedor")
-        'podria ir lo de vacio
-        fila = Me.ProveedoresBindingSource.Find("CUIT", CodConsulta)
-        If fila = -1 Then
-            'no lo encontró
-            MsgBox("No se encontró el CUIT del Proveedor")
+
+        CodConsulta = InputBox("Ingrese codigo de consulta") 'genera una ventana donde se ingresa el cod consulta 
+        If CodConsulta.ToString = "" Then 'hay que pasarlo a cadena para que lo tome
+            MsgBox("El Campo esta vacio")
+
         Else
-            'lo encontró
-            Me.ProveedoresBindingSource.Position = fila ' muevo el puntero a la pocision encontrada
-            aux = MsgBox("Quiere eliminar al proveedor? " & CodConsulta)
-            If aux = 1 Then
-                'apreto si
-                Me.ProveedoresBindingSource.RemoveCurrent()
-                Me.ProveedoresBindingSource.EndEdit()
-                Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'guardo en el disco
-                Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores) 'para actualizar en el otro formulario
+            fila = Me.ProveedoresBindingSource.Find("Razon_Social", CodConsulta) 'busca dentra de la BD
+
+            If fila = -1 Then
+                MsgBox("No se encotro el codigo del video")
+                Razon_SocialTextBox.Focus()
+            Else
+                'lo encotro 
+                Me.ProveedoresBindingSource.Position = fila 'paro el puntero en la  fila buscada
+                aux = MsgBox("Quiere eliminar al proveedor?" & CodConsulta) 'Pregunto
+                If aux = 1 Then
+                    'apreto si
+                    Me.ProveedoresBindingSource.RemoveCurrent() 'borro el regiostro donde estoy parado
+                    Me.ProveedoresBindingSource.EndEdit() 'cierro bd
+                    Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'guardo en disco
+                    Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores) ' para actualizar en el otro formulario la grilla
+                End If
             End If
         End If
 
@@ -77,7 +83,7 @@
         If e.KeyCode = Keys.F2 Then
             Call BtnEliminar_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F3 Then
+        If e.KeyCode = Keys.F4 Then
             BuscarProv.Show()
         End If
         If e.KeyCode = Keys.F5 Then

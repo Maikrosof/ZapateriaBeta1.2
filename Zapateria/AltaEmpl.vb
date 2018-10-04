@@ -26,22 +26,37 @@
     End Sub
 
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
-        Me.EmpleadosBindingSource.Current("ID_Localidad") = CmbLocalidad.SelectedValue
-        Me.EmpleadosBindingSource.Current("DNI") = Val(DNITextBox.Text)
-        Me.EmpleadosBindingSource.Current("Nombre") = NombreTextBox.Text
-        Me.EmpleadosBindingSource.Current("Apellido") = ApellidoTextBox.Text
-        Me.EmpleadosBindingSource.Current("Fec_Nacimiento") = Fec_NacimientoDateTimePicker.Value
-        Me.EmpleadosBindingSource.Current("Direccion") = DireccionTextBox.Text
-        Me.EmpleadosBindingSource.Current("Nro") = Val(NroTextBox.Text)
-        Me.EmpleadosBindingSource.Current("Telefono") = Val(TelefonoTextBox.Text)
-        Me.EmpleadosBindingSource.Current("Fec_Contr") = Fec_ContrDateTimePicker.Value
-        Me.EmpleadosBindingSource.Current("Cargo") = CargoTextBox.Text
-        Me.EmpleadosBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'guardar disco
-        Me.EmpleadosTableAdapter.Fill(Me.ZapateriaDataSet.Empleados) 'actualizo en altas
-        Empl.EmpleadosTableAdapter.Fill(Empl.ZapateriaDataSet.Empleados) 'actualizo en principal para que muestre el cod del art
-        Me.EmpleadosBindingSource.MoveLast() 'muestra el ultimo agregado
-        MsgBox("El codigo de empleado es:" + Me.EmpleadosBindingSource.Current("ID_Emp").ToString)
-        Me.EmpleadosBindingSource.AddNew()
+
+        If DNITextBox.Text <> "" Or NombreTextBox.Text <> "" Or ApellidoTextBox.Text <> "" Or DireccionTextBox.Text <> "" Or NroTextBox.Text <> "" Or TelefonoTextBox.Text <> "" Or CargoTextBox.Text <> "" Then
+
+            Me.EmpleadosBindingSource.Current("ID_Localidad") = CmbLocalidad.SelectedValue
+            Me.EmpleadosBindingSource.Current("DNI") = Val(DNITextBox.Text)
+            Me.EmpleadosBindingSource.Current("Nombre") = NombreTextBox.Text
+            Me.EmpleadosBindingSource.Current("Apellido") = ApellidoTextBox.Text
+            Me.EmpleadosBindingSource.Current("Fec_Nacimiento") = Fec_NacimientoDateTimePicker.Value
+            Me.EmpleadosBindingSource.Current("Direccion") = DireccionTextBox.Text
+            Me.EmpleadosBindingSource.Current("Nro") = Val(NroTextBox.Text)
+            Me.EmpleadosBindingSource.Current("Telefono") = Val(TelefonoTextBox.Text)
+            Me.EmpleadosBindingSource.Current("Fec_Contr") = Fec_ContrDateTimePicker.Value
+            Me.EmpleadosBindingSource.Current("Cargo") = CargoTextBox.Text
+            Me.EmpleadosBindingSource.EndEdit()
+            Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'guardar disco
+            Me.EmpleadosTableAdapter.Fill(Me.ZapateriaDataSet.Empleados) 'actualizo en altas
+            Empl.EmpleadosTableAdapter.Fill(Empl.ZapateriaDataSet.Empleados) 'actualizo en principal para que muestre el cod del art
+            Me.EmpleadosBindingSource.MoveLast() 'muestra el ultimo agregado
+            MsgBox("El codigo de empleado es:" + Me.EmpleadosBindingSource.Current("ID_Emp").ToString)
+            Me.EmpleadosBindingSource.AddNew()
+        Else
+            MsgBox("Faltan datos")
+        End If
+    End Sub
+
+    Private Sub AltaEmpl_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call BtnGuardar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call BtnVolver_Click(sender, e)
+        End If
     End Sub
 End Class

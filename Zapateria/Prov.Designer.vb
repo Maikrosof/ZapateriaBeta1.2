@@ -324,11 +324,11 @@ Partial Class Prov
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(300, 21)
+        Me.BtnBuscar.Location = New System.Drawing.Point(528, 21)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(84, 49)
         Me.BtnBuscar.TabIndex = 21
-        Me.BtnBuscar.Text = "Busqueda[F3]"
+        Me.BtnBuscar.Text = "Busqueda[F4]"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'BtnEliminar
