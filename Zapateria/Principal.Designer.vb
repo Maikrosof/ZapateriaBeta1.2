@@ -234,7 +234,7 @@ Partial Class Principal
         '
         Me.LocalidadesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarLocalidadesToolStripMenuItem, Me.ModificarLocalidadesToolStripMenuItem, Me.MostrarLocalidadesToolStripMenuItem})
         Me.LocalidadesToolStripMenuItem.Name = "LocalidadesToolStripMenuItem"
-        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.LocalidadesToolStripMenuItem.Text = "Localidades"
         '
         'AgregarLocalidadesToolStripMenuItem

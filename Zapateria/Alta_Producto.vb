@@ -26,7 +26,7 @@
         Me.ProductosBindingSource.Current("ID_Marca") = Val(ID_MarcaTextBox.Text)
         Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
         Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
-        Me.ProductosBindingSource.Current("Color") = Val(PrecioTextBox.Text)
+        Me.ProductosBindingSource.Current("Color") = ColorTextBox.Text
         Me.ProductosBindingSource.Current("Estilo") = Val(ColorTextBox.Text)
         Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
 
