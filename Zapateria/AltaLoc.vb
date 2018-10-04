@@ -22,16 +22,18 @@
     End Sub
 
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
-
-        Me.Validate()
-        Me.LocalidadBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
-        Me.LocalidadTableAdapter.Fill(Me.ZapateriaDataSet.Localidad)
-        MostrarLoc.LocalidadTableAdapter.Fill(MostrarLoc.ZapateriaDataSet.Localidad)
-        Me.LocalidadBindingSource.MoveLast()
-        MsgBox("El codigo de la localidad es:" + Me.LocalidadBindingSource.Current("ID_Localidad").ToString)
-        Me.LocalidadBindingSource.AddNew()
-
+        If LocalidadTextBox.Text <> "" Or ZonaTextBox.Text <> "" Or CPTextBox.Text <> "" Then
+            Me.Validate()
+            Me.LocalidadBindingSource.EndEdit()
+            Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
+            Me.LocalidadTableAdapter.Fill(Me.ZapateriaDataSet.Localidad)
+            MostrarLoc.LocalidadTableAdapter.Fill(MostrarLoc.ZapateriaDataSet.Localidad)
+            Me.LocalidadBindingSource.MoveLast()
+            MsgBox("El codigo de la localidad es:" + Me.LocalidadBindingSource.Current("ID_Localidad").ToString)
+            Me.LocalidadBindingSource.AddNew()
+        Else
+            MsgBox("Faltan datos")
+        End If
     End Sub
 
     Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
