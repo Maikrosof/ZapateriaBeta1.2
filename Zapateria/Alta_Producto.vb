@@ -22,13 +22,11 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        'Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
-        ' Me.ProductosBindingSource.Current("ID_Marca") = Val(ID_MarcaTextBox.Text)
-        ' Me.ProductosBindingSource.Current("Marca") = Val(MarcaTextBox.Text)
-        ' Me.ProductosBindingSource.Current("Modelo") = Val(ModeloTextBox.Text)
+        Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
+        Me.ProductosBindingSource.Current("ID_Marca") = Val(ID_MarcaTextBox.Text)
         Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
         Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
-        Me.ProductosBindingSource.Current("Color") = Val(PrecioTextBox.Text)
+        Me.ProductosBindingSource.Current("Color") = ColorTextBox.Text
         Me.ProductosBindingSource.Current("Estilo") = Val(ColorTextBox.Text)
         Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
 
