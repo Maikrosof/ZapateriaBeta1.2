@@ -34,8 +34,8 @@ Partial Class Alta_Producto
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ID_MarcaTextBox = New System.Windows.Forms.TextBox()
         Me.ID_ProveedorTextBox = New System.Windows.Forms.TextBox()
         Me.TallaTextBox = New System.Windows.Forms.TextBox()
@@ -56,6 +56,69 @@ Partial Class Alta_Producto
         CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_MarcaLabel
+        '
+        ID_MarcaLabel.AutoSize = True
+        ID_MarcaLabel.Location = New System.Drawing.Point(23, 56)
+        ID_MarcaLabel.Name = "ID_MarcaLabel"
+        ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
+        ID_MarcaLabel.TabIndex = 3
+        ID_MarcaLabel.Text = "ID Marca:"
+        '
+        'ID_ProveedorLabel
+        '
+        ID_ProveedorLabel.AutoSize = True
+        ID_ProveedorLabel.Location = New System.Drawing.Point(23, 82)
+        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
+        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
+        ID_ProveedorLabel.TabIndex = 5
+        ID_ProveedorLabel.Text = "ID Proveedor:"
+        '
+        'TallaLabel
+        '
+        TallaLabel.AutoSize = True
+        TallaLabel.Location = New System.Drawing.Point(23, 108)
+        TallaLabel.Name = "TallaLabel"
+        TallaLabel.Size = New System.Drawing.Size(33, 13)
+        TallaLabel.TabIndex = 7
+        TallaLabel.Text = "Talla:"
+        '
+        'PrecioLabel
+        '
+        PrecioLabel.AutoSize = True
+        PrecioLabel.Location = New System.Drawing.Point(23, 134)
+        PrecioLabel.Name = "PrecioLabel"
+        PrecioLabel.Size = New System.Drawing.Size(40, 13)
+        PrecioLabel.TabIndex = 9
+        PrecioLabel.Text = "Precio:"
+        '
+        'ColorLabel
+        '
+        ColorLabel.AutoSize = True
+        ColorLabel.Location = New System.Drawing.Point(23, 160)
+        ColorLabel.Name = "ColorLabel"
+        ColorLabel.Size = New System.Drawing.Size(34, 13)
+        ColorLabel.TabIndex = 11
+        ColorLabel.Text = "Color:"
+        '
+        'EstiloLabel
+        '
+        EstiloLabel.AutoSize = True
+        EstiloLabel.Location = New System.Drawing.Point(23, 186)
+        EstiloLabel.Name = "EstiloLabel"
+        EstiloLabel.Size = New System.Drawing.Size(35, 13)
+        EstiloLabel.TabIndex = 13
+        EstiloLabel.Text = "Estilo:"
+        '
+        'StockLabel
+        '
+        StockLabel.AutoSize = True
+        StockLabel.Location = New System.Drawing.Point(23, 212)
+        StockLabel.Name = "StockLabel"
+        StockLabel.Size = New System.Drawing.Size(38, 13)
+        StockLabel.TabIndex = 15
+        StockLabel.Text = "Stock:"
         '
         'ZapateriaDataSet
         '
@@ -83,23 +146,14 @@ Partial Class Alta_Producto
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'MarcasBindingSource
-        '
-        Me.MarcasBindingSource.DataMember = "Marcas"
-        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
-        '
         'MarcasTableAdapter
         '
         Me.MarcasTableAdapter.ClearBeforeFill = True
         '
-        'ID_MarcaLabel
+        'MarcasBindingSource
         '
-        ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.Location = New System.Drawing.Point(23, 56)
-        ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
-        ID_MarcaLabel.TabIndex = 3
-        ID_MarcaLabel.Text = "ID Marca:"
+        Me.MarcasBindingSource.DataMember = "Marcas"
+        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
         '
         'ID_MarcaTextBox
         '
@@ -109,15 +163,6 @@ Partial Class Alta_Producto
         Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_MarcaTextBox.TabIndex = 4
         '
-        'ID_ProveedorLabel
-        '
-        ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.Location = New System.Drawing.Point(23, 82)
-        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
-        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
-        ID_ProveedorLabel.TabIndex = 5
-        ID_ProveedorLabel.Text = "ID Proveedor:"
-        '
         'ID_ProveedorTextBox
         '
         Me.ID_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "ID_Proveedor", True))
@@ -125,15 +170,6 @@ Partial Class Alta_Producto
         Me.ID_ProveedorTextBox.Name = "ID_ProveedorTextBox"
         Me.ID_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_ProveedorTextBox.TabIndex = 6
-        '
-        'TallaLabel
-        '
-        TallaLabel.AutoSize = True
-        TallaLabel.Location = New System.Drawing.Point(23, 108)
-        TallaLabel.Name = "TallaLabel"
-        TallaLabel.Size = New System.Drawing.Size(33, 13)
-        TallaLabel.TabIndex = 7
-        TallaLabel.Text = "Talla:"
         '
         'TallaTextBox
         '
@@ -143,15 +179,6 @@ Partial Class Alta_Producto
         Me.TallaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TallaTextBox.TabIndex = 8
         '
-        'PrecioLabel
-        '
-        PrecioLabel.AutoSize = True
-        PrecioLabel.Location = New System.Drawing.Point(23, 134)
-        PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(40, 13)
-        PrecioLabel.TabIndex = 9
-        PrecioLabel.Text = "Precio:"
-        '
         'PrecioTextBox
         '
         Me.PrecioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Precio", True))
@@ -159,15 +186,6 @@ Partial Class Alta_Producto
         Me.PrecioTextBox.Name = "PrecioTextBox"
         Me.PrecioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.PrecioTextBox.TabIndex = 10
-        '
-        'ColorLabel
-        '
-        ColorLabel.AutoSize = True
-        ColorLabel.Location = New System.Drawing.Point(23, 160)
-        ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(34, 13)
-        ColorLabel.TabIndex = 11
-        ColorLabel.Text = "Color:"
         '
         'ColorTextBox
         '
@@ -177,15 +195,6 @@ Partial Class Alta_Producto
         Me.ColorTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ColorTextBox.TabIndex = 12
         '
-        'EstiloLabel
-        '
-        EstiloLabel.AutoSize = True
-        EstiloLabel.Location = New System.Drawing.Point(23, 186)
-        EstiloLabel.Name = "EstiloLabel"
-        EstiloLabel.Size = New System.Drawing.Size(35, 13)
-        EstiloLabel.TabIndex = 13
-        EstiloLabel.Text = "Estilo:"
-        '
         'EstiloTextBox
         '
         Me.EstiloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Estilo", True))
@@ -193,15 +202,6 @@ Partial Class Alta_Producto
         Me.EstiloTextBox.Name = "EstiloTextBox"
         Me.EstiloTextBox.Size = New System.Drawing.Size(100, 20)
         Me.EstiloTextBox.TabIndex = 14
-        '
-        'StockLabel
-        '
-        StockLabel.AutoSize = True
-        StockLabel.Location = New System.Drawing.Point(23, 212)
-        StockLabel.Name = "StockLabel"
-        StockLabel.Size = New System.Drawing.Size(38, 13)
-        StockLabel.TabIndex = 15
-        StockLabel.Text = "Stock:"
         '
         'StockTextBox
         '
@@ -250,6 +250,7 @@ Partial Class Alta_Producto
         Me.Controls.Add(Me.EstiloTextBox)
         Me.Controls.Add(StockLabel)
         Me.Controls.Add(Me.StockTextBox)
+        Me.KeyPreview = True
         Me.Name = "Alta_Producto"
         Me.Text = "Alta_Producto"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

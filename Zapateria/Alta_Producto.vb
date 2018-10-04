@@ -12,7 +12,7 @@
         Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
         Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
-        Me.MarcasBindingSource.AddNew()
+        ' Me.MarcasBindingSource.AddNew()
         Me.ProductosBindingSource.AddNew()
     End Sub
 
@@ -31,16 +31,25 @@
         Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
 
         Me.ProductosBindingSource.EndEdit()
-        Me.MarcasBindingSource.EndEdit()
+        ' Me.MarcasBindingSource.EndEdit()
 
         Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
         Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
-        Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
+        ' Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
 
         Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
-        Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
+        ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
 
         Me.ProductosBindingSource.AddNew()
-        Me.MarcasBindingSource.AddNew()
+        'Me.MarcasBindingSource.AddNew()
+    End Sub
+
+    Private Sub Alta_Producto_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call Button1_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call Button2_Click(sender, e)
+        End If
     End Sub
 End Class
