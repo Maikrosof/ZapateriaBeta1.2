@@ -137,6 +137,12 @@
     <Compile Include="BuscarProv.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Buscar_Productos.Designer.vb">
+      <DependentUpon>Buscar_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Client.Designer.vb">
       <DependentUpon>Client.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar_Productos.resx">
+      <DependentUpon>Buscar_Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
