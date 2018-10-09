@@ -30,6 +30,7 @@ Partial Class Alta_Producto
         Dim ColorLabel As System.Windows.Forms.Label
         Dim EstiloLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
+        Dim ModeloLabel As System.Windows.Forms.Label
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
@@ -45,6 +46,7 @@ Partial Class Alta_Producto
         Me.StockTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ModeloTextBox = New System.Windows.Forms.TextBox()
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_ProveedorLabel = New System.Windows.Forms.Label()
         TallaLabel = New System.Windows.Forms.Label()
@@ -52,6 +54,7 @@ Partial Class Alta_Producto
         ColorLabel = New System.Windows.Forms.Label()
         EstiloLabel = New System.Windows.Forms.Label()
         StockLabel = New System.Windows.Forms.Label()
+        ModeloLabel = New System.Windows.Forms.Label()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,7 +63,7 @@ Partial Class Alta_Producto
         'ID_MarcaLabel
         '
         ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.Location = New System.Drawing.Point(23, 56)
+        ID_MarcaLabel.Location = New System.Drawing.Point(23, 31)
         ID_MarcaLabel.Name = "ID_MarcaLabel"
         ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
         ID_MarcaLabel.TabIndex = 3
@@ -69,7 +72,7 @@ Partial Class Alta_Producto
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.Location = New System.Drawing.Point(23, 82)
+        ID_ProveedorLabel.Location = New System.Drawing.Point(23, 57)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
         ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
         ID_ProveedorLabel.TabIndex = 5
@@ -158,7 +161,7 @@ Partial Class Alta_Producto
         'ID_MarcaTextBox
         '
         Me.ID_MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "ID_Marca", True))
-        Me.ID_MarcaTextBox.Location = New System.Drawing.Point(102, 53)
+        Me.ID_MarcaTextBox.Location = New System.Drawing.Point(102, 28)
         Me.ID_MarcaTextBox.Name = "ID_MarcaTextBox"
         Me.ID_MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_MarcaTextBox.TabIndex = 4
@@ -166,7 +169,7 @@ Partial Class Alta_Producto
         'ID_ProveedorTextBox
         '
         Me.ID_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "ID_Proveedor", True))
-        Me.ID_ProveedorTextBox.Location = New System.Drawing.Point(102, 79)
+        Me.ID_ProveedorTextBox.Location = New System.Drawing.Point(102, 54)
         Me.ID_ProveedorTextBox.Name = "ID_ProveedorTextBox"
         Me.ID_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_ProveedorTextBox.TabIndex = 6
@@ -213,7 +216,7 @@ Partial Class Alta_Producto
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(248, 53)
+        Me.Button1.Location = New System.Drawing.Point(248, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 72)
         Me.Button1.TabIndex = 17
@@ -229,11 +232,30 @@ Partial Class Alta_Producto
         Me.Button2.Text = "Volver"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ModeloLabel
+        '
+        ModeloLabel.AutoSize = True
+        ModeloLabel.Location = New System.Drawing.Point(23, 83)
+        ModeloLabel.Name = "ModeloLabel"
+        ModeloLabel.Size = New System.Drawing.Size(45, 13)
+        ModeloLabel.TabIndex = 18
+        ModeloLabel.Text = "Modelo:"
+        '
+        'ModeloTextBox
+        '
+        Me.ModeloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Modelo", True))
+        Me.ModeloTextBox.Location = New System.Drawing.Point(102, 80)
+        Me.ModeloTextBox.Name = "ModeloTextBox"
+        Me.ModeloTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ModeloTextBox.TabIndex = 19
+        '
         'Alta_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(433, 276)
+        Me.Controls.Add(ModeloLabel)
+        Me.Controls.Add(Me.ModeloTextBox)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(ID_MarcaLabel)
@@ -275,4 +297,5 @@ Partial Class Alta_Producto
     Friend WithEvents StockTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ModeloTextBox As System.Windows.Forms.TextBox
 End Class

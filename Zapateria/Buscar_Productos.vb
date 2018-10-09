@@ -28,15 +28,77 @@
 
     End Sub
 
-    Private Sub ID_ZapTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ID_ZapTextBox.TextChanged
-        Dim vista As New DataView 'creo e instancio el objeto 
+    Private Sub ID_ZapTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        vista.Table = Me.ZapateriaDataSet.Productos 'cargo objeto con la tabla stock
-        'aux = "Id_articulo = " + Val(Me.TextBox2.Text) con el simbolo + tira error no concatena
+        If TextBox1.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Convert (ID_Zap,'System.String') like '%" & Val(TextBox1.Text) & "%'"
+        End If
 
-        vista.RowFilter = "ID_Zap = " & Val(Me.ID_ZapTextBox.Text)    'esta para numeros
+    End Sub
 
-        Me.ProductosBindingSource.DataSource = vista 'cargo la vista
+    Private Sub ID_MarcaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox2.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Convert (ID_Marca,'System.String') like '%" & TextBox2.Text & "%'"
+        End If
+    End Sub
 
+    Private Sub ID_ProveedorTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox3.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Convert (ID_Proveedor,'System.String') like '%" & TextBox3.Text & "%'"
+        End If
+    End Sub
+
+    Private Sub TallaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox5.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Convert (Talla,'System.String') like '%" & TextBox5.Text & "%'"
+        End If
+    End Sub
+
+    Private Sub PrecioTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        'If TextBox6.Text = "" Then
+        'Me.ProductosBindingSource.Filter = Nothing
+        'Else
+        'Me.ProductosBindingSource.Filter = "Convert (Precio'System.String') like '%" & TextBox6.Text & "%'"
+        'End If
+    End Sub
+
+    Private Sub ColorTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox7.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Color like '%" & TextBox7.Text & "%'"
+        End If
+    End Sub
+
+    Private Sub EstiloTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox8.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Estilo like '" & TextBox8.Text & "'"
+        End If
+    End Sub
+
+    Private Sub StockTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox9.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Convert (Stock,'System.String') like '%" & TextBox9.Text & "%'"
+        End If
+    End Sub
+
+    Private Sub ModeloTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        If TextBox4.Text = "" Then
+            Me.ProductosBindingSource.Filter = Nothing
+        Else
+            Me.ProductosBindingSource.Filter = "Modelo like '" & TextBox4.Text & "'"
+        End If
     End Sub
 End Class
