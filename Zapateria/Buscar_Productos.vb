@@ -20,27 +20,23 @@
 
     End Sub
 
-    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
-        Dim i As Integer
-        Dim CodigoConsulta As String
-        ProductosBindingSource.MoveFirst() 'Mover arriba
-        CodigoConsulta = InputBox("ingrese el DNI del cliente") 'abre pantalla
-        i = 0
-        If CodigoConsulta <> "" And IsNumeric(CodigoConsulta) Then
-            Do
-                If ProductosBindingSource.Current("ID_Marca") = CodigoConsulta Then
+    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        
+    End Sub
 
-                    TextBox1 = ProductosBindingSource.Current("ID_Marca")
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
+    End Sub
 
-                    Exit Sub
-                End If
-                i = i + 1
-                ProductosBindingSource.MoveNext()
-            Loop Until i = ProductosBindingSource.Count 'cantidad de registros, 'funciona como do while, '(pregunta si es el codigo que busca)
-            MsgBox("no se encontro el DNI")
-        Else
-            MsgBox("El Número de DNI esta vacío o mal ingresado")
-        End If
+    Private Sub ID_ZapTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ID_ZapTextBox.TextChanged
+        Dim vista As New DataView 'creo e instancio el objeto 
+
+        vista.Table = Me.ZapateriaDataSet.Productos 'cargo objeto con la tabla stock
+        'aux = "Id_articulo = " + Val(Me.TextBox2.Text) con el simbolo + tira error no concatena
+
+        vista.RowFilter = "ID_Zap = " & Val(Me.ID_ZapTextBox.Text)    'esta para numeros
+
+        Me.ProductosBindingSource.DataSource = vista 'cargo la vista
+
     End Sub
 End Class

@@ -38,6 +38,7 @@
         ' Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
 
         Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
+        Buscar_Productos.ProductosTableAdapter.Fill(Buscar_Productos.ZapateriaDataSet.Productos)
         ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
 
         Me.ProductosBindingSource.AddNew()

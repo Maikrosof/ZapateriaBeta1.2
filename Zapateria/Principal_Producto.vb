@@ -34,4 +34,15 @@
         Close()
 
     End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Dim vista As New DataView 'creo e instancio el objeto 
+
+        vista.Table = Me.ZapateriaDataSet.Productos 'cargo objeto con la tabla stock
+        'aux = "Id_articulo = " + Val(Me.TextBox2.Text) con el simbolo + tira error no concatena
+
+        vista.RowFilter = "ID_Zap = " & Val(Me.TextBox1.Text)    'esta para numeros
+
+        Me.ProductosBindingSource.DataSource = vista 'cargo la vista
+    End Sub
 End Class
