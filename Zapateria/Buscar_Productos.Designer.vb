@@ -34,21 +34,6 @@ Partial Class Buscar_Productos
         Dim ModeloLabel As System.Windows.Forms.Label
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
-        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
-        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
-        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -58,6 +43,21 @@ Partial Class Buscar_Productos
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
+        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
+        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.IDZapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDMarcaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDProveedorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TallaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EstiloDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StockDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ModeloDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
         ID_ZapLabel = New System.Windows.Forms.Label()
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_ProveedorLabel = New System.Windows.Forms.Label()
@@ -68,8 +68,8 @@ Partial Class Buscar_Productos
         StockLabel = New System.Windows.Forms.Label()
         ModeloLabel = New System.Windows.Forms.Label()
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -145,6 +145,15 @@ Partial Class Buscar_Productos
         StockLabel.TabIndex = 17
         StockLabel.Text = "Stock:"
         '
+        'ModeloLabel
+        '
+        ModeloLabel.AutoSize = True
+        ModeloLabel.Location = New System.Drawing.Point(11, 93)
+        ModeloLabel.Name = "ModeloLabel"
+        ModeloLabel.Size = New System.Drawing.Size(45, 13)
+        ModeloLabel.TabIndex = 18
+        ModeloLabel.Text = "Modelo:"
+        '
         'BtnVolver
         '
         Me.BtnVolver.Location = New System.Drawing.Point(575, 246)
@@ -158,111 +167,12 @@ Partial Class Buscar_Productos
         '
         Me.ProductosDataGridView.AutoGenerateColumns = False
         Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
+        Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDZapDataGridViewTextBoxColumn, Me.IDMarcaDataGridViewTextBoxColumn, Me.IDProveedorDataGridViewTextBoxColumn, Me.TallaDataGridViewTextBoxColumn, Me.PrecioDataGridViewTextBoxColumn, Me.ColorDataGridViewTextBoxColumn, Me.EstiloDataGridViewTextBoxColumn, Me.StockDataGridViewTextBoxColumn, Me.ModeloDataGridViewTextBoxColumn})
         Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
         Me.ProductosDataGridView.Location = New System.Drawing.Point(249, 12)
         Me.ProductosDataGridView.Name = "ProductosDataGridView"
         Me.ProductosDataGridView.Size = New System.Drawing.Size(492, 228)
         Me.ProductosDataGridView.TabIndex = 18
-        '
-        'ModeloLabel
-        '
-        ModeloLabel.AutoSize = True
-        ModeloLabel.Location = New System.Drawing.Point(11, 93)
-        ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(45, 13)
-        ModeloLabel.TabIndex = 18
-        ModeloLabel.Text = "Modelo:"
-        '
-        'ProductosBindingSource
-        '
-        Me.ProductosBindingSource.DataMember = "Productos"
-        Me.ProductosBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'ZapateriaDataSet
-        '
-        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
-        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Zap"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Zap"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Marca"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Marca"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ID_Proveedor"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "ID_Proveedor"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Talla"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Talla"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Precio"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Precio"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Color"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Color"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Estilo"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Estilo"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Stock"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Stock"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Modelo"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Modelo"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'ProductosTableAdapter
-        '
-        Me.ProductosTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.EmpleadosTableAdapter = Nothing
-        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
-        Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
-        Me.TableAdapterManager.ProductosTableAdapter = Me.ProductosTableAdapter
-        Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentasTableAdapter = Nothing
-        '
-        'MarcasTableAdapter
-        '
-        Me.MarcasTableAdapter.ClearBeforeFill = True
-        '
-        'MarcasBindingSource
-        '
-        Me.MarcasBindingSource.DataMember = "Marcas"
-        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
         '
         'TextBox1
         '
@@ -327,11 +237,101 @@ Partial Class Buscar_Productos
         Me.TextBox9.Size = New System.Drawing.Size(100, 20)
         Me.TextBox9.TabIndex = 27
         '
+        'ZapateriaDataSet
+        '
+        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
+        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProductosBindingSource
+        '
+        Me.ProductosBindingSource.DataMember = "Productos"
+        Me.ProductosBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'ProductosTableAdapter
+        '
+        Me.ProductosTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ClientesTableAdapter = Nothing
+        Me.TableAdapterManager.EmpleadosTableAdapter = Nothing
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
+        Me.TableAdapterManager.ProductosTableAdapter = Me.ProductosTableAdapter
+        Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentasTableAdapter = Nothing
+        '
+        'IDZapDataGridViewTextBoxColumn
+        '
+        Me.IDZapDataGridViewTextBoxColumn.DataPropertyName = "ID_Zap"
+        Me.IDZapDataGridViewTextBoxColumn.HeaderText = "ID_Zap"
+        Me.IDZapDataGridViewTextBoxColumn.Name = "IDZapDataGridViewTextBoxColumn"
+        Me.IDZapDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'IDMarcaDataGridViewTextBoxColumn
+        '
+        Me.IDMarcaDataGridViewTextBoxColumn.DataPropertyName = "ID_Marca"
+        Me.IDMarcaDataGridViewTextBoxColumn.HeaderText = "ID_Marca"
+        Me.IDMarcaDataGridViewTextBoxColumn.Name = "IDMarcaDataGridViewTextBoxColumn"
+        '
+        'IDProveedorDataGridViewTextBoxColumn
+        '
+        Me.IDProveedorDataGridViewTextBoxColumn.DataPropertyName = "ID_Proveedor"
+        Me.IDProveedorDataGridViewTextBoxColumn.HeaderText = "ID_Proveedor"
+        Me.IDProveedorDataGridViewTextBoxColumn.Name = "IDProveedorDataGridViewTextBoxColumn"
+        '
+        'TallaDataGridViewTextBoxColumn
+        '
+        Me.TallaDataGridViewTextBoxColumn.DataPropertyName = "Talla"
+        Me.TallaDataGridViewTextBoxColumn.HeaderText = "Talla"
+        Me.TallaDataGridViewTextBoxColumn.Name = "TallaDataGridViewTextBoxColumn"
+        '
+        'PrecioDataGridViewTextBoxColumn
+        '
+        Me.PrecioDataGridViewTextBoxColumn.DataPropertyName = "Precio"
+        Me.PrecioDataGridViewTextBoxColumn.HeaderText = "Precio"
+        Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
+        '
+        'ColorDataGridViewTextBoxColumn
+        '
+        Me.ColorDataGridViewTextBoxColumn.DataPropertyName = "Color"
+        Me.ColorDataGridViewTextBoxColumn.HeaderText = "Color"
+        Me.ColorDataGridViewTextBoxColumn.Name = "ColorDataGridViewTextBoxColumn"
+        '
+        'EstiloDataGridViewTextBoxColumn
+        '
+        Me.EstiloDataGridViewTextBoxColumn.DataPropertyName = "Estilo"
+        Me.EstiloDataGridViewTextBoxColumn.HeaderText = "Estilo"
+        Me.EstiloDataGridViewTextBoxColumn.Name = "EstiloDataGridViewTextBoxColumn"
+        '
+        'StockDataGridViewTextBoxColumn
+        '
+        Me.StockDataGridViewTextBoxColumn.DataPropertyName = "Stock"
+        Me.StockDataGridViewTextBoxColumn.HeaderText = "Stock"
+        Me.StockDataGridViewTextBoxColumn.Name = "StockDataGridViewTextBoxColumn"
+        '
+        'ModeloDataGridViewTextBoxColumn
+        '
+        Me.ModeloDataGridViewTextBoxColumn.DataPropertyName = "Modelo"
+        Me.ModeloDataGridViewTextBoxColumn.HeaderText = "Modelo"
+        Me.ModeloDataGridViewTextBoxColumn.Name = "ModeloDataGridViewTextBoxColumn"
+        '
+        'MarcasBindingSource
+        '
+        Me.MarcasBindingSource.DataMember = "Marcas"
+        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'MarcasTableAdapter
+        '
+        Me.MarcasTableAdapter.ClearBeforeFill = True
+        '
         'Buscar_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(747, 313)
+        Me.ClientSize = New System.Drawing.Size(761, 320)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
@@ -355,30 +355,15 @@ Partial Class Buscar_Productos
         Me.Name = "Buscar_Productos"
         Me.Text = "Buscar_Productos"
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
-    Friend WithEvents ProductosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProductosTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter
-    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents MarcasTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter
-    Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
     Friend WithEvents ProductosDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -388,4 +373,19 @@ Partial Class Buscar_Productos
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
+    Friend WithEvents ProductosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProductosTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter
+    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents IDZapDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDMarcaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDProveedorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TallaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PrecioDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ColorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EstiloDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents StockDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ModeloDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MarcasTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter
+    Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
 End Class
