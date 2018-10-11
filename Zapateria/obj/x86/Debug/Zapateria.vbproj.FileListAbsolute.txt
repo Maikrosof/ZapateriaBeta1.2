@@ -100,3 +100,4 @@ C:\Users\Maikro\Desktop\VisualBasic\04.10 guardado para rama\Zapateria\obj\x86\D
 C:\Users\Maikro\Desktop\VisualBasic\04.10 guardado para rama\Zapateria\obj\x86\Debug\Zapateria.Prov.resources
 C:\Users\Maikro\Desktop\VisualBasic\04.10 guardado para rama\Zapateria\obj\x86\Debug\Zapateria.vbproj.GenerateResource.Cache
 C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.ElimLoc.resources
+C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.AltaMarca.resources

@@ -107,6 +107,12 @@
     <Compile Include="AltaLoc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AltaMarca.Designer.vb">
+      <DependentUpon>AltaMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AltasProv.Designer.vb">
       <DependentUpon>AltasProv.vb</DependentUpon>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaLoc.resx">
       <DependentUpon>AltaLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMarca.resx">
+      <DependentUpon>AltaMarca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AltasProv.resx">
       <DependentUpon>AltasProv.vb</DependentUpon>

@@ -24,4 +24,72 @@
 
     End Sub
 
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "ID_Zap=" & Val(Me.TextBox1.Text)
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "ID_Marca=" & Val(Me.ComboBox1.SelectedValue)
+        Me.ProductosDataGridView.DataSource = vista
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "ID_Proveedor=" & Val(Me.TextBox3.Text)
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "Convert (Modelo,'System.String') LIKE'" & Me.TextBox4.Text & "%'"
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "Talla=" & Val(Me.TextBox5.Text)
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "ID_Precio=" & Val(Me.TextBox6.Text)
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "Convert (Color,'System.String') LIKE'" & Me.TextBox7.Text & "%'"
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "Convert (Estilo,'System.String') LIKE'" & Me.TextBox8.Text & "%'"
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub TextBox9_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox9.TextChanged
+        Dim vista As New DataView
+        vista.Table = Me.ZapateriaDataSet.Productos
+        vista.RowFilter = "Stock=" & Val(Me.TextBox9.Text)
+        Me.ProductosDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
+        Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
+    End Sub
 End Class

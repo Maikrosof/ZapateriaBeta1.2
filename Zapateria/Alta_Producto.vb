@@ -23,12 +23,12 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
-        Me.ProductosBindingSource.Current("ID_Marca") = Val(ID_MarcaTextBox.Text)
-        Me.ProductosBindingSource.Current("Modelo") = Val(ModeloTextBox.Text)
+        Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
+        Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
         Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
         Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
-        Me.ProductosBindingSource.Current("Color") = Val(PrecioTextBox.Text)
-        Me.ProductosBindingSource.Current("Estilo") = Val(ColorTextBox.Text)
+        Me.ProductosBindingSource.Current("Color") = PrecioTextBox.Text
+        Me.ProductosBindingSource.Current("Estilo") = ColorTextBox.Text
         Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
 
         Me.ProductosBindingSource.EndEdit()
@@ -40,6 +40,7 @@
 
         Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
         Buscar_Productos.ProductosTableAdapter.Fill(Buscar_Productos.ZapateriaDataSet.Productos)
+
         ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
 
         Me.ProductosBindingSource.AddNew()
@@ -53,5 +54,10 @@
         If e.KeyCode = Keys.F5 Then
             Call Button2_Click(sender, e)
         End If
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        AltaMarca.Show()
+
     End Sub
 End Class
