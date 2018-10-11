@@ -25,16 +25,16 @@ Partial Class Buscar_Productos
         Me.components = New System.ComponentModel.Container()
         Dim ID_ZapLabel As System.Windows.Forms.Label
         Dim ID_MarcaLabel As System.Windows.Forms.Label
-        Dim ID_ProveedorLabel As System.Windows.Forms.Label
         Dim TallaLabel As System.Windows.Forms.Label
         Dim PrecioLabel As System.Windows.Forms.Label
         Dim ColorLabel As System.Windows.Forms.Label
         Dim EstiloLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
+        Dim ID_ProveedorLabel1 As System.Windows.Forms.Label
+        Dim ID_ProveedorLabel As System.Windows.Forms.Label
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -45,8 +45,8 @@ Partial Class Buscar_Productos
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -59,15 +59,18 @@ Partial Class Buscar_Productos
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ID_ProveedorTextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         ID_ZapLabel = New System.Windows.Forms.Label()
         ID_MarcaLabel = New System.Windows.Forms.Label()
-        ID_ProveedorLabel = New System.Windows.Forms.Label()
         TallaLabel = New System.Windows.Forms.Label()
         PrecioLabel = New System.Windows.Forms.Label()
         ColorLabel = New System.Windows.Forms.Label()
         EstiloLabel = New System.Windows.Forms.Label()
         StockLabel = New System.Windows.Forms.Label()
         ModeloLabel = New System.Windows.Forms.Label()
+        ID_ProveedorLabel1 = New System.Windows.Forms.Label()
+        ID_ProveedorLabel = New System.Windows.Forms.Label()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,15 +94,6 @@ Partial Class Buscar_Productos
         ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
         ID_MarcaLabel.TabIndex = 5
         ID_MarcaLabel.Text = "ID Marca:"
-        '
-        'ID_ProveedorLabel
-        '
-        ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.Location = New System.Drawing.Point(11, 67)
-        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
-        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
-        ID_ProveedorLabel.TabIndex = 7
-        ID_ProveedorLabel.Text = "ID Proveedor:"
         '
         'TallaLabel
         '
@@ -171,13 +165,6 @@ Partial Class Buscar_Productos
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 19
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(91, 64)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 21
-        '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(91, 90)
@@ -246,14 +233,14 @@ Partial Class Buscar_Productos
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
+        'MarcasTableAdapter
+        '
+        Me.MarcasTableAdapter.ClearBeforeFill = True
+        '
         'MarcasBindingSource
         '
         Me.MarcasBindingSource.DataMember = "Marcas"
         Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'MarcasTableAdapter
-        '
-        Me.MarcasTableAdapter.ClearBeforeFill = True
         '
         'ProductosDataGridView
         '
@@ -323,11 +310,14 @@ Partial Class Buscar_Productos
         '
         'ComboBox1
         '
+        Me.ComboBox1.DataSource = Me.MarcasBindingSource
+        Me.ComboBox1.DisplayMember = "Marca"
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(91, 37)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
         Me.ComboBox1.TabIndex = 28
+        Me.ComboBox1.ValueMember = "ID_Marca"
         '
         'Button1
         '
@@ -338,11 +328,46 @@ Partial Class Buscar_Productos
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ID_ProveedorLabel1
+        '
+        ID_ProveedorLabel1.AutoSize = True
+        ID_ProveedorLabel1.Location = New System.Drawing.Point(332, 192)
+        ID_ProveedorLabel1.Name = "ID_ProveedorLabel1"
+        ID_ProveedorLabel1.Size = New System.Drawing.Size(73, 13)
+        ID_ProveedorLabel1.TabIndex = 29
+        ID_ProveedorLabel1.Text = "ID Proveedor:"
+        '
+        'ID_ProveedorTextBox
+        '
+        Me.ID_ProveedorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "ID_Proveedor", True))
+        Me.ID_ProveedorTextBox.Location = New System.Drawing.Point(411, 189)
+        Me.ID_ProveedorTextBox.Name = "ID_ProveedorTextBox"
+        Me.ID_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ID_ProveedorTextBox.TabIndex = 30
+        '
+        'ID_ProveedorLabel
+        '
+        ID_ProveedorLabel.AutoSize = True
+        ID_ProveedorLabel.Location = New System.Drawing.Point(11, 67)
+        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
+        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
+        ID_ProveedorLabel.TabIndex = 7
+        ID_ProveedorLabel.Text = "ID Proveedor:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(91, 64)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 21
+        '
         'Buscar_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(769, 251)
+        Me.ClientSize = New System.Drawing.Size(777, 260)
+        Me.Controls.Add(ID_ProveedorLabel1)
+        Me.Controls.Add(Me.ID_ProveedorTextBox)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ProductosDataGridView)
@@ -376,7 +401,6 @@ Partial Class Buscar_Productos
     End Sub
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
@@ -401,4 +425,6 @@ Partial Class Buscar_Productos
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ID_ProveedorTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class
