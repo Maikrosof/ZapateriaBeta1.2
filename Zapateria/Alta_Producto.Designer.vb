@@ -31,6 +31,7 @@ Partial Class Alta_Producto
         Dim EstiloLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Alta_Producto))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
@@ -255,12 +256,14 @@ Partial Class Alta_Producto
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(208, 12)
+        Me.Button3.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.Location = New System.Drawing.Point(208, 1)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(27, 21)
+        Me.Button3.Size = New System.Drawing.Size(43, 44)
         Me.Button3.TabIndex = 21
-        Me.Button3.Text = "A"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Alta_Producto
         '
