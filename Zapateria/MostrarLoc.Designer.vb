@@ -40,6 +40,7 @@ Partial Class MostrarLoc
         Me.BtnAdelante = New System.Windows.Forms.Button()
         Me.BtnUltimo = New System.Windows.Forms.Button()
         Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         LocalidadLabel = New System.Windows.Forms.Label()
         ZonaLabel = New System.Windows.Forms.Label()
@@ -180,18 +181,28 @@ Partial Class MostrarLoc
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(237, 98)
+        Me.BtnVolver.Location = New System.Drawing.Point(251, 166)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 43)
         Me.BtnVolver.TabIndex = 13
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.Location = New System.Drawing.Point(251, 42)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(75, 43)
+        Me.BtnBuscar.TabIndex = 14
+        Me.BtnBuscar.Text = "Buscar"
+        Me.BtnBuscar.UseVisualStyleBackColor = True
+        '
         'MostrarLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(366, 255)
+        Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnUltimo)
         Me.Controls.Add(Me.BtnAdelante)
@@ -227,4 +238,5 @@ Partial Class MostrarLoc
     Friend WithEvents BtnAdelante As System.Windows.Forms.Button
     Friend WithEvents BtnUltimo As System.Windows.Forms.Button
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
+    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
 End Class

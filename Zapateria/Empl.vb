@@ -34,17 +34,17 @@
 
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaEmpl.Show()
 
     End Sub
 
-    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Close()
 
     End Sub
 
-    Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
+    Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim fila, CodConsulta, aux As Integer
         CodConsulta = InputBox("Ingrese el DNI del empleado")
         'podria ir lo de vacio
@@ -67,8 +67,8 @@
 
     End Sub
 
-    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
-        BuscarEmpl.Show()
+    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        BuscarEmp.Show()
 
     End Sub
 
@@ -79,11 +79,62 @@
         If e.KeyCode = Keys.F2 Then
             Call BtnEliminar_Click(sender, e)
         End If
+        If e.KeyCode = Keys.F3 Then
+            ModEmpl.Show()
+        End If
         If e.KeyCode = Keys.F4 Then
             Call BtnBuscar_Click(sender, e)
         End If
         If e.KeyCode = Keys.F5 Then
             Call BtnVolver_Click(sender, e)
         End If
+    End Sub
+
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        AltaEmpl.Show()
+
+    End Sub
+
+    Private Sub BtnEliminar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
+        Dim fila, CodConsulta, aux As Integer
+        CodConsulta = Val(InputBox("Ingrese el DNI")) 'genera una ventana donde se ingresa el cod consulta 
+        If CodConsulta = Nothing Then 'El magico Nothing
+            MsgBox("No ingresó nada")
+        Else
+
+            fila = Me.EmpleadosBindingSource.Find("DNI", CodConsulta)
+            If fila = -1 Then
+                'no lo encontró
+                MsgBox("No se encontró el DNI del empleado")
+            Else
+                'lo encontró
+                Me.EmpleadosBindingSource.Position = fila ' muevo el puntero a la pocision encontrada
+                aux = MsgBox("Quiere eliminar al empleado? " & CodConsulta)
+                If aux = 1 Then
+                    'apreto si
+                    Me.EmpleadosBindingSource.RemoveCurrent()
+                    Me.EmpleadosBindingSource.EndEdit()
+                    Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'guardo en el disco
+                    Me.EmpleadosTableAdapter.Fill(Me.ZapateriaDataSet.Empleados) 'para actualizar en el otro formulario
+                End If
+            End If
+        End If
+
+    End Sub
+
+    Private Sub BtnBuscar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        BuscarEmp.Show()
+
+
+    End Sub
+
+    Private Sub BtnModificaciones_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnModificaciones.Click
+        modempl.show()
+
+    End Sub
+
+    Private Sub BtnVolver_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+        Close()
+
     End Sub
 End Class

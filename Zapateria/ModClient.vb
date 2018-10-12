@@ -35,4 +35,15 @@
         Client.ClientesTableAdapter.Fill(Client.ZapateriaDataSet.Clientes) 'actualizo en principal para que muestre el cod del art
         Me.ClientesBindingSource.MoveLast() 'muestra el ultimo agregado
     End Sub
+
+    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+        Close()
+
+    End Sub
+
+    Private Sub ModClient_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F5 Then
+            Close()
+        End If
+    End Sub
 End Class

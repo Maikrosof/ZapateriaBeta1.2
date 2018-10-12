@@ -365,7 +365,7 @@ Partial Class Client
         Me.BtnModificaciones.Name = "BtnModificaciones"
         Me.BtnModificaciones.Size = New System.Drawing.Size(178, 62)
         Me.BtnModificaciones.TabIndex = 53
-        Me.BtnModificaciones.Text = "Modificaciones"
+        Me.BtnModificaciones.Text = "Modificaciones[F3]"
         Me.BtnModificaciones.UseVisualStyleBackColor = True
         '
         'BtnEliminar

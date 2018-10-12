@@ -44,4 +44,19 @@
         End If
 
     End Sub
+
+    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        Dim fila, CodConsulta As Integer
+        CodConsulta = Val(InputBox("ingrese el Código Postal")) 'lo paso a val numerico
+        If CodConsulta = Nothing Then 'El magico Nothing
+            MsgBox("No ingresó nada")
+        Else
+            fila = Me.LocalidadBindingSource.Find("CP", CodConsulta)
+            If fila = -1 Then
+                MsgBox("No se encontro el CUIT")
+            Else
+                LocalidadBindingSource.Position = fila
+            End If
+        End If
+    End Sub
 End Class

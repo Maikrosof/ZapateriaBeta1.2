@@ -42,4 +42,10 @@
         Close()
 
     End Sub
+
+    Private Sub ModProv_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F5 Then
+            Close()
+        End If
+    End Sub
 End Class

@@ -158,7 +158,7 @@
     End Sub
 
     Private Sub PorEmpleadosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorEmpleadosToolStripMenuItem.Click
-        BuscarEmpl.Show()
+        BuscarEmp.Show()
 
     End Sub
 
@@ -173,6 +173,26 @@
 
     Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem.Click
         AltaMarca.Show()
+
+    End Sub
+
+    Private Sub ProveedoresToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem1.Click
+        ModProv.Show()
+
+    End Sub
+
+    Private Sub ClientesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem1.Click
+        ModClient.Show()
+
+    End Sub
+
+    Private Sub EmpleadosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpleadosToolStripMenuItem1.Click
+        ModEmpl.Show()
+
+    End Sub
+
+    Private Sub LocalidadesToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem2.Click
+        ModLoc.Show()
 
     End Sub
 End Class

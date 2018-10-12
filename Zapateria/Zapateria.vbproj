@@ -131,10 +131,10 @@
     <Compile Include="BuscarCli.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarEmpl.Designer.vb">
-      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    <Compile Include="BuscarEmp.Designer.vb">
+      <DependentUpon>BuscarEmp.vb</DependentUpon>
     </Compile>
-    <Compile Include="BuscarEmpl.vb">
+    <Compile Include="BuscarEmp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuscarProv.Designer.vb">
@@ -171,6 +171,18 @@
       <DependentUpon>ModClient.vb</DependentUpon>
     </Compile>
     <Compile Include="ModClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModEmpl.Designer.vb">
+      <DependentUpon>ModEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModLoc.Designer.vb">
+      <DependentUpon>ModLoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModLoc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModProv.Designer.vb">
@@ -247,8 +259,8 @@
     <EmbeddedResource Include="BuscarCli.resx">
       <DependentUpon>BuscarCli.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarEmpl.resx">
-      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    <EmbeddedResource Include="BuscarEmp.resx">
+      <DependentUpon>BuscarEmp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>
@@ -267,6 +279,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModClient.resx">
       <DependentUpon>ModClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModEmpl.resx">
+      <DependentUpon>ModEmpl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModLoc.resx">
+      <DependentUpon>ModLoc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModProv.resx">
       <DependentUpon>ModProv.vb</DependentUpon>

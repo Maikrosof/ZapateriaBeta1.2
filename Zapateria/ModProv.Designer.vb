@@ -33,6 +33,7 @@ Partial Class ModProv
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
         Me.ID_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Razon_SocialTextBox = New System.Windows.Forms.TextBox()
         Me.CUITTextBox = New System.Windows.Forms.TextBox()
@@ -40,7 +41,6 @@ Partial Class ModProv
         Me.NroTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
         Me.ProveedoresDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -64,6 +64,60 @@ Partial Class ModProv
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ID_LocalidadLabel
+        '
+        ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.Location = New System.Drawing.Point(31, 101)
+        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
+        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.TabIndex = 3
+        ID_LocalidadLabel.Text = "ID Localidad:"
+        '
+        'Razon_SocialLabel
+        '
+        Razon_SocialLabel.AutoSize = True
+        Razon_SocialLabel.Location = New System.Drawing.Point(31, 127)
+        Razon_SocialLabel.Name = "Razon_SocialLabel"
+        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
+        Razon_SocialLabel.TabIndex = 5
+        Razon_SocialLabel.Text = "Razon Social:"
+        '
+        'CUITLabel
+        '
+        CUITLabel.AutoSize = True
+        CUITLabel.Location = New System.Drawing.Point(31, 153)
+        CUITLabel.Name = "CUITLabel"
+        CUITLabel.Size = New System.Drawing.Size(35, 13)
+        CUITLabel.TabIndex = 7
+        CUITLabel.Text = "CUIT:"
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(31, 179)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.TabIndex = 9
+        DireccionLabel.Text = "Direccion:"
+        '
+        'NroLabel
+        '
+        NroLabel.AutoSize = True
+        NroLabel.Location = New System.Drawing.Point(31, 205)
+        NroLabel.Name = "NroLabel"
+        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.TabIndex = 11
+        NroLabel.Text = "Nro:"
+        '
+        'TelefonoLabel
+        '
+        TelefonoLabel.AutoSize = True
+        TelefonoLabel.Location = New System.Drawing.Point(31, 231)
+        TelefonoLabel.Name = "TelefonoLabel"
+        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.TabIndex = 13
+        TelefonoLabel.Text = "Telefono:"
         '
         'ZapateriaDataSet
         '
@@ -91,14 +145,9 @@ Partial Class ModProv
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'ID_LocalidadLabel
+        'LocalidadTableAdapter
         '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(31, 101)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 3
-        ID_LocalidadLabel.Text = "ID Localidad:"
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
         '
         'ID_LocalidadTextBox
         '
@@ -108,15 +157,6 @@ Partial Class ModProv
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 4
         '
-        'Razon_SocialLabel
-        '
-        Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.Location = New System.Drawing.Point(31, 127)
-        Razon_SocialLabel.Name = "Razon_SocialLabel"
-        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
-        Razon_SocialLabel.TabIndex = 5
-        Razon_SocialLabel.Text = "Razon Social:"
-        '
         'Razon_SocialTextBox
         '
         Me.Razon_SocialTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Razon_Social", True))
@@ -124,15 +164,6 @@ Partial Class ModProv
         Me.Razon_SocialTextBox.Name = "Razon_SocialTextBox"
         Me.Razon_SocialTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Razon_SocialTextBox.TabIndex = 6
-        '
-        'CUITLabel
-        '
-        CUITLabel.AutoSize = True
-        CUITLabel.Location = New System.Drawing.Point(31, 153)
-        CUITLabel.Name = "CUITLabel"
-        CUITLabel.Size = New System.Drawing.Size(35, 13)
-        CUITLabel.TabIndex = 7
-        CUITLabel.Text = "CUIT:"
         '
         'CUITTextBox
         '
@@ -142,15 +173,6 @@ Partial Class ModProv
         Me.CUITTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CUITTextBox.TabIndex = 8
         '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(31, 179)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
-        DireccionLabel.TabIndex = 9
-        DireccionLabel.Text = "Direccion:"
-        '
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Direccion", True))
@@ -159,15 +181,6 @@ Partial Class ModProv
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 10
         '
-        'NroLabel
-        '
-        NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(31, 205)
-        NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
-        NroLabel.TabIndex = 11
-        NroLabel.Text = "Nro:"
-        '
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Nro", True))
@@ -175,15 +188,6 @@ Partial Class ModProv
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NroTextBox.TabIndex = 12
-        '
-        'TelefonoLabel
-        '
-        TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(31, 231)
-        TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
-        TelefonoLabel.TabIndex = 13
-        TelefonoLabel.Text = "Telefono:"
         '
         'TelefonoTextBox
         '
@@ -197,10 +201,6 @@ Partial Class ModProv
         '
         Me.LocalidadBindingSource.DataMember = "Localidad"
         Me.LocalidadBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'LocalidadTableAdapter
-        '
-        Me.LocalidadTableAdapter.ClearBeforeFill = True
         '
         'ProveedoresDataGridView
         '
@@ -315,6 +315,7 @@ Partial Class ModProv
         Me.Controls.Add(Me.NroTextBox)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
+        Me.KeyPreview = True
         Me.Name = "ModProv"
         Me.Text = "ModProv"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
