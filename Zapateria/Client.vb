@@ -66,6 +66,22 @@
     End Sub
 
     Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        BuscarCli.Show()
 
+    End Sub
+
+    Private Sub Client_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F1 Then
+            AltaCli.Show()
+        End If
+        If e.KeyCode = Keys.F2 Then
+            Call BtnEliminar_Click(sender, e)
+        End If
+        If e.KeyCode = Keys.F4 Then
+            Call BuscarCli.Show()
+        End If
+        If e.KeyCode = Keys.F5 Then
+            Call BtnVolver_Click(sender, e)
+        End If
     End Sub
 End Class

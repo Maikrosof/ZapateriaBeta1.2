@@ -35,12 +35,40 @@ Partial Class AltaLoc
         Me.CPTextBox = New System.Windows.Forms.TextBox()
         Me.BtnGuardar = New System.Windows.Forms.Button()
         Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         LocalidadLabel = New System.Windows.Forms.Label()
         ZonaLabel = New System.Windows.Forms.Label()
         CPLabel = New System.Windows.Forms.Label()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'LocalidadLabel
+        '
+        LocalidadLabel.AutoSize = True
+        LocalidadLabel.Location = New System.Drawing.Point(58, 101)
+        LocalidadLabel.Name = "LocalidadLabel"
+        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.TabIndex = 3
+        LocalidadLabel.Text = "Localidad:"
+        '
+        'ZonaLabel
+        '
+        ZonaLabel.AutoSize = True
+        ZonaLabel.Location = New System.Drawing.Point(58, 127)
+        ZonaLabel.Name = "ZonaLabel"
+        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.TabIndex = 5
+        ZonaLabel.Text = "Zona:"
+        '
+        'CPLabel
+        '
+        CPLabel.AutoSize = True
+        CPLabel.Location = New System.Drawing.Point(58, 153)
+        CPLabel.Name = "CPLabel"
+        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.TabIndex = 7
+        CPLabel.Text = "CP:"
         '
         'ZapateriaDataSet
         '
@@ -68,60 +96,33 @@ Partial Class AltaLoc
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'LocalidadLabel
-        '
-        LocalidadLabel.AutoSize = True
-        LocalidadLabel.Location = New System.Drawing.Point(50, 49)
-        LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
-        LocalidadLabel.TabIndex = 3
-        LocalidadLabel.Text = "Localidad:"
-        '
         'LocalidadTextBox
         '
         Me.LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad", True))
-        Me.LocalidadTextBox.Location = New System.Drawing.Point(126, 46)
+        Me.LocalidadTextBox.Location = New System.Drawing.Point(134, 98)
         Me.LocalidadTextBox.Name = "LocalidadTextBox"
         Me.LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LocalidadTextBox.TabIndex = 4
         '
-        'ZonaLabel
-        '
-        ZonaLabel.AutoSize = True
-        ZonaLabel.Location = New System.Drawing.Point(50, 75)
-        ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
-        ZonaLabel.TabIndex = 5
-        ZonaLabel.Text = "Zona:"
-        '
         'ZonaTextBox
         '
         Me.ZonaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Zona", True))
-        Me.ZonaTextBox.Location = New System.Drawing.Point(126, 72)
+        Me.ZonaTextBox.Location = New System.Drawing.Point(134, 124)
         Me.ZonaTextBox.Name = "ZonaTextBox"
         Me.ZonaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ZonaTextBox.TabIndex = 6
         '
-        'CPLabel
-        '
-        CPLabel.AutoSize = True
-        CPLabel.Location = New System.Drawing.Point(50, 101)
-        CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
-        CPLabel.TabIndex = 7
-        CPLabel.Text = "CP:"
-        '
         'CPTextBox
         '
         Me.CPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "CP", True))
-        Me.CPTextBox.Location = New System.Drawing.Point(126, 98)
+        Me.CPTextBox.Location = New System.Drawing.Point(134, 150)
         Me.CPTextBox.Name = "CPTextBox"
         Me.CPTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CPTextBox.TabIndex = 8
         '
         'BtnGuardar
         '
-        Me.BtnGuardar.Location = New System.Drawing.Point(31, 172)
+        Me.BtnGuardar.Location = New System.Drawing.Point(39, 217)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
         Me.BtnGuardar.TabIndex = 9
@@ -130,18 +131,29 @@ Partial Class AltaLoc
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(147, 172)
+        Me.BtnVolver.Location = New System.Drawing.Point(155, 217)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
         Me.BtnVolver.TabIndex = 10
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(21, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(230, 19)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "Ingrese los datos de las Localidades:"
+        '
         'AltaLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(271, 255)
+        Me.ClientSize = New System.Drawing.Size(305, 274)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnGuardar)
         Me.Controls.Add(LocalidadLabel)
@@ -150,6 +162,7 @@ Partial Class AltaLoc
         Me.Controls.Add(Me.ZonaTextBox)
         Me.Controls.Add(CPLabel)
         Me.Controls.Add(Me.CPTextBox)
+        Me.KeyPreview = True
         Me.Name = "AltaLoc"
         Me.Text = "AltaLoc"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -167,4 +180,5 @@ Partial Class AltaLoc
     Friend WithEvents CPTextBox As System.Windows.Forms.TextBox
     Friend WithEvents BtnGuardar As System.Windows.Forms.Button
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

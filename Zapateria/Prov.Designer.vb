@@ -216,11 +216,11 @@ Partial Class Prov
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 21)
+        Me.Button1.Location = New System.Drawing.Point(13, 21)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 49)
+        Me.Button1.Size = New System.Drawing.Size(84, 49)
         Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Nuevo"
+        Me.Button1.Text = "Nuevo[F1]"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'BtnPrimero
@@ -315,29 +315,29 @@ Partial Class Prov
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(865, 21)
+        Me.BtnVolver.Location = New System.Drawing.Point(844, 21)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 49)
+        Me.BtnVolver.Size = New System.Drawing.Size(84, 49)
         Me.BtnVolver.TabIndex = 20
-        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.Text = "Volver[F5]"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(300, 21)
+        Me.BtnBuscar.Location = New System.Drawing.Point(528, 21)
         Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 49)
+        Me.BtnBuscar.Size = New System.Drawing.Size(84, 49)
         Me.BtnBuscar.TabIndex = 21
-        Me.BtnBuscar.Text = "Busqueda"
+        Me.BtnBuscar.Text = "Busqueda[F4]"
         Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'BtnEliminar
         '
         Me.BtnEliminar.Location = New System.Drawing.Point(154, 21)
         Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(75, 49)
+        Me.BtnEliminar.Size = New System.Drawing.Size(84, 49)
         Me.BtnEliminar.TabIndex = 22
-        Me.BtnEliminar.Text = "Eliminar"
+        Me.BtnEliminar.Text = "Eliminar[F2]"
         Me.BtnEliminar.UseVisualStyleBackColor = True
         '
         'Prov
@@ -368,6 +368,7 @@ Partial Class Prov
         Me.Controls.Add(Me.NroTextBox)
         Me.Controls.Add(TelefonoLabel)
         Me.Controls.Add(Me.TelefonoTextBox)
+        Me.KeyPreview = True
         Me.Name = "Prov"
         Me.Text = "Prov"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

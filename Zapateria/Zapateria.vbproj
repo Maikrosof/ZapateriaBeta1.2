@@ -95,10 +95,22 @@
     <Compile Include="AltaCli.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AltaEmpl.Designer.vb">
+      <DependentUpon>AltaEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AltaLoc.Designer.vb">
       <DependentUpon>AltaLoc.vb</DependentUpon>
     </Compile>
     <Compile Include="AltaLoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMarca.Designer.vb">
+      <DependentUpon>AltaMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMarca.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AltasProv.Designer.vb">
@@ -113,10 +125,28 @@
     <Compile Include="Alta_Producto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BuscarCli.Designer.vb">
+      <DependentUpon>BuscarCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarEmpl.Designer.vb">
+      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarEmpl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarProv.Designer.vb">
       <DependentUpon>BuscarProv.vb</DependentUpon>
     </Compile>
     <Compile Include="BuscarProv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar_Productos.Designer.vb">
+      <DependentUpon>Buscar_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Productos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Client.Designer.vb">
@@ -125,10 +155,16 @@
     <Compile Include="Client.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModElimLoc.Designer.vb">
-      <DependentUpon>ModElimLoc.vb</DependentUpon>
+    <Compile Include="Empl.Designer.vb">
+      <DependentUpon>Empl.vb</DependentUpon>
     </Compile>
-    <Compile Include="ModElimLoc.vb">
+    <Compile Include="Empl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElimLoc.Designer.vb">
+      <DependentUpon>ElimLoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ElimLoc.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MostrarLoc.Designer.vb">
@@ -181,8 +217,14 @@
     <EmbeddedResource Include="AltaCli.resx">
       <DependentUpon>AltaCli.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AltaEmpl.resx">
+      <DependentUpon>AltaEmpl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AltaLoc.resx">
       <DependentUpon>AltaLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMarca.resx">
+      <DependentUpon>AltaMarca.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AltasProv.resx">
       <DependentUpon>AltasProv.vb</DependentUpon>
@@ -190,14 +232,26 @@
     <EmbeddedResource Include="Alta_Producto.resx">
       <DependentUpon>Alta_Producto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCli.resx">
+      <DependentUpon>BuscarCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarEmpl.resx">
+      <DependentUpon>BuscarEmpl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarProv.resx">
       <DependentUpon>BuscarProv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar_Productos.resx">
+      <DependentUpon>Buscar_Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModElimLoc.resx">
-      <DependentUpon>ModElimLoc.vb</DependentUpon>
+    <EmbeddedResource Include="Empl.resx">
+      <DependentUpon>Empl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElimLoc.resx">
+      <DependentUpon>ElimLoc.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MostrarLoc.resx">
       <DependentUpon>MostrarLoc.vb</DependentUpon>
