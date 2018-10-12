@@ -129,3 +129,8 @@ D:\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Principal.resources
 D:\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Principal_Producto.resources
 D:\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Prov.resources
 D:\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.vbproj.GenerateResource.Cache
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.vbprojResolveAssemblyReference.cache
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.AltaMarca.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Buscar_Productos.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.ModProv.resources
+C:\Users\Vanina Ariño\Desktop\Zap Beta\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.ModClient.resources

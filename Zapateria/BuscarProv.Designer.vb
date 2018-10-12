@@ -23,100 +23,31 @@ Partial Class BuscarProv
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ID_ProveedorLabel As System.Windows.Forms.Label
-        Dim ID_LocalidadLabel As System.Windows.Forms.Label
-        Dim Razon_SocialLabel As System.Windows.Forms.Label
-        Dim CUITLabel As System.Windows.Forms.Label
-        Dim DireccionLabel As System.Windows.Forms.Label
-        Dim NroLabel As System.Windows.Forms.Label
-        Dim TelefonoLabel As System.Windows.Forms.Label
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.BtnVolver = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        ID_ProveedorLabel = New System.Windows.Forms.Label()
-        ID_LocalidadLabel = New System.Windows.Forms.Label()
-        Razon_SocialLabel = New System.Windows.Forms.Label()
-        CUITLabel = New System.Windows.Forms.Label()
-        DireccionLabel = New System.Windows.Forms.Label()
-        NroLabel = New System.Windows.Forms.Label()
-        TelefonoLabel = New System.Windows.Forms.Label()
+        Me.ProveedoresDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ID_ProveedorLabel
-        '
-        ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.Location = New System.Drawing.Point(13, 82)
-        ID_ProveedorLabel.Name = "ID_ProveedorLabel"
-        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
-        ID_ProveedorLabel.TabIndex = 1
-        ID_ProveedorLabel.Text = "ID Proveedor:"
-        '
-        'ID_LocalidadLabel
-        '
-        ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(13, 108)
-        ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
-        ID_LocalidadLabel.TabIndex = 3
-        ID_LocalidadLabel.Text = "ID Localidad:"
-        '
-        'Razon_SocialLabel
-        '
-        Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.Location = New System.Drawing.Point(13, 134)
-        Razon_SocialLabel.Name = "Razon_SocialLabel"
-        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
-        Razon_SocialLabel.TabIndex = 5
-        Razon_SocialLabel.Text = "Razon Social:"
-        '
-        'CUITLabel
-        '
-        CUITLabel.AutoSize = True
-        CUITLabel.Location = New System.Drawing.Point(13, 160)
-        CUITLabel.Name = "CUITLabel"
-        CUITLabel.Size = New System.Drawing.Size(35, 13)
-        CUITLabel.TabIndex = 7
-        CUITLabel.Text = "CUIT:"
-        '
-        'DireccionLabel
-        '
-        DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(13, 186)
-        DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
-        DireccionLabel.TabIndex = 9
-        DireccionLabel.Text = "Direccion:"
-        '
-        'NroLabel
-        '
-        NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(13, 212)
-        NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
-        NroLabel.TabIndex = 11
-        NroLabel.Text = "Nro:"
-        '
-        'TelefonoLabel
-        '
-        TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(13, 238)
-        TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
-        TelefonoLabel.TabIndex = 13
-        TelefonoLabel.Text = "Telefono:"
         '
         'ZapateriaDataSet
         '
@@ -144,72 +75,14 @@ Partial Class BuscarProv
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(268, 82)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(75, 52)
-        Me.BtnBuscar.TabIndex = 21
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(268, 203)
+        Me.BtnVolver.Location = New System.Drawing.Point(637, 316)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 52)
         Me.BtnVolver.TabIndex = 22
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(101, 79)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 14
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 105)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 15
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(101, 131)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 16
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(101, 157)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 17
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(101, 183)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 18
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(101, 209)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 19
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(101, 235)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 20
         '
         'Label1
         '
@@ -217,37 +90,126 @@ Partial Class BuscarProv
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 29)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(281, 19)
+        Me.Label1.Size = New System.Drawing.Size(169, 19)
         Me.Label1.TabIndex = 30
-        Me.Label1.Text = " Busqueda por Razon Social de Proveedores"
+        Me.Label1.Text = "Busqueda de Proveedores"
+        '
+        'ProveedoresDataGridView
+        '
+        Me.ProveedoresDataGridView.AutoGenerateColumns = False
+        Me.ProveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProveedoresDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.ProveedoresDataGridView.DataSource = Me.ProveedoresBindingSource
+        Me.ProveedoresDataGridView.Location = New System.Drawing.Point(12, 73)
+        Me.ProveedoresDataGridView.Name = "ProveedoresDataGridView"
+        Me.ProveedoresDataGridView.Size = New System.Drawing.Size(720, 220)
+        Me.ProveedoresDataGridView.TabIndex = 30
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Proveedor"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Localidad"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Razon_Social"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Razon_Social"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "CUIT"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "CUIT"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Direccion"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Direccion"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Nro"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Nro"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Telefono"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'LocalidadBindingSource
+        '
+        Me.LocalidadBindingSource.DataMember = "Localidad"
+        Me.LocalidadBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'LocalidadTableAdapter
+        '
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(162, 313)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(165, 20)
+        Me.TextBox2.TabIndex = 32
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(16, 316)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(124, 13)
+        Me.Label2.TabIndex = 33
+        Me.Label2.Text = "Buscar por Razon Social"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(16, 355)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(86, 13)
+        Me.Label3.TabIndex = 34
+        Me.Label3.Text = "Buscar por CUIT"
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.Location = New System.Drawing.Point(162, 350)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBuscar.TabIndex = 35
+        Me.BtnBuscar.Text = "Buscar"
+        Me.BtnBuscar.UseVisualStyleBackColor = True
         '
         'BuscarProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(495, 297)
+        Me.ClientSize = New System.Drawing.Size(754, 405)
+        Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.ProveedoresDataGridView)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)
-        Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(ID_ProveedorLabel)
-        Me.Controls.Add(ID_LocalidadLabel)
-        Me.Controls.Add(Razon_SocialLabel)
-        Me.Controls.Add(CUITLabel)
-        Me.Controls.Add(DireccionLabel)
-        Me.Controls.Add(NroLabel)
-        Me.Controls.Add(TelefonoLabel)
         Me.KeyPreview = True
         Me.Name = "BuscarProv"
         Me.Text = "BuscarProv"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -256,14 +218,20 @@ Partial Class BuscarProv
     Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ProveedoresTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter
     Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ProveedoresDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents LocalidadTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
 End Class

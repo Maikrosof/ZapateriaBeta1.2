@@ -167,6 +167,18 @@
     <Compile Include="ElimLoc.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModClient.Designer.vb">
+      <DependentUpon>ModClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModProv.Designer.vb">
+      <DependentUpon>ModProv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModProv.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MostrarLoc.Designer.vb">
       <DependentUpon>MostrarLoc.vb</DependentUpon>
     </Compile>
@@ -252,6 +264,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ElimLoc.resx">
       <DependentUpon>ElimLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModClient.resx">
+      <DependentUpon>ModClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModProv.resx">
+      <DependentUpon>ModProv.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MostrarLoc.resx">
       <DependentUpon>MostrarLoc.vb</DependentUpon>

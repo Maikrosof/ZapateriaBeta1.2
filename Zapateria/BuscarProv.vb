@@ -8,37 +8,25 @@
     End Sub
 
     Private Sub BuscarProv_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Localidad' Puede moverla o quitarla según sea necesario.
+        Me.LocalidadTableAdapter.Fill(Me.ZapateriaDataSet.Localidad)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
         Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores)
 
     End Sub
 
-    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
-        Dim i As Integer
-        Dim CodigoConsulta As String
-        ProveedoresBindingSource.MoveFirst() 'Mover arriba
-        CodigoConsulta = InputBox("ingrese el CUIT del proveedor") 'abre pantalla
-        i = 0
-        If CodigoConsulta <> "" And IsNumeric(CodigoConsulta) Then
-            Do
-                If ProveedoresBindingSource.Current("CUIT") = CodigoConsulta Then
-
-                    TextBox1.Text = ProveedoresBindingSource.Current("ID_Proveedor")
-                    TextBox2.Text = ProveedoresBindingSource.Current("ID_Localidad")
-                    TextBox3.Text = ProveedoresBindingSource.Current("Razon_Social")
-                    TextBox4.Text = ProveedoresBindingSource.Current("CUIT")
-                    TextBox5.Text = ProveedoresBindingSource.Current("Direccion")
-                    TextBox6.Text = ProveedoresBindingSource.Current("Nro")
-                    TextBox7.Text = ProveedoresBindingSource.Current("Telefono")
-
-                    Exit Sub
-                End If
-                i = i + 1
-                ProveedoresBindingSource.MoveNext()
-            Loop Until i = ProveedoresBindingSource.Count 'cantidad de registros, 'funciona como do while, '(pregunta si es el codigo que busca)
-            MsgBox("no se encontro el cuit")
+    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Dim fila, CodConsulta As Integer
+        CodConsulta = Val(InputBox("ingrese el Cuit del proveedor")) 'lo paso a val numerico
+        If CodConsulta = Nothing Then 'El magico Nothing
+            MsgBox("No ingresó nada")
         Else
-            MsgBox("el codigo de art esta vacio o mal ingresado")
+            fila = Me.ProveedoresBindingSource.Find("CUIT", CodConsulta)
+            If fila = -1 Then
+                MsgBox("No se encontro el cuit")
+            Else
+                ProveedoresBindingSource.Position = fila
+            End If
         End If
     End Sub
 
@@ -52,6 +40,29 @@
         End If
         If e.KeyCode = Keys.F5 Then
             Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+        Dim vista As New DataView 'instancio el objeto
+        vista.Table = Me.ZapateriaDataSet.Proveedores 'cargo objeto
+        vista.RowFilter = "Razon_Social LIKE '" & Me.TextBox2.Text & "%'" 'esta para texto
+        'vista.RowFilter = "Id_articulo = " & Val(Me.TextBox1.Text)    'esta para numeros
+        Me.ProveedoresDataGridView.DataSource = vista
+    End Sub
+
+    Private Sub BtnBuscar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        Dim fila, CodConsulta As Integer
+        CodConsulta = Val(InputBox("ingrese el CUIT del Proveedor")) 'lo paso a val numerico
+        If CodConsulta = Nothing Then 'El magico Nothing
+            MsgBox("No ingresó nada")
+        Else
+            fila = Me.ProveedoresBindingSource.Find("CUIT", CodConsulta)
+            If fila = -1 Then
+                MsgBox("No se encontro el CUIT")
+            Else
+                ProveedoresBindingSource.Position = fila
+            End If
         End If
     End Sub
 End Class

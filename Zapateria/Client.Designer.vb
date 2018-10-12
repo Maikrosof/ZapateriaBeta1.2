@@ -32,10 +32,6 @@ Partial Class Client
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim DNILabel As System.Windows.Forms.Label
-        Me.BtnEliminar = New System.Windows.Forms.Button()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
-        Me.BtnVolver = New System.Windows.Forms.Button()
-        Me.BtnNuevo = New System.Windows.Forms.Button()
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClientesTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ClientesTableAdapter()
@@ -63,6 +59,11 @@ Partial Class Client
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BtnModificaciones = New System.Windows.Forms.Button()
+        Me.BtnEliminar = New System.Windows.Forms.Button()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         ID_ClienteLabel = New System.Windows.Forms.Label()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
@@ -80,7 +81,7 @@ Partial Class Client
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.Location = New System.Drawing.Point(12, 93)
+        ID_ClienteLabel.Location = New System.Drawing.Point(17, 134)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
         ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
         ID_ClienteLabel.TabIndex = 27
@@ -89,7 +90,7 @@ Partial Class Client
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(12, 119)
+        ID_LocalidadLabel.Location = New System.Drawing.Point(17, 160)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 29
@@ -98,7 +99,7 @@ Partial Class Client
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(12, 145)
+        NombreLabel.Location = New System.Drawing.Point(17, 186)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(47, 13)
         NombreLabel.TabIndex = 31
@@ -107,7 +108,7 @@ Partial Class Client
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(12, 171)
+        ApellidoLabel.Location = New System.Drawing.Point(17, 212)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(47, 13)
         ApellidoLabel.TabIndex = 33
@@ -116,7 +117,7 @@ Partial Class Client
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(12, 198)
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(17, 239)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
         Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
         Fec_NacimientoLabel.TabIndex = 35
@@ -125,7 +126,7 @@ Partial Class Client
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(12, 223)
+        DireccionLabel.Location = New System.Drawing.Point(17, 264)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
         DireccionLabel.TabIndex = 37
@@ -134,7 +135,7 @@ Partial Class Client
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(12, 249)
+        NroLabel.Location = New System.Drawing.Point(17, 290)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
         NroLabel.TabIndex = 39
@@ -143,7 +144,7 @@ Partial Class Client
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(12, 275)
+        TelefonoLabel.Location = New System.Drawing.Point(17, 316)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
         TelefonoLabel.TabIndex = 41
@@ -152,47 +153,11 @@ Partial Class Client
         'DNILabel
         '
         DNILabel.AutoSize = True
-        DNILabel.Location = New System.Drawing.Point(12, 301)
+        DNILabel.Location = New System.Drawing.Point(17, 342)
         DNILabel.Name = "DNILabel"
         DNILabel.Size = New System.Drawing.Size(29, 13)
         DNILabel.TabIndex = 43
         DNILabel.Text = "DNI:"
-        '
-        'BtnEliminar
-        '
-        Me.BtnEliminar.Location = New System.Drawing.Point(160, 12)
-        Me.BtnEliminar.Name = "BtnEliminar"
-        Me.BtnEliminar.Size = New System.Drawing.Size(91, 49)
-        Me.BtnEliminar.TabIndex = 26
-        Me.BtnEliminar.Text = "Eliminar[F2]"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
-        '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(622, 12)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(91, 49)
-        Me.BtnBuscar.TabIndex = 25
-        Me.BtnBuscar.Text = "Busqueda[F4]"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
-        'BtnVolver
-        '
-        Me.BtnVolver.Location = New System.Drawing.Point(828, 12)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(91, 49)
-        Me.BtnVolver.TabIndex = 24
-        Me.BtnVolver.Text = "Volver[F5]"
-        Me.BtnVolver.UseVisualStyleBackColor = True
-        '
-        'BtnNuevo
-        '
-        Me.BtnNuevo.Location = New System.Drawing.Point(5, 12)
-        Me.BtnNuevo.Name = "BtnNuevo"
-        Me.BtnNuevo.Size = New System.Drawing.Size(91, 49)
-        Me.BtnNuevo.TabIndex = 23
-        Me.BtnNuevo.Text = "Nuevo[F1]"
-        Me.BtnNuevo.UseVisualStyleBackColor = True
         '
         'ZapateriaDataSet
         '
@@ -223,7 +188,7 @@ Partial Class Client
         'ID_ClienteTextBox
         '
         Me.ID_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "ID_Cliente", True))
-        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(102, 90)
+        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(107, 131)
         Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
         Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_ClienteTextBox.TabIndex = 28
@@ -231,7 +196,7 @@ Partial Class Client
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(102, 116)
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(107, 157)
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_LocalidadTextBox.TabIndex = 30
@@ -239,7 +204,7 @@ Partial Class Client
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(102, 142)
+        Me.NombreTextBox.Location = New System.Drawing.Point(107, 183)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 32
@@ -247,7 +212,7 @@ Partial Class Client
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(102, 168)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(107, 209)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ApellidoTextBox.TabIndex = 34
@@ -255,7 +220,7 @@ Partial Class Client
         'Fec_NacimientoDateTimePicker
         '
         Me.Fec_NacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClientesBindingSource, "Fec_Nacimiento", True))
-        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(102, 194)
+        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(107, 235)
         Me.Fec_NacimientoDateTimePicker.Name = "Fec_NacimientoDateTimePicker"
         Me.Fec_NacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fec_NacimientoDateTimePicker.TabIndex = 36
@@ -263,7 +228,7 @@ Partial Class Client
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(102, 220)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(107, 261)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(200, 20)
         Me.DireccionTextBox.TabIndex = 38
@@ -271,7 +236,7 @@ Partial Class Client
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(102, 246)
+        Me.NroTextBox.Location = New System.Drawing.Point(107, 287)
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NroTextBox.TabIndex = 40
@@ -279,7 +244,7 @@ Partial Class Client
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(102, 272)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(107, 313)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TelefonoTextBox.TabIndex = 42
@@ -287,43 +252,43 @@ Partial Class Client
         'DNITextBox
         '
         Me.DNITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "DNI", True))
-        Me.DNITextBox.Location = New System.Drawing.Point(102, 298)
+        Me.DNITextBox.Location = New System.Drawing.Point(107, 339)
         Me.DNITextBox.Name = "DNITextBox"
         Me.DNITextBox.Size = New System.Drawing.Size(200, 20)
         Me.DNITextBox.TabIndex = 44
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.Location = New System.Drawing.Point(252, 348)
+        Me.BtnUltimo.Location = New System.Drawing.Point(257, 380)
         Me.BtnUltimo.Name = "BtnUltimo"
-        Me.BtnUltimo.Size = New System.Drawing.Size(57, 37)
+        Me.BtnUltimo.Size = New System.Drawing.Size(50, 27)
         Me.BtnUltimo.TabIndex = 48
         Me.BtnUltimo.Text = ">>"
         Me.BtnUltimo.UseVisualStyleBackColor = True
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.Location = New System.Drawing.Point(168, 348)
+        Me.BtnAdelante.Location = New System.Drawing.Point(173, 380)
         Me.BtnAdelante.Name = "BtnAdelante"
-        Me.BtnAdelante.Size = New System.Drawing.Size(57, 37)
+        Me.BtnAdelante.Size = New System.Drawing.Size(53, 27)
         Me.BtnAdelante.TabIndex = 47
         Me.BtnAdelante.Text = ">"
         Me.BtnAdelante.UseVisualStyleBackColor = True
         '
         'BtnAtras
         '
-        Me.BtnAtras.Location = New System.Drawing.Point(85, 348)
+        Me.BtnAtras.Location = New System.Drawing.Point(90, 380)
         Me.BtnAtras.Name = "BtnAtras"
-        Me.BtnAtras.Size = New System.Drawing.Size(57, 37)
+        Me.BtnAtras.Size = New System.Drawing.Size(54, 27)
         Me.BtnAtras.TabIndex = 46
         Me.BtnAtras.Text = "<"
         Me.BtnAtras.UseVisualStyleBackColor = True
         '
         'BtnPrimero
         '
-        Me.BtnPrimero.Location = New System.Drawing.Point(4, 348)
+        Me.BtnPrimero.Location = New System.Drawing.Point(9, 380)
         Me.BtnPrimero.Name = "BtnPrimero"
-        Me.BtnPrimero.Size = New System.Drawing.Size(57, 37)
+        Me.BtnPrimero.Size = New System.Drawing.Size(55, 27)
         Me.BtnPrimero.TabIndex = 45
         Me.BtnPrimero.Text = "<<"
         Me.BtnPrimero.UseVisualStyleBackColor = True
@@ -334,7 +299,7 @@ Partial Class Client
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
-        Me.ClientesDataGridView.Location = New System.Drawing.Point(319, 90)
+        Me.ClientesDataGridView.Location = New System.Drawing.Point(324, 112)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.Size = New System.Drawing.Size(638, 295)
         Me.ClientesDataGridView.TabIndex = 48
@@ -394,11 +359,61 @@ Partial Class Client
         Me.DataGridViewTextBoxColumn9.HeaderText = "DNI"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
+        'BtnModificaciones
+        '
+        Me.BtnModificaciones.Location = New System.Drawing.Point(398, 34)
+        Me.BtnModificaciones.Name = "BtnModificaciones"
+        Me.BtnModificaciones.Size = New System.Drawing.Size(178, 62)
+        Me.BtnModificaciones.TabIndex = 53
+        Me.BtnModificaciones.Text = "Modificaciones"
+        Me.BtnModificaciones.UseVisualStyleBackColor = True
+        '
+        'BtnEliminar
+        '
+        Me.BtnEliminar.Location = New System.Drawing.Point(207, 34)
+        Me.BtnEliminar.Name = "BtnEliminar"
+        Me.BtnEliminar.Size = New System.Drawing.Size(176, 62)
+        Me.BtnEliminar.TabIndex = 52
+        Me.BtnEliminar.Text = "Eliminar[F2]"
+        Me.BtnEliminar.UseVisualStyleBackColor = True
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.Location = New System.Drawing.Point(592, 34)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(176, 62)
+        Me.BtnBuscar.TabIndex = 51
+        Me.BtnBuscar.Text = "Busquedas[F4]"
+        Me.BtnBuscar.UseVisualStyleBackColor = True
+        '
+        'BtnVolver
+        '
+        Me.BtnVolver.Location = New System.Drawing.Point(784, 34)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(176, 62)
+        Me.BtnVolver.TabIndex = 50
+        Me.BtnVolver.Text = "Volver[F5]"
+        Me.BtnVolver.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 34)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(178, 62)
+        Me.Button1.TabIndex = 49
+        Me.Button1.Text = "Agregar[F1]"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(969, 422)
+        Me.ClientSize = New System.Drawing.Size(969, 446)
+        Me.Controls.Add(Me.BtnModificaciones)
+        Me.Controls.Add(Me.BtnEliminar)
+        Me.Controls.Add(Me.BtnBuscar)
+        Me.Controls.Add(Me.BtnVolver)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ClientesDataGridView)
         Me.Controls.Add(Me.BtnUltimo)
         Me.Controls.Add(Me.BtnAdelante)
@@ -422,10 +437,6 @@ Partial Class Client
         Me.Controls.Add(Me.TelefonoTextBox)
         Me.Controls.Add(DNILabel)
         Me.Controls.Add(Me.DNITextBox)
-        Me.Controls.Add(Me.BtnEliminar)
-        Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.BtnVolver)
-        Me.Controls.Add(Me.BtnNuevo)
         Me.KeyPreview = True
         Me.Name = "Client"
         Me.Text = " "
@@ -436,10 +447,6 @@ Partial Class Client
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents BtnEliminar As System.Windows.Forms.Button
-    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
-    Friend WithEvents BtnVolver As System.Windows.Forms.Button
-    Friend WithEvents BtnNuevo As System.Windows.Forms.Button
     Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
     Friend WithEvents ClientesBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ClientesTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ClientesTableAdapter
@@ -467,4 +474,9 @@ Partial Class Client
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BtnModificaciones As System.Windows.Forms.Button
+    Friend WithEvents BtnEliminar As System.Windows.Forms.Button
+    Friend WithEvents BtnBuscar As System.Windows.Forms.Button
+    Friend WithEvents BtnVolver As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

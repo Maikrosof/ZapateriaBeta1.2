@@ -13,12 +13,12 @@
 
     End Sub
 
-    Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnNuevo.Click
+    Private Sub BtnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaCli.Show()
 
     End Sub
 
-    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+    Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Close()
 
     End Sub
@@ -43,7 +43,7 @@
 
     End Sub
 
-    Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnEliminar.Click
+    Private Sub BtnEliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim fila, CodConsulta, aux As Integer
         CodConsulta = InputBox("Ingrese el DNI del Cliente")
         'podria ir lo de vacio
@@ -65,7 +65,7 @@
         End If
     End Sub
 
-    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+    Private Sub BtnBuscar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BuscarCli.Show()
 
     End Sub
@@ -83,5 +83,20 @@
         If e.KeyCode = Keys.F5 Then
             Call BtnVolver_Click(sender, e)
         End If
+    End Sub
+
+    Private Sub BtnModificaciones_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnModificaciones.Click
+        ModClient.Show()
+
+    End Sub
+
+    Private Sub BtnBuscar_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnBuscar.Click
+        BuscarCli.Show()
+
+    End Sub
+
+    Private Sub BtnVolver_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click
+        Close()
+
     End Sub
 End Class
