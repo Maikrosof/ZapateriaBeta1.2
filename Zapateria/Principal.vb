@@ -170,4 +170,9 @@
     Private Sub LocalidadesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem.Click
         ElimLoc.Show()
     End Sub
+
+    Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem.Click
+        AltaMarca.Show()
+
+    End Sub
 End Class

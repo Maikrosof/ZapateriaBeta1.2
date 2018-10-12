@@ -31,7 +31,6 @@ Partial Class Alta_Producto
         Dim EstiloLabel As System.Windows.Forms.Label
         Dim StockLabel As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Alta_Producto))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
@@ -221,7 +220,7 @@ Partial Class Alta_Producto
         '
         Me.Button1.Location = New System.Drawing.Point(268, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(135, 72)
+        Me.Button1.Size = New System.Drawing.Size(135, 73)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -256,19 +255,21 @@ Partial Class Alta_Producto
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button3.BackColor = System.Drawing.SystemColors.Info
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(208, 1)
+        Me.Button3.Location = New System.Drawing.Point(208, 12)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(43, 44)
+        Me.Button3.Size = New System.Drawing.Size(18, 21)
         Me.Button3.TabIndex = 21
+        Me.Button3.Text = "+"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Alta_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(421, 233)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)

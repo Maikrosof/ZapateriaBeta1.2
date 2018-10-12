@@ -22,29 +22,33 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
-        Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
-        Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
-        Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
-        Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
-        Me.ProductosBindingSource.Current("Color") = PrecioTextBox.Text
-        Me.ProductosBindingSource.Current("Estilo") = ColorTextBox.Text
-        Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
+        If ID_ProveedorTextBox.Text <> "" Or ComboBox1.SelectedValue <> "" Or ModeloTextBox.Text <> "" Or TallaTextBox.Text <> "" Or PrecioTextBox.Text <> "" Or PrecioTextBox.Text <> "" Or ColorTextBox.Text <> "" Or EstiloTextBox.Text <> "" Or StockTextBox.Text <> "" Then
+            Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
+            Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
+            Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
+            Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
+            Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
+            Me.ProductosBindingSource.Current("Color") = ColorTextBox.Text
+            Me.ProductosBindingSource.Current("Estilo") = EstiloTextBox.Text
+            Me.ProductosBindingSource.Current("Stock") = Val(StockTextBox.Text)
 
-        Me.ProductosBindingSource.EndEdit()
-        ' Me.MarcasBindingSource.EndEdit()
+            Me.ProductosBindingSource.EndEdit()
+            ' Me.MarcasBindingSource.EndEdit()
 
-        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
-        Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
-        ' Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
+            Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
+            Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
+            ' Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
 
-        Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
-        Buscar_Productos.ProductosTableAdapter.Fill(Buscar_Productos.ZapateriaDataSet.Productos)
+            Principal_Producto.ProductosTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Productos)
+            Buscar_Productos.ProductosTableAdapter.Fill(Buscar_Productos.ZapateriaDataSet.Productos)
 
-        ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
+            ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
 
-        Me.ProductosBindingSource.AddNew()
-        'Me.MarcasBindingSource.AddNew()
+            Me.ProductosBindingSource.AddNew()
+            'Me.MarcasBindingSource.AddNew()
+        Else
+            MsgBox("Vacio")
+        End If
     End Sub
 
     Private Sub Alta_Producto_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown

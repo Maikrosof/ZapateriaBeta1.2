@@ -39,6 +39,24 @@ Partial Class AltaMarca
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'MarcaLabel
+        '
+        MarcaLabel.AutoSize = True
+        MarcaLabel.Location = New System.Drawing.Point(12, 9)
+        MarcaLabel.Name = "MarcaLabel"
+        MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel.TabIndex = 3
+        MarcaLabel.Text = "Marca:"
+        '
+        'OrigenLabel
+        '
+        OrigenLabel.AutoSize = True
+        OrigenLabel.Location = New System.Drawing.Point(12, 35)
+        OrigenLabel.Name = "OrigenLabel"
+        OrigenLabel.Size = New System.Drawing.Size(41, 13)
+        OrigenLabel.TabIndex = 5
+        OrigenLabel.Text = "Origen:"
+        '
         'ZapateriaDataSet
         '
         Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
@@ -65,15 +83,6 @@ Partial Class AltaMarca
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'MarcaLabel
-        '
-        MarcaLabel.AutoSize = True
-        MarcaLabel.Location = New System.Drawing.Point(12, 9)
-        MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(40, 13)
-        MarcaLabel.TabIndex = 3
-        MarcaLabel.Text = "Marca:"
-        '
         'MarcaTextBox
         '
         Me.MarcaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.MarcasBindingSource, "Marca", True))
@@ -81,15 +90,6 @@ Partial Class AltaMarca
         Me.MarcaTextBox.Name = "MarcaTextBox"
         Me.MarcaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.MarcaTextBox.TabIndex = 4
-        '
-        'OrigenLabel
-        '
-        OrigenLabel.AutoSize = True
-        OrigenLabel.Location = New System.Drawing.Point(12, 35)
-        OrigenLabel.Name = "OrigenLabel"
-        OrigenLabel.Size = New System.Drawing.Size(41, 13)
-        OrigenLabel.TabIndex = 5
-        OrigenLabel.Text = "Origen:"
         '
         'OrigenTextBox
         '

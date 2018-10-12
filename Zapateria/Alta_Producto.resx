@@ -159,16 +159,4 @@
   <metadata name="MarcasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>40, 56</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAATBJREFUaEPtmTGOwjAQRSOKBcq9AAU9FafgADR0XHL3ALR7ki1WIOiQgPmSRxpZ
-        STZOJgMS/0lPAjvGfgUuoCKEEPKKzMV1oB/iKKzEe6Bf4lR0JzoEfosz0RUbchP/Mi+izl/TWJ36DDym
-        MYg1dk51j7EhOEDOTtT5AwYa0GfgAgMJrNHxX/MausZEhuxFHN4+6xYTGYLPwhd9lBivkE/jBAOJPAQ0
-        xQy6mr1CmqgLAXUxOEtvnhUCEGNvxbCQs/hTKNbo+jwEYE+dDwsZKkO68F8IrtKtk/ZaVsJCxoYhOQxx
-        IiTEbuJl2x4MAW8XshGXPcXaLnuEhAzZJGIPhpTAkBIYUgBDSmBIAQwpwW6S/4iN9zp3SmN9xNoue7iF
-        PFuGgOi/3trEWQghhLwSVfUAsk9tWn2SLM0AAAAASUVORK5CYII=
-</value>
-  </data>
 </root>
