@@ -57,7 +57,6 @@ Partial Class Buscar_Productos
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         ID_ZapLabel = New System.Windows.Forms.Label()
         ID_MarcaLabel = New System.Windows.Forms.Label()
@@ -325,15 +324,6 @@ Partial Class Buscar_Productos
         Me.ComboBox1.TabIndex = 28
         Me.ComboBox1.ValueMember = "ID_Marca"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(197, 179)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(77, 61)
-        Me.Button1.TabIndex = 29
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(91, 64)
@@ -346,7 +336,6 @@ Partial Class Buscar_Productos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(777, 252)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ProductosDataGridView)
         Me.Controls.Add(Me.TextBox9)
@@ -402,6 +391,5 @@ Partial Class Buscar_Productos
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

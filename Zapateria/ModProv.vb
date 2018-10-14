@@ -44,7 +44,7 @@
     End Sub
 
     Private Sub ModProv_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Close()
         End If
     End Sub

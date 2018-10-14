@@ -90,7 +90,7 @@
         If e.KeyCode = Keys.F4 Then
             BuscarProv.Show()
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Close()
         End If
 

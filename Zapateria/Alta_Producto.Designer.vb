@@ -174,7 +174,7 @@ Partial Class Alta_Producto
         Me.ID_ProveedorTextBox.Location = New System.Drawing.Point(102, 39)
         Me.ID_ProveedorTextBox.Name = "ID_ProveedorTextBox"
         Me.ID_ProveedorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ID_ProveedorTextBox.TabIndex = 6
+        Me.ID_ProveedorTextBox.TabIndex = 2
         '
         'TallaTextBox
         '
@@ -182,7 +182,7 @@ Partial Class Alta_Producto
         Me.TallaTextBox.Location = New System.Drawing.Point(102, 90)
         Me.TallaTextBox.Name = "TallaTextBox"
         Me.TallaTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.TallaTextBox.TabIndex = 8
+        Me.TallaTextBox.TabIndex = 4
         '
         'PrecioTextBox
         '
@@ -190,7 +190,7 @@ Partial Class Alta_Producto
         Me.PrecioTextBox.Location = New System.Drawing.Point(102, 116)
         Me.PrecioTextBox.Name = "PrecioTextBox"
         Me.PrecioTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.PrecioTextBox.TabIndex = 10
+        Me.PrecioTextBox.TabIndex = 5
         '
         'ColorTextBox
         '
@@ -198,7 +198,7 @@ Partial Class Alta_Producto
         Me.ColorTextBox.Location = New System.Drawing.Point(102, 142)
         Me.ColorTextBox.Name = "ColorTextBox"
         Me.ColorTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ColorTextBox.TabIndex = 12
+        Me.ColorTextBox.TabIndex = 6
         '
         'EstiloTextBox
         '
@@ -206,7 +206,7 @@ Partial Class Alta_Producto
         Me.EstiloTextBox.Location = New System.Drawing.Point(102, 168)
         Me.EstiloTextBox.Name = "EstiloTextBox"
         Me.EstiloTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.EstiloTextBox.TabIndex = 14
+        Me.EstiloTextBox.TabIndex = 7
         '
         'StockTextBox
         '
@@ -214,14 +214,14 @@ Partial Class Alta_Producto
         Me.StockTextBox.Location = New System.Drawing.Point(102, 194)
         Me.StockTextBox.Name = "StockTextBox"
         Me.StockTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.StockTextBox.TabIndex = 16
+        Me.StockTextBox.TabIndex = 8
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(268, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 73)
-        Me.Button1.TabIndex = 17
+        Me.Button1.TabIndex = 9
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -240,7 +240,7 @@ Partial Class Alta_Producto
         Me.ModeloTextBox.Location = New System.Drawing.Point(102, 65)
         Me.ModeloTextBox.Name = "ModeloTextBox"
         Me.ModeloTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ModeloTextBox.TabIndex = 19
+        Me.ModeloTextBox.TabIndex = 3
         '
         'ComboBox1
         '
@@ -250,7 +250,7 @@ Partial Class Alta_Producto
         Me.ComboBox1.Location = New System.Drawing.Point(102, 12)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 20
+        Me.ComboBox1.TabIndex = 1
         Me.ComboBox1.ValueMember = "ID_Marca"
         '
         'Button3

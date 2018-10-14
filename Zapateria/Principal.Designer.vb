@@ -143,7 +143,7 @@ Partial Class Principal
         Me.BtnSalir.Name = "BtnSalir"
         Me.BtnSalir.Size = New System.Drawing.Size(134, 47)
         Me.BtnSalir.TabIndex = 6
-        Me.BtnSalir.Text = "Salir[F10]"
+        Me.BtnSalir.Text = "Salir[Esc]"
         Me.BtnSalir.UseVisualStyleBackColor = True
         '
         'ClientesBindingSource

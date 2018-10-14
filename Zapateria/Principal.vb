@@ -35,7 +35,8 @@
     End Sub
 
     Private Sub BtnSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSalir.Click
-        End
+        Salir.Show()
+
 
     End Sub
 
@@ -88,6 +89,9 @@
 
 
     Private Sub Principal_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.F1 Then
+            Ventas.Show()
+        End If
         If e.KeyCode = Keys.F3 Then
             Principal_Producto.Show()
         End If
@@ -100,7 +104,8 @@
         If e.KeyCode = Keys.F6 Then
             Empl.Show()
         End If
-        If e.KeyCode = Keys.F10 Then
+        If e.KeyCode = Keys.Escape Then
+            Salir.Show()
         End If
     End Sub
 

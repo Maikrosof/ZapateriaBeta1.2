@@ -7,6 +7,12 @@
 
     End Sub
 
+    Private Sub BuscarEmp_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
+
     Private Sub BuscarEmp_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Empleados' Puede moverla o quitarla según sea necesario.
         Me.EmpleadosTableAdapter.Fill(Me.ZapateriaDataSet.Empleados)

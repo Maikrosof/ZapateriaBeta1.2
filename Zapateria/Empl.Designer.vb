@@ -446,7 +446,7 @@ Partial Class Empl
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(176, 62)
         Me.BtnVolver.TabIndex = 54
-        Me.BtnVolver.Text = "Volver[F5]"
+        Me.BtnVolver.Text = "Volver[Esc]"
         Me.BtnVolver.UseVisualStyleBackColor = True
         '
         'Button1

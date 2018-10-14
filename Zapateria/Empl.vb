@@ -85,7 +85,7 @@
         If e.KeyCode = Keys.F4 Then
             Call BtnBuscar_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Call BtnVolver_Click(sender, e)
         End If
     End Sub

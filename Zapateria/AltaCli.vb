@@ -16,8 +16,7 @@
     End Sub
 
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
-        If NombreTextBox.Text <> "" Or ApellidoTextBox.Text <> "" Or DireccionTextBox.Text <> "" Or NroTextBox.Text <> "" Or DNITextBox.Text <> "" Then
-
+        
             Me.ClientesBindingSource.Current("ID_Localidad") = CmbLocalidad.SelectedValue
             Me.ClientesBindingSource.Current("Nombre") = NombreTextBox.Text
             Me.ClientesBindingSource.Current("Apellido") = ApellidoTextBox.Text
@@ -47,7 +46,7 @@
         If e.KeyCode = Keys.Enter Then
             Call BtnGuardar_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Call BtnVolver_Click(sender, e)
         End If
     End Sub

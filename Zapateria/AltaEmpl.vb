@@ -27,8 +27,6 @@
 
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
 
-        If DNITextBox.Text <> "" Or NombreTextBox.Text <> "" Or ApellidoTextBox.Text <> "" Or DireccionTextBox.Text <> "" Or NroTextBox.Text <> "" Or TelefonoTextBox.Text <> "" Or CargoTextBox.Text <> "" Then
-
             Me.EmpleadosBindingSource.Current("ID_Localidad") = CmbLocalidad.SelectedValue
             Me.EmpleadosBindingSource.Current("DNI") = Val(DNITextBox.Text)
             Me.EmpleadosBindingSource.Current("Nombre") = NombreTextBox.Text
@@ -55,7 +53,7 @@
         If e.KeyCode = Keys.Enter Then
             Call BtnGuardar_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Call BtnVolver_Click(sender, e)
         End If
     End Sub

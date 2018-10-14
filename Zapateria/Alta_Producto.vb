@@ -22,9 +22,8 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        If ID_ProveedorTextBox.Text <> Nothing Or ComboBox1.SelectedValue <> Nothing Or ModeloTextBox.Text <> Nothing Or TallaTextBox.Text <> Nothing Or PrecioTextBox.Text <> Nothing Or PrecioTextBox.Text <> Nothing Or ColorTextBox.Text <> Nothing Or EstiloTextBox.Text <> Nothing Or StockTextBox.Text <> Nothing Then
+        Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
             Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
-            Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
             Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
             Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
             Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
@@ -43,7 +42,8 @@
             Buscar_Productos.ProductosTableAdapter.Fill(Buscar_Productos.ZapateriaDataSet.Productos)
 
             ' Principal_Producto.MarcasTableAdapter.Fill(Principal_Producto.ZapateriaDataSet.Marcas)
-
+            Me.ProductosBindingSource.MoveLast() 'muestra el ultimo agregado
+            MsgBox("El ID del producto es:" + Me.ProductosBindingSource.Current("ID_Zap").ToString)
             Me.ProductosBindingSource.AddNew()
             'Me.MarcasBindingSource.AddNew()
         Else
@@ -55,13 +55,21 @@
         If e.KeyCode = Keys.Enter Then
             Call Button1_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Call Button2_Click(sender, e)
         End If
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         AltaMarca.Show()
+
+    End Sub
+
+    Private Sub TallaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TallaTextBox.TextChanged
+
+    End Sub
+
+    Private Sub PrecioTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrecioTextBox.TextChanged
 
     End Sub
 End Class

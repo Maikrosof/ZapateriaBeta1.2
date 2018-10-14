@@ -231,6 +231,12 @@
     <Compile Include="Prov.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Salir.Designer.vb">
+      <DependentUpon>Salir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salir.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ventas.Designer.vb">
       <DependentUpon>Ventas.vb</DependentUpon>
     </Compile>
@@ -312,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prov.resx">
       <DependentUpon>Prov.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salir.resx">
+      <DependentUpon>Salir.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>

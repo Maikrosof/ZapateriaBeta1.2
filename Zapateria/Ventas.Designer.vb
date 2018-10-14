@@ -30,6 +30,7 @@ Partial Class Ventas
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
         Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.VentasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.VentasTableAdapter()
         Me.ProductosDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,7 +51,6 @@ Partial Class Ventas
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.VentasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.VentasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.VentasTableAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ID_Zap = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Color = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -91,6 +91,10 @@ Partial Class Ventas
         Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Me.VentasTableAdapter
+        '
+        'VentasTableAdapter
+        '
+        Me.VentasTableAdapter.ClearBeforeFill = True
         '
         'ProductosDataGridView
         '
@@ -255,19 +259,15 @@ Partial Class Ventas
         '
         Me.Button1.Location = New System.Drawing.Point(674, 396)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(101, 38)
         Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Volver"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'VentasBindingSource
         '
         Me.VentasBindingSource.DataMember = "Ventas"
         Me.VentasBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'VentasTableAdapter
-        '
-        Me.VentasTableAdapter.ClearBeforeFill = True
         '
         'DataGridView1
         '

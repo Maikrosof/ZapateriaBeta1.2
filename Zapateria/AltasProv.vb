@@ -16,8 +16,7 @@
     End Sub
 
     Private Sub BtnGuardar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnGuardar.Click
-        If Razon_SocialTextBox.Text <> "" Or CUITTextBox.Text <> "" Or DireccionTextBox.Text <> "" Or NroTextBox.Text <> "" Or TelefonoTextBox.Text <> "" Then
-
+        
             Me.ProveedoresBindingSource.Current("ID_Localidad") = CmbLocalidad.SelectedValue
             Me.ProveedoresBindingSource.Current("Razon_Social") = Razon_SocialTextBox.Text
             Me.ProveedoresBindingSource.Current("CUIT") = Val(CUITTextBox.Text)
@@ -47,7 +46,7 @@
         If e.KeyCode = Keys.Enter Then
             Call BtnGuardar_Click(sender, e)
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.Escape Then
             Call BtnVolver_Click(sender, e)
         End If
     End Sub

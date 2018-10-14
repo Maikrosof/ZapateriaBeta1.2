@@ -174,3 +174,5 @@ C:\Users\Gabriel\Documents\Proyecto\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zap
 C:\Users\Gabriel\Documents\Proyecto\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Prov.resources
 C:\Users\Gabriel\Documents\Proyecto\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Ventas.resources
 C:\Users\Gabriel\Documents\Proyecto\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.vbproj.GenerateResource.Cache
+C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Ventas.resources
+C:\Users\Maikro\Desktop\VisualBasic\ZapateriaBeta1.2\Zapateria\obj\x86\Debug\Zapateria.Salir.resources

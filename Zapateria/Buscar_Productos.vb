@@ -7,6 +7,12 @@
 
     End Sub
 
+    Private Sub Buscar_Productos_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Escape Then
+            Call BtnVolver_Click(sender, e)
+        End If
+    End Sub
+
     Private Sub Buscar_Productos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Marcas' Puede moverla o quitarla según sea necesario.
         Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
@@ -97,7 +103,7 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
