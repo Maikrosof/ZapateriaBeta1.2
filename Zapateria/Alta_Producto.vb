@@ -22,7 +22,7 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        If ID_ProveedorTextBox.Text <> "" Or ComboBox1.SelectedValue <> "" Or ModeloTextBox.Text <> "" Or TallaTextBox.Text <> "" Or PrecioTextBox.Text <> "" Or PrecioTextBox.Text <> "" Or ColorTextBox.Text <> "" Or EstiloTextBox.Text <> "" Or StockTextBox.Text <> "" Then
+        If ID_ProveedorTextBox.Text <> Nothing Or ComboBox1.SelectedValue <> Nothing Or ModeloTextBox.Text <> Nothing Or TallaTextBox.Text <> Nothing Or PrecioTextBox.Text <> Nothing Or PrecioTextBox.Text <> Nothing Or ColorTextBox.Text <> Nothing Or EstiloTextBox.Text <> Nothing Or StockTextBox.Text <> Nothing Then
             Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
             Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
             Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
