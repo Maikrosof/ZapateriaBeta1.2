@@ -47,6 +47,8 @@ Partial Class Principal_Producto
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,7 +99,7 @@ Partial Class Principal_Producto
         Me.ProductosDataGridView.Location = New System.Drawing.Point(0, 1)
         Me.ProductosDataGridView.Name = "ProductosDataGridView"
         Me.ProductosDataGridView.Size = New System.Drawing.Size(815, 306)
-        Me.ProductosDataGridView.TabIndex = 8
+        Me.ProductosDataGridView.TabIndex = 10
         '
         'DataGridViewTextBoxColumn1
         '
@@ -177,19 +179,19 @@ Partial Class Principal_Producto
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(402, 313)
+        Me.Button4.Location = New System.Drawing.Point(402, 354)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(132, 71)
-        Me.Button4.TabIndex = 5
+        Me.Button4.Size = New System.Drawing.Size(160, 30)
+        Me.Button4.TabIndex = 6
         Me.Button4.Text = "Busqueda Personalizada[F4]"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(675, 313)
+        Me.Button5.Location = New System.Drawing.Point(687, 313)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 71)
-        Me.Button5.TabIndex = 7
+        Me.Button5.TabIndex = 9
         Me.Button5.Text = "Salir[Esc]"
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -205,25 +207,45 @@ Partial Class Principal_Producto
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(537, 352)
+        Me.TextBox1.Location = New System.Drawing.Point(403, 329)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(132, 20)
-        Me.TextBox1.TabIndex = 6
+        Me.TextBox1.Size = New System.Drawing.Size(159, 20)
+        Me.TextBox1.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(536, 324)
+        Me.Label1.Location = New System.Drawing.Point(415, 313)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(133, 13)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Buscar por ID de Producto"
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(569, 313)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(112, 35)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "Ventas"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(569, 349)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(112, 35)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "Compras"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Principal_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(815, 392)
+        Me.ClientSize = New System.Drawing.Size(815, 388)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button5)
@@ -267,4 +289,6 @@ Partial Class Principal_Producto
     Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

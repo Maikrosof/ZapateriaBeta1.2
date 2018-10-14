@@ -22,6 +22,10 @@
     End Sub
 
     Private Sub Ventas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
+        Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Ventas' Puede moverla o quitarla según sea necesario.
+        Me.VentasTableAdapter.Fill(Me.ZapateriaDataSet.Ventas)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Ventas' Puede moverla o quitarla según sea necesario.
         Me.VentasTableAdapter.Fill(Me.ZapateriaDataSet.Ventas)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
@@ -124,6 +128,13 @@
 
     Private Sub ProductosDataGridView_RowStateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewRowStateChangedEventArgs) Handles ProductosDataGridView.RowStateChanged
         dgv_styleRow()
+
+    End Sub
+
+    Private Sub VentasBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.VentasBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
 
     End Sub
 End Class

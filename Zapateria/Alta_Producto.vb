@@ -8,6 +8,8 @@
     End Sub
 
     Private Sub Alta_Producto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+        Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Marcas' Puede moverla o quitarla según sea necesario.
         Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
@@ -23,8 +25,8 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.ProductosBindingSource.Current("ID_Marca") = ComboBox1.SelectedValue
-            Me.ProductosBindingSource.Current("ID_Proveedor") = Val(ID_ProveedorTextBox.Text)
-            Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
+        Me.ProductosBindingSource.Current("ID_Proveedor") = ComboBox2.SelectedValue
+        Me.ProductosBindingSource.Current("Modelo") = ModeloTextBox.Text
             Me.ProductosBindingSource.Current("Talla") = Val(TallaTextBox.Text)
             Me.ProductosBindingSource.Current("Precio") = Val(PrecioTextBox.Text)
             Me.ProductosBindingSource.Current("Color") = ColorTextBox.Text
@@ -69,5 +71,9 @@
 
     Private Sub PrecioTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrecioTextBox.TextChanged
 
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        AltasProv.Show()
     End Sub
 End Class
