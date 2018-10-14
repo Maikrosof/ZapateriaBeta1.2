@@ -44,9 +44,7 @@
             Me.EmpleadosBindingSource.MoveLast() 'muestra el ultimo agregado
             MsgBox("El codigo de empleado es:" + Me.EmpleadosBindingSource.Current("ID_Emp").ToString)
             Me.EmpleadosBindingSource.AddNew()
-        Else
-            MsgBox("Faltan datos")
-        End If
+        
     End Sub
 
     Private Sub AltaEmpl_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown

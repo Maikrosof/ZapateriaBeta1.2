@@ -30,9 +30,7 @@
             Me.LocalidadBindingSource.MoveLast()
             MsgBox("El codigo de la localidad es:" + Me.LocalidadBindingSource.Current("ID_Localidad").ToString)
             Me.LocalidadBindingSource.AddNew()
-        Else
-            MsgBox("Faltan datos")
-        End If
+        
     End Sub
 
     Private Sub BtnVolver_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVolver.Click

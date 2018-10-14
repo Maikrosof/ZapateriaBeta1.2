@@ -46,9 +46,7 @@
             MsgBox("El ID del producto es:" + Me.ProductosBindingSource.Current("ID_Zap").ToString)
             Me.ProductosBindingSource.AddNew()
             'Me.MarcasBindingSource.AddNew()
-        Else
-            MsgBox("Vacio")
-        End If
+
     End Sub
 
     Private Sub Alta_Producto_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown

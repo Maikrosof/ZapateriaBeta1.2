@@ -30,9 +30,7 @@
             Me.ProveedoresBindingSource.MoveLast() 'muestra el ultimo agregado
             MsgBox("El codigo de proveedor es:" + Me.ProveedoresBindingSource.Current("ID_Proveedor").ToString)
             Me.ProveedoresBindingSource.AddNew()
-        Else
-            MsgBox("Faltan datos")
-        End If
+        
 
 
     End Sub

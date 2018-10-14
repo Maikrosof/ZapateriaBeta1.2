@@ -31,9 +31,7 @@
             Me.ClientesBindingSource.MoveLast() 'muestra el ultimo agregado
             MsgBox("El codigo de Cliente es:" + Me.ClientesBindingSource.Current("ID_Cliente").ToString)
             Me.ClientesBindingSource.AddNew()
-        Else
-            MsgBox("Faltan datos")
-        End If
+        
 
     End Sub
 

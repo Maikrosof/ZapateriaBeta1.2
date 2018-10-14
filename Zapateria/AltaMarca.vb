@@ -32,9 +32,7 @@
             Me.MarcasBindingSource.MoveLast()
             MsgBox("Marca agregada a la lista")
             Me.MarcasBindingSource.AddNew()
-        Else
-            MsgBox("Faltan datos")
-        End If
+        
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
