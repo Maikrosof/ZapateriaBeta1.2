@@ -30,101 +30,208 @@ Partial Class ModProv
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModProv))
-        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
-        Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
-        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
         Me.ID_LocalidadTextBox = New System.Windows.Forms.TextBox()
         Me.Razon_SocialTextBox = New System.Windows.Forms.TextBox()
         Me.CUITTextBox = New System.Windows.Forms.TextBox()
         Me.DireccionTextBox = New System.Windows.Forms.TextBox()
         Me.NroTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
-        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.BtnModificar = New System.Windows.Forms.Button()
         Me.BtnVolver = New System.Windows.Forms.Button()
+        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
+        Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
+        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
+        Me.IDProveedorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IDLocalidadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RazonSocialDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CUITDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         ID_LocalidadLabel = New System.Windows.Forms.Label()
         Razon_SocialLabel = New System.Windows.Forms.Label()
         CUITLabel = New System.Windows.Forms.Label()
         DireccionLabel = New System.Windows.Forms.Label()
         NroLabel = New System.Windows.Forms.Label()
         TelefonoLabel = New System.Windows.Forms.Label()
+        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_LocalidadLabel.Location = New System.Drawing.Point(30, 82)
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.Location = New System.Drawing.Point(17, 82)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 3
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'Razon_SocialLabel
         '
         Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Razon_SocialLabel.Location = New System.Drawing.Point(30, 108)
+        Razon_SocialLabel.BackColor = System.Drawing.Color.Transparent
+        Razon_SocialLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Razon_SocialLabel.Location = New System.Drawing.Point(17, 108)
         Razon_SocialLabel.Name = "Razon_SocialLabel"
-        Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
+        Razon_SocialLabel.Size = New System.Drawing.Size(86, 13)
         Razon_SocialLabel.TabIndex = 5
         Razon_SocialLabel.Text = "Razon Social:"
         '
         'CUITLabel
         '
         CUITLabel.AutoSize = True
-        CUITLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        CUITLabel.Location = New System.Drawing.Point(30, 134)
+        CUITLabel.BackColor = System.Drawing.Color.Transparent
+        CUITLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CUITLabel.Location = New System.Drawing.Point(17, 134)
         CUITLabel.Name = "CUITLabel"
-        CUITLabel.Size = New System.Drawing.Size(35, 13)
+        CUITLabel.Size = New System.Drawing.Size(40, 13)
         CUITLabel.TabIndex = 7
         CUITLabel.Text = "CUIT:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DireccionLabel.Location = New System.Drawing.Point(30, 160)
+        DireccionLabel.BackColor = System.Drawing.Color.Transparent
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(17, 160)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.Size = New System.Drawing.Size(65, 13)
         DireccionLabel.TabIndex = 9
         DireccionLabel.Text = "Direccion:"
         '
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NroLabel.Location = New System.Drawing.Point(30, 186)
+        NroLabel.BackColor = System.Drawing.Color.Transparent
+        NroLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NroLabel.Location = New System.Drawing.Point(17, 186)
         NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.Size = New System.Drawing.Size(31, 13)
         NroLabel.TabIndex = 11
         NroLabel.Text = "Nro:"
         '
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        TelefonoLabel.Location = New System.Drawing.Point(30, 212)
+        TelefonoLabel.BackColor = System.Drawing.Color.Transparent
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.Location = New System.Drawing.Point(17, 212)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(61, 13)
         TelefonoLabel.TabIndex = 13
         TelefonoLabel.Text = "Telefono:"
+        '
+        'ID_LocalidadTextBox
+        '
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(109, 79)
+        Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
+        Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ID_LocalidadTextBox.TabIndex = 4
+        '
+        'Razon_SocialTextBox
+        '
+        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(109, 105)
+        Me.Razon_SocialTextBox.Name = "Razon_SocialTextBox"
+        Me.Razon_SocialTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Razon_SocialTextBox.TabIndex = 6
+        '
+        'CUITTextBox
+        '
+        Me.CUITTextBox.Location = New System.Drawing.Point(109, 131)
+        Me.CUITTextBox.Name = "CUITTextBox"
+        Me.CUITTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CUITTextBox.TabIndex = 8
+        '
+        'DireccionTextBox
+        '
+        Me.DireccionTextBox.Location = New System.Drawing.Point(109, 157)
+        Me.DireccionTextBox.Name = "DireccionTextBox"
+        Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.DireccionTextBox.TabIndex = 10
+        '
+        'NroTextBox
+        '
+        Me.NroTextBox.Location = New System.Drawing.Point(109, 183)
+        Me.NroTextBox.Name = "NroTextBox"
+        Me.NroTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NroTextBox.TabIndex = 12
+        '
+        'TelefonoTextBox
+        '
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(109, 209)
+        Me.TelefonoTextBox.Name = "TelefonoTextBox"
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.TelefonoTextBox.TabIndex = 14
+        '
+        'ProveedoresDataGridView
+        '
+        Me.ProveedoresDataGridView.AutoGenerateColumns = False
+        Me.ProveedoresDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.ProveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ProveedoresDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDProveedorDataGridViewTextBoxColumn, Me.IDLocalidadDataGridViewTextBoxColumn, Me.RazonSocialDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn, Me.NroDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn, Me.CUITDataGridViewTextBoxColumn})
+        Me.ProveedoresDataGridView.DataSource = Me.ProveedoresBindingSource
+        Me.ProveedoresDataGridView.Location = New System.Drawing.Point(235, 9)
+        Me.ProveedoresDataGridView.Name = "ProveedoresDataGridView"
+        Me.ProveedoresDataGridView.Size = New System.Drawing.Size(638, 220)
+        Me.ProveedoresDataGridView.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(7, 12)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(221, 16)
+        Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Modificaciones por Proveedor:"
+        '
+        'BtnBuscar
+        '
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnBuscar.Location = New System.Drawing.Point(16, 252)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(117, 55)
+        Me.BtnBuscar.TabIndex = 26
+        Me.BtnBuscar.Text = "Buscar por CUIT"
+        Me.BtnBuscar.UseVisualStyleBackColor = False
+        '
+        'BtnModificar
+        '
+        Me.BtnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnModificar.BackgroundImage = CType(resources.GetObject("BtnModificar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnModificar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnModificar.Location = New System.Drawing.Point(164, 252)
+        Me.BtnModificar.Name = "BtnModificar"
+        Me.BtnModificar.Size = New System.Drawing.Size(117, 55)
+        Me.BtnModificar.TabIndex = 27
+        Me.BtnModificar.Text = "Modificar"
+        Me.BtnModificar.UseVisualStyleBackColor = False
+        '
+        'BtnVolver
+        '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnVolver.Location = New System.Drawing.Point(756, 252)
+        Me.BtnVolver.Name = "BtnVolver"
+        Me.BtnVolver.Size = New System.Drawing.Size(117, 55)
+        Me.BtnVolver.TabIndex = 28
+        Me.BtnVolver.Text = "Volver"
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'ZapateriaDataSet
         '
@@ -152,165 +259,64 @@ Partial Class ModProv
         Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VentasTableAdapter = Nothing
         '
-        'LocalidadTableAdapter
-        '
-        Me.LocalidadTableAdapter.ClearBeforeFill = True
-        '
-        'ID_LocalidadTextBox
-        '
-        Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(109, 79)
-        Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
-        Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.ID_LocalidadTextBox.TabIndex = 4
-        '
-        'Razon_SocialTextBox
-        '
-        Me.Razon_SocialTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Razon_Social", True))
-        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(109, 105)
-        Me.Razon_SocialTextBox.Name = "Razon_SocialTextBox"
-        Me.Razon_SocialTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Razon_SocialTextBox.TabIndex = 6
-        '
-        'CUITTextBox
-        '
-        Me.CUITTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "CUIT", True))
-        Me.CUITTextBox.Location = New System.Drawing.Point(109, 131)
-        Me.CUITTextBox.Name = "CUITTextBox"
-        Me.CUITTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.CUITTextBox.TabIndex = 8
-        '
-        'DireccionTextBox
-        '
-        Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(109, 157)
-        Me.DireccionTextBox.Name = "DireccionTextBox"
-        Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.DireccionTextBox.TabIndex = 10
-        '
-        'NroTextBox
-        '
-        Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(109, 183)
-        Me.NroTextBox.Name = "NroTextBox"
-        Me.NroTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.NroTextBox.TabIndex = 12
-        '
-        'TelefonoTextBox
-        '
-        Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(109, 209)
-        Me.TelefonoTextBox.Name = "TelefonoTextBox"
-        Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.TelefonoTextBox.TabIndex = 14
-        '
         'LocalidadBindingSource
         '
         Me.LocalidadBindingSource.DataMember = "Localidad"
         Me.LocalidadBindingSource.DataSource = Me.ZapateriaDataSet
         '
-        'ProveedoresDataGridView
+        'LocalidadTableAdapter
         '
-        Me.ProveedoresDataGridView.AutoGenerateColumns = False
-        Me.ProveedoresDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
-        Me.ProveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ProveedoresDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        Me.ProveedoresDataGridView.DataSource = Me.ProveedoresBindingSource
-        Me.ProveedoresDataGridView.Location = New System.Drawing.Point(235, 9)
-        Me.ProveedoresDataGridView.Name = "ProveedoresDataGridView"
-        Me.ProveedoresDataGridView.Size = New System.Drawing.Size(638, 220)
-        Me.ProveedoresDataGridView.TabIndex = 14
+        Me.LocalidadTableAdapter.ClearBeforeFill = True
         '
-        'DataGridViewTextBoxColumn1
+        'IDProveedorDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_Proveedor"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_Proveedor"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.IDProveedorDataGridViewTextBoxColumn.DataPropertyName = "ID_Proveedor"
+        Me.IDProveedorDataGridViewTextBoxColumn.HeaderText = "ID_Proveedor"
+        Me.IDProveedorDataGridViewTextBoxColumn.Name = "IDProveedorDataGridViewTextBoxColumn"
+        Me.IDProveedorDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'DataGridViewTextBoxColumn2
+        'IDLocalidadDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID_Localidad"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.IDLocalidadDataGridViewTextBoxColumn.DataPropertyName = "ID_Localidad"
+        Me.IDLocalidadDataGridViewTextBoxColumn.HeaderText = "ID_Localidad"
+        Me.IDLocalidadDataGridViewTextBoxColumn.Name = "IDLocalidadDataGridViewTextBoxColumn"
         '
-        'DataGridViewTextBoxColumn3
+        'RazonSocialDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Razon_Social"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Razon_Social"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.RazonSocialDataGridViewTextBoxColumn.DataPropertyName = "Razon_Social"
+        Me.RazonSocialDataGridViewTextBoxColumn.HeaderText = "Razon_Social"
+        Me.RazonSocialDataGridViewTextBoxColumn.Name = "RazonSocialDataGridViewTextBoxColumn"
         '
-        'DataGridViewTextBoxColumn4
+        'DireccionDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "CUIT"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "CUIT"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
         '
-        'DataGridViewTextBoxColumn5
+        'NroDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Direccion"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Direccion"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.NroDataGridViewTextBoxColumn.DataPropertyName = "Nro"
+        Me.NroDataGridViewTextBoxColumn.HeaderText = "Nro"
+        Me.NroDataGridViewTextBoxColumn.Name = "NroDataGridViewTextBoxColumn"
         '
-        'DataGridViewTextBoxColumn6
+        'TelefonoDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Nro"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Nro"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
         '
-        'DataGridViewTextBoxColumn7
+        'CUITDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Telefono"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Telefono"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 19)
-        Me.Label1.TabIndex = 25
-        Me.Label1.Text = "Modificaciones por Proveedor:"
-        '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnBuscar.Location = New System.Drawing.Point(16, 252)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(117, 55)
-        Me.BtnBuscar.TabIndex = 26
-        Me.BtnBuscar.Text = "Buscar por CUIT"
-        Me.BtnBuscar.UseVisualStyleBackColor = False
-        '
-        'BtnModificar
-        '
-        Me.BtnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnModificar.Location = New System.Drawing.Point(164, 252)
-        Me.BtnModificar.Name = "BtnModificar"
-        Me.BtnModificar.Size = New System.Drawing.Size(117, 55)
-        Me.BtnModificar.TabIndex = 27
-        Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = False
-        '
-        'BtnVolver
-        '
-        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnVolver.Location = New System.Drawing.Point(756, 252)
-        Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(117, 55)
-        Me.BtnVolver.TabIndex = 28
-        Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = False
+        Me.CUITDataGridViewTextBoxColumn.DataPropertyName = "CUIT"
+        Me.CUITDataGridViewTextBoxColumn.HeaderText = "CUIT"
+        Me.CUITDataGridViewTextBoxColumn.Name = "CUITDataGridViewTextBoxColumn"
         '
         'ModProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(875, 312)
+        Me.ClientSize = New System.Drawing.Size(893, 321)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.BtnBuscar)
@@ -331,36 +337,36 @@ Partial Class ModProv
         Me.KeyPreview = True
         Me.Name = "ModProv"
         Me.Text = "ModProv"
+        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocalidadBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProveedoresDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
-    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProveedoresTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter
-    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
     Friend WithEvents ID_LocalidadTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Razon_SocialTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CUITTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DireccionTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NroTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TelefonoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents LocalidadTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter
-    Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ProveedoresDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BtnBuscar As System.Windows.Forms.Button
     Friend WithEvents BtnModificar As System.Windows.Forms.Button
     Friend WithEvents BtnVolver As System.Windows.Forms.Button
+    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
+    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProveedoresTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter
+    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents LocalidadTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter
+    Friend WithEvents LocalidadBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents IDProveedorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IDLocalidadDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RazonSocialDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DireccionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NroDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TelefonoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CUITDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

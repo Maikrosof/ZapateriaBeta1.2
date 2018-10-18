@@ -156,6 +156,8 @@ Partial Class Principal_Producto
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(0, 313)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(128, 71)
@@ -166,6 +168,8 @@ Partial Class Principal_Producto
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(134, 313)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(128, 71)
@@ -176,6 +180,8 @@ Partial Class Principal_Producto
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button3.Location = New System.Drawing.Point(268, 313)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(128, 71)
@@ -186,6 +192,8 @@ Partial Class Principal_Producto
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button4.Location = New System.Drawing.Point(402, 354)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(160, 30)
@@ -196,6 +204,8 @@ Partial Class Principal_Producto
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button5.Location = New System.Drawing.Point(687, 313)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 71)
@@ -233,6 +243,8 @@ Partial Class Principal_Producto
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button6.Location = New System.Drawing.Point(569, 313)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(112, 35)
@@ -243,6 +255,8 @@ Partial Class Principal_Producto
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
+        Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button7.Location = New System.Drawing.Point(569, 349)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(112, 35)
@@ -266,6 +280,7 @@ Partial Class Principal_Producto
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProductosDataGridView)
+        Me.KeyPreview = True
         Me.Name = "Principal_Producto"
         Me.Text = "Principal_Producto"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

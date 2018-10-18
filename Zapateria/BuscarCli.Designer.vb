@@ -65,90 +65,99 @@ Partial Class BuscarCli
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_ClienteLabel.Location = New System.Drawing.Point(28, 63)
+        ID_ClienteLabel.BackColor = System.Drawing.Color.Transparent
+        ID_ClienteLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_ClienteLabel.Location = New System.Drawing.Point(22, 63)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
-        ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
+        ID_ClienteLabel.Size = New System.Drawing.Size(67, 13)
         ID_ClienteLabel.TabIndex = 1
         ID_ClienteLabel.Text = "ID Cliente:"
         '
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_LocalidadLabel.Location = New System.Drawing.Point(28, 89)
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.Location = New System.Drawing.Point(22, 89)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 3
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NombreLabel.Location = New System.Drawing.Point(28, 115)
+        NombreLabel.BackColor = System.Drawing.Color.Transparent
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(22, 115)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.Size = New System.Drawing.Size(54, 13)
         NombreLabel.TabIndex = 5
         NombreLabel.Text = "Nombre:"
         '
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ApellidoLabel.Location = New System.Drawing.Point(28, 141)
+        ApellidoLabel.BackColor = System.Drawing.Color.Transparent
+        ApellidoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ApellidoLabel.Location = New System.Drawing.Point(22, 141)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
+        ApellidoLabel.Size = New System.Drawing.Size(56, 13)
         ApellidoLabel.TabIndex = 7
         ApellidoLabel.Text = "Apellido:"
         '
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(28, 168)
+        Fec_NacimientoLabel.BackColor = System.Drawing.Color.Transparent
+        Fec_NacimientoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(22, 168)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
-        Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
+        Fec_NacimientoLabel.Size = New System.Drawing.Size(99, 13)
         Fec_NacimientoLabel.TabIndex = 9
         Fec_NacimientoLabel.Text = "Fec Nacimiento:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DireccionLabel.Location = New System.Drawing.Point(28, 193)
+        DireccionLabel.BackColor = System.Drawing.Color.Transparent
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(22, 193)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.Size = New System.Drawing.Size(65, 13)
         DireccionLabel.TabIndex = 11
         DireccionLabel.Text = "Direccion:"
         '
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NroLabel.Location = New System.Drawing.Point(28, 219)
+        NroLabel.BackColor = System.Drawing.Color.Transparent
+        NroLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NroLabel.Location = New System.Drawing.Point(22, 219)
         NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.Size = New System.Drawing.Size(31, 13)
         NroLabel.TabIndex = 13
         NroLabel.Text = "Nro:"
         '
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        TelefonoLabel.Location = New System.Drawing.Point(28, 245)
+        TelefonoLabel.BackColor = System.Drawing.Color.Transparent
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.Location = New System.Drawing.Point(22, 245)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(61, 13)
         TelefonoLabel.TabIndex = 15
         TelefonoLabel.Text = "Telefono:"
         '
         'DNILabel
         '
         DNILabel.AutoSize = True
-        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DNILabel.Location = New System.Drawing.Point(28, 271)
+        DNILabel.BackColor = System.Drawing.Color.Transparent
+        DNILabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DNILabel.Location = New System.Drawing.Point(22, 271)
         DNILabel.Name = "DNILabel"
-        DNILabel.Size = New System.Drawing.Size(29, 13)
+        DNILabel.Size = New System.Drawing.Size(33, 13)
         DNILabel.TabIndex = 17
         DNILabel.Text = "DNI:"
         '
@@ -180,56 +189,56 @@ Partial Class BuscarCli
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(113, 55)
+        Me.TextBox1.Location = New System.Drawing.Point(120, 55)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 18
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(113, 81)
+        Me.TextBox2.Location = New System.Drawing.Point(120, 81)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 19
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(113, 107)
+        Me.TextBox3.Location = New System.Drawing.Point(120, 107)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 20
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(113, 133)
+        Me.TextBox4.Location = New System.Drawing.Point(120, 133)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 21
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(113, 159)
+        Me.TextBox5.Location = New System.Drawing.Point(120, 159)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
         Me.TextBox5.TabIndex = 22
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(113, 186)
+        Me.TextBox6.Location = New System.Drawing.Point(120, 186)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 20)
         Me.TextBox6.TabIndex = 23
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(113, 212)
+        Me.TextBox7.Location = New System.Drawing.Point(120, 212)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 24
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(113, 238)
+        Me.TextBox8.Location = New System.Drawing.Point(120, 238)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(100, 20)
         Me.TextBox8.TabIndex = 25
@@ -237,6 +246,8 @@ Partial Class BuscarCli
         'BtnBuscar
         '
         Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnBuscar.Location = New System.Drawing.Point(257, 55)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(102, 39)
@@ -246,7 +257,7 @@ Partial Class BuscarCli
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(113, 263)
+        Me.TextBox9.Location = New System.Drawing.Point(120, 263)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(100, 20)
         Me.TextBox9.TabIndex = 27
@@ -254,6 +265,8 @@ Partial Class BuscarCli
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(257, 244)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(102, 39)
@@ -264,11 +277,11 @@ Partial Class BuscarCli
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(201, 19)
+        Me.Label1.Size = New System.Drawing.Size(263, 22)
         Me.Label1.TabIndex = 29
         Me.Label1.Text = " Busqueda por DNI de Clientes"
         '

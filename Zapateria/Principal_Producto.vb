@@ -9,7 +9,7 @@
 
     Private Sub Principal_Producto_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.F1 Then
-            Call Button1_Click(sender, e)
+            Alta_Producto.Show()
         End If
         If e.KeyCode = Keys.F2 Then
             Call Button2_Click(sender, e)
@@ -23,7 +23,6 @@
         If e.KeyCode = Keys.Escape Then
             Call Button5_Click(sender, e)
         End If
-
     End Sub
 
     Private Sub Principal_Producto_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

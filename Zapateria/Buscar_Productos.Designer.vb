@@ -77,96 +77,107 @@ Partial Class Buscar_Productos
         'ID_ZapLabel
         '
         ID_ZapLabel.AutoSize = True
-        ID_ZapLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_ZapLabel.Location = New System.Drawing.Point(11, 15)
+        ID_ZapLabel.BackColor = System.Drawing.Color.Transparent
+        ID_ZapLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_ZapLabel.Location = New System.Drawing.Point(5, 15)
         ID_ZapLabel.Name = "ID_ZapLabel"
-        ID_ZapLabel.Size = New System.Drawing.Size(43, 13)
+        ID_ZapLabel.Size = New System.Drawing.Size(50, 13)
         ID_ZapLabel.TabIndex = 3
         ID_ZapLabel.Text = "ID Zap:"
         '
         'ID_MarcaLabel
         '
         ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_MarcaLabel.Location = New System.Drawing.Point(11, 41)
+        ID_MarcaLabel.BackColor = System.Drawing.Color.Transparent
+        ID_MarcaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_MarcaLabel.Location = New System.Drawing.Point(5, 41)
         ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
+        ID_MarcaLabel.Size = New System.Drawing.Size(63, 13)
         ID_MarcaLabel.TabIndex = 5
         ID_MarcaLabel.Text = "ID Marca:"
         '
         'TallaLabel
         '
         TallaLabel.AutoSize = True
-        TallaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        TallaLabel.Location = New System.Drawing.Point(11, 119)
+        TallaLabel.BackColor = System.Drawing.Color.Transparent
+        TallaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TallaLabel.Location = New System.Drawing.Point(5, 119)
         TallaLabel.Name = "TallaLabel"
-        TallaLabel.Size = New System.Drawing.Size(33, 13)
+        TallaLabel.Size = New System.Drawing.Size(39, 13)
         TallaLabel.TabIndex = 9
         TallaLabel.Text = "Talla:"
         '
         'PrecioLabel
         '
         PrecioLabel.AutoSize = True
-        PrecioLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        PrecioLabel.Location = New System.Drawing.Point(11, 145)
+        PrecioLabel.BackColor = System.Drawing.Color.Transparent
+        PrecioLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PrecioLabel.Location = New System.Drawing.Point(5, 145)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(40, 13)
+        PrecioLabel.Size = New System.Drawing.Size(47, 13)
         PrecioLabel.TabIndex = 11
         PrecioLabel.Text = "Precio:"
         '
         'ColorLabel
         '
         ColorLabel.AutoSize = True
-        ColorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ColorLabel.Location = New System.Drawing.Point(11, 171)
+        ColorLabel.BackColor = System.Drawing.Color.Transparent
+        ColorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ColorLabel.Location = New System.Drawing.Point(5, 171)
         ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(34, 13)
+        ColorLabel.Size = New System.Drawing.Size(40, 13)
         ColorLabel.TabIndex = 13
         ColorLabel.Text = "Color:"
         '
         'EstiloLabel
         '
         EstiloLabel.AutoSize = True
-        EstiloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        EstiloLabel.Location = New System.Drawing.Point(11, 197)
+        EstiloLabel.BackColor = System.Drawing.Color.Transparent
+        EstiloLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        EstiloLabel.Location = New System.Drawing.Point(5, 197)
         EstiloLabel.Name = "EstiloLabel"
-        EstiloLabel.Size = New System.Drawing.Size(35, 13)
+        EstiloLabel.Size = New System.Drawing.Size(42, 13)
         EstiloLabel.TabIndex = 15
         EstiloLabel.Text = "Estilo:"
         '
         'StockLabel
         '
         StockLabel.AutoSize = True
-        StockLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        StockLabel.Location = New System.Drawing.Point(11, 223)
+        StockLabel.BackColor = System.Drawing.Color.Transparent
+        StockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        StockLabel.Location = New System.Drawing.Point(5, 223)
         StockLabel.Name = "StockLabel"
-        StockLabel.Size = New System.Drawing.Size(38, 13)
+        StockLabel.Size = New System.Drawing.Size(44, 13)
         StockLabel.TabIndex = 17
         StockLabel.Text = "Stock:"
         '
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
-        ModeloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ModeloLabel.Location = New System.Drawing.Point(11, 93)
+        ModeloLabel.BackColor = System.Drawing.Color.Transparent
+        ModeloLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ModeloLabel.Location = New System.Drawing.Point(5, 93)
         ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(45, 13)
+        ModeloLabel.Size = New System.Drawing.Size(52, 13)
         ModeloLabel.TabIndex = 18
         ModeloLabel.Text = "Modelo:"
         '
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_ProveedorLabel.Location = New System.Drawing.Point(11, 67)
+        ID_ProveedorLabel.BackColor = System.Drawing.Color.Transparent
+        ID_ProveedorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_ProveedorLabel.Location = New System.Drawing.Point(5, 67)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
-        ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
+        ID_ProveedorLabel.Size = New System.Drawing.Size(86, 13)
         ID_ProveedorLabel.TabIndex = 7
         ID_ProveedorLabel.Text = "ID Proveedor:"
         '
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = Global.Zapateria.My.Resources.Resources._1
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(599, 179)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(166, 61)

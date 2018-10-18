@@ -12,6 +12,10 @@
         Me.LocalidadTableAdapter.Fill(Me.ZapateriaDataSet.Localidad)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
         Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Localidad' Puede moverla o quitarla según sea necesario.
+        Me.LocalidadTableAdapter.Fill(Me.ZapateriaDataSet.Localidad)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+        Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores)
 
     End Sub
 
@@ -47,5 +51,12 @@
         If e.KeyCode = Keys.Escape Then
             Close()
         End If
+    End Sub
+
+    Private Sub ProveedoresBindingNavigatorSaveItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Validate()
+        Me.ProveedoresBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
+
     End Sub
 End Class

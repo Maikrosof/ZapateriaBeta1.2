@@ -43,20 +43,22 @@ Partial Class AltaMarca
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
-        MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        MarcaLabel.BackColor = System.Drawing.Color.Transparent
+        MarcaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         MarcaLabel.Location = New System.Drawing.Point(12, 9)
         MarcaLabel.Name = "MarcaLabel"
-        MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        MarcaLabel.Size = New System.Drawing.Size(46, 13)
         MarcaLabel.TabIndex = 3
         MarcaLabel.Text = "Marca:"
         '
         'OrigenLabel
         '
         OrigenLabel.AutoSize = True
-        OrigenLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        OrigenLabel.BackColor = System.Drawing.Color.Transparent
+        OrigenLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         OrigenLabel.Location = New System.Drawing.Point(12, 35)
         OrigenLabel.Name = "OrigenLabel"
-        OrigenLabel.Size = New System.Drawing.Size(41, 13)
+        OrigenLabel.Size = New System.Drawing.Size(48, 13)
         OrigenLabel.TabIndex = 5
         OrigenLabel.Text = "Origen:"
         '
@@ -105,6 +107,8 @@ Partial Class AltaMarca
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(181, 7)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(69, 44)
@@ -115,6 +119,8 @@ Partial Class AltaMarca
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(256, 7)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(69, 44)
@@ -134,6 +140,7 @@ Partial Class AltaMarca
         Me.Controls.Add(Me.MarcaTextBox)
         Me.Controls.Add(OrigenLabel)
         Me.Controls.Add(Me.OrigenTextBox)
+        Me.KeyPreview = True
         Me.Name = "AltaMarca"
         Me.Text = "AltaMarca"
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()

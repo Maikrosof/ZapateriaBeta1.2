@@ -47,30 +47,33 @@ Partial Class AltaLoc
         'LocalidadLabel
         '
         LocalidadLabel.AutoSize = True
-        LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         LocalidadLabel.Location = New System.Drawing.Point(58, 101)
         LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.Size = New System.Drawing.Size(66, 13)
         LocalidadLabel.TabIndex = 3
         LocalidadLabel.Text = "Localidad:"
         '
         'ZonaLabel
         '
         ZonaLabel.AutoSize = True
-        ZonaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ZonaLabel.BackColor = System.Drawing.Color.Transparent
+        ZonaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ZonaLabel.Location = New System.Drawing.Point(58, 127)
         ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.Size = New System.Drawing.Size(40, 13)
         ZonaLabel.TabIndex = 5
         ZonaLabel.Text = "Zona:"
         '
         'CPLabel
         '
         CPLabel.AutoSize = True
-        CPLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        CPLabel.BackColor = System.Drawing.Color.Transparent
+        CPLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CPLabel.Location = New System.Drawing.Point(58, 153)
         CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.Size = New System.Drawing.Size(27, 13)
         CPLabel.TabIndex = 7
         CPLabel.Text = "CP:"
         '
@@ -127,9 +130,11 @@ Partial Class AltaLoc
         'BtnGuardar
         '
         Me.BtnGuardar.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnGuardar.Location = New System.Drawing.Point(39, 217)
+        Me.BtnGuardar.BackgroundImage = CType(resources.GetObject("BtnGuardar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnGuardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnGuardar.Location = New System.Drawing.Point(32, 217)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnGuardar.Size = New System.Drawing.Size(116, 45)
         Me.BtnGuardar.TabIndex = 9
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = False
@@ -137,9 +142,11 @@ Partial Class AltaLoc
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.BtnVolver.Location = New System.Drawing.Point(155, 217)
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnVolver.Location = New System.Drawing.Point(159, 217)
         Me.BtnVolver.Name = "BtnVolver"
-        Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
+        Me.BtnVolver.Size = New System.Drawing.Size(116, 45)
         Me.BtnVolver.TabIndex = 10
         Me.BtnVolver.Text = "Volver"
         Me.BtnVolver.UseVisualStyleBackColor = False
@@ -147,11 +154,11 @@ Partial Class AltaLoc
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(21, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(230, 19)
+        Me.Label1.Size = New System.Drawing.Size(269, 16)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "Ingrese los datos de las Localidades:"
         '

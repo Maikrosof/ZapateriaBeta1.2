@@ -350,6 +350,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Imagenes\images.jpg" />
+    <None Include="Imagenes\1.jpg" />
+    <None Include="Imagenes\WhatsApp Image 2018-10-17 at 23.13.34.jpeg" />
     <Content Include="Zapateria.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

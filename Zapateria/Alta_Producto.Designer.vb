@@ -32,12 +32,6 @@ Partial Class Alta_Producto
         Dim StockLabel As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Alta_Producto))
-        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
-        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
-        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
-        Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
-        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TallaTextBox = New System.Windows.Forms.TextBox()
         Me.PrecioTextBox = New System.Windows.Forms.TextBox()
         Me.ColorTextBox = New System.Windows.Forms.TextBox()
@@ -47,10 +41,16 @@ Partial Class Alta_Producto
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ModeloTextBox = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
+        Me.TableAdapterManager = New Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager()
+        Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
         ID_MarcaLabel = New System.Windows.Forms.Label()
         ID_ProveedorLabel = New System.Windows.Forms.Label()
@@ -60,130 +60,102 @@ Partial Class Alta_Producto
         EstiloLabel = New System.Windows.Forms.Label()
         StockLabel = New System.Windows.Forms.Label()
         ModeloLabel = New System.Windows.Forms.Label()
-        CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ID_MarcaLabel
         '
         ID_MarcaLabel.AutoSize = True
-        ID_MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_MarcaLabel.BackColor = System.Drawing.Color.Transparent
+        ID_MarcaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ID_MarcaLabel.Location = New System.Drawing.Point(23, 16)
         ID_MarcaLabel.Name = "ID_MarcaLabel"
-        ID_MarcaLabel.Size = New System.Drawing.Size(40, 13)
+        ID_MarcaLabel.Size = New System.Drawing.Size(46, 13)
         ID_MarcaLabel.TabIndex = 3
         ID_MarcaLabel.Text = "Marca:"
         '
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
-        ID_ProveedorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_ProveedorLabel.BackColor = System.Drawing.Color.Transparent
+        ID_ProveedorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ID_ProveedorLabel.Location = New System.Drawing.Point(23, 42)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
-        ID_ProveedorLabel.Size = New System.Drawing.Size(59, 13)
+        ID_ProveedorLabel.Size = New System.Drawing.Size(69, 13)
         ID_ProveedorLabel.TabIndex = 5
         ID_ProveedorLabel.Text = "Proveedor:"
         '
         'TallaLabel
         '
         TallaLabel.AutoSize = True
-        TallaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        TallaLabel.BackColor = System.Drawing.Color.Transparent
+        TallaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         TallaLabel.Location = New System.Drawing.Point(23, 93)
         TallaLabel.Name = "TallaLabel"
-        TallaLabel.Size = New System.Drawing.Size(33, 13)
+        TallaLabel.Size = New System.Drawing.Size(39, 13)
         TallaLabel.TabIndex = 7
         TallaLabel.Text = "Talla:"
         '
         'PrecioLabel
         '
         PrecioLabel.AutoSize = True
-        PrecioLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        PrecioLabel.BackColor = System.Drawing.Color.Transparent
+        PrecioLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         PrecioLabel.Location = New System.Drawing.Point(23, 119)
         PrecioLabel.Name = "PrecioLabel"
-        PrecioLabel.Size = New System.Drawing.Size(40, 13)
+        PrecioLabel.Size = New System.Drawing.Size(47, 13)
         PrecioLabel.TabIndex = 9
         PrecioLabel.Text = "Precio:"
         '
         'ColorLabel
         '
         ColorLabel.AutoSize = True
-        ColorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ColorLabel.BackColor = System.Drawing.Color.Transparent
+        ColorLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ColorLabel.Location = New System.Drawing.Point(23, 145)
         ColorLabel.Name = "ColorLabel"
-        ColorLabel.Size = New System.Drawing.Size(34, 13)
+        ColorLabel.Size = New System.Drawing.Size(40, 13)
         ColorLabel.TabIndex = 11
         ColorLabel.Text = "Color:"
         '
         'EstiloLabel
         '
         EstiloLabel.AutoSize = True
-        EstiloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        EstiloLabel.BackColor = System.Drawing.Color.Transparent
+        EstiloLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         EstiloLabel.Location = New System.Drawing.Point(23, 171)
         EstiloLabel.Name = "EstiloLabel"
-        EstiloLabel.Size = New System.Drawing.Size(35, 13)
+        EstiloLabel.Size = New System.Drawing.Size(42, 13)
         EstiloLabel.TabIndex = 13
         EstiloLabel.Text = "Estilo:"
         '
         'StockLabel
         '
         StockLabel.AutoSize = True
-        StockLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        StockLabel.BackColor = System.Drawing.Color.Transparent
+        StockLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         StockLabel.Location = New System.Drawing.Point(23, 197)
         StockLabel.Name = "StockLabel"
-        StockLabel.Size = New System.Drawing.Size(38, 13)
+        StockLabel.Size = New System.Drawing.Size(44, 13)
         StockLabel.TabIndex = 15
         StockLabel.Text = "Stock:"
         '
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
-        ModeloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ModeloLabel.BackColor = System.Drawing.Color.Transparent
+        ModeloLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ModeloLabel.Location = New System.Drawing.Point(23, 68)
         ModeloLabel.Name = "ModeloLabel"
-        ModeloLabel.Size = New System.Drawing.Size(45, 13)
+        ModeloLabel.Size = New System.Drawing.Size(52, 13)
         ModeloLabel.TabIndex = 18
         ModeloLabel.Text = "Modelo:"
         '
-        'ZapateriaDataSet
-        '
-        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
-        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProductosBindingSource
-        '
-        Me.ProductosBindingSource.DataMember = "Productos"
-        Me.ProductosBindingSource.DataSource = Me.ZapateriaDataSet
-        '
-        'ProductosTableAdapter
-        '
-        Me.ProductosTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.ClientesTableAdapter = Nothing
-        Me.TableAdapterManager.EmpleadosTableAdapter = Nothing
-        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
-        Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
-        Me.TableAdapterManager.ProductosTableAdapter = Me.ProductosTableAdapter
-        Me.TableAdapterManager.ProveedoresTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.VentasTableAdapter = Nothing
-        '
-        'MarcasTableAdapter
-        '
-        Me.MarcasTableAdapter.ClearBeforeFill = True
-        '
-        'MarcasBindingSource
-        '
-        Me.MarcasBindingSource.DataMember = "Marcas"
-        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
-        '
         'TallaTextBox
         '
-        Me.TallaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Talla", True))
         Me.TallaTextBox.Location = New System.Drawing.Point(102, 90)
         Me.TallaTextBox.Name = "TallaTextBox"
         Me.TallaTextBox.Size = New System.Drawing.Size(100, 20)
@@ -191,7 +163,6 @@ Partial Class Alta_Producto
         '
         'PrecioTextBox
         '
-        Me.PrecioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Precio", True))
         Me.PrecioTextBox.Location = New System.Drawing.Point(102, 116)
         Me.PrecioTextBox.Name = "PrecioTextBox"
         Me.PrecioTextBox.Size = New System.Drawing.Size(100, 20)
@@ -199,7 +170,6 @@ Partial Class Alta_Producto
         '
         'ColorTextBox
         '
-        Me.ColorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Color", True))
         Me.ColorTextBox.Location = New System.Drawing.Point(102, 142)
         Me.ColorTextBox.Name = "ColorTextBox"
         Me.ColorTextBox.Size = New System.Drawing.Size(100, 20)
@@ -207,7 +177,6 @@ Partial Class Alta_Producto
         '
         'EstiloTextBox
         '
-        Me.EstiloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Estilo", True))
         Me.EstiloTextBox.Location = New System.Drawing.Point(102, 168)
         Me.EstiloTextBox.Name = "EstiloTextBox"
         Me.EstiloTextBox.Size = New System.Drawing.Size(100, 20)
@@ -215,7 +184,6 @@ Partial Class Alta_Producto
         '
         'StockTextBox
         '
-        Me.StockTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Stock", True))
         Me.StockTextBox.Location = New System.Drawing.Point(102, 194)
         Me.StockTextBox.Name = "StockTextBox"
         Me.StockTextBox.Size = New System.Drawing.Size(100, 20)
@@ -224,7 +192,8 @@ Partial Class Alta_Producto
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(268, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 73)
@@ -235,7 +204,8 @@ Partial Class Alta_Producto
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(268, 140)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(135, 74)
@@ -245,7 +215,6 @@ Partial Class Alta_Producto
         '
         'ModeloTextBox
         '
-        Me.ModeloTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProductosBindingSource, "Modelo", True))
         Me.ModeloTextBox.Location = New System.Drawing.Point(102, 65)
         Me.ModeloTextBox.Name = "ModeloTextBox"
         Me.ModeloTextBox.Size = New System.Drawing.Size(100, 20)
@@ -261,6 +230,16 @@ Partial Class Alta_Producto
         Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
         Me.ComboBox1.TabIndex = 1
         Me.ComboBox1.ValueMember = "ID_Marca"
+        '
+        'MarcasBindingSource
+        '
+        Me.MarcasBindingSource.DataMember = "Marcas"
+        Me.MarcasBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'ZapateriaDataSet
+        '
+        Me.ZapateriaDataSet.DataSetName = "ZapateriaDataSet"
+        Me.ZapateriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Button3
         '
@@ -304,6 +283,31 @@ Partial Class Alta_Producto
         Me.ProveedoresBindingSource.DataMember = "Proveedores"
         Me.ProveedoresBindingSource.DataSource = Me.ZapateriaDataSet
         '
+        'ProductosBindingSource
+        '
+        Me.ProductosBindingSource.DataMember = "Productos"
+        Me.ProductosBindingSource.DataSource = Me.ZapateriaDataSet
+        '
+        'ProductosTableAdapter
+        '
+        Me.ProductosTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.ClientesTableAdapter = Nothing
+        Me.TableAdapterManager.EmpleadosTableAdapter = Nothing
+        Me.TableAdapterManager.LocalidadTableAdapter = Nothing
+        Me.TableAdapterManager.MarcasTableAdapter = Me.MarcasTableAdapter
+        Me.TableAdapterManager.ProductosTableAdapter = Me.ProductosTableAdapter
+        Me.TableAdapterManager.ProveedoresTableAdapter = Me.ProveedoresTableAdapter
+        Me.TableAdapterManager.UpdateOrder = Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.VentasTableAdapter = Nothing
+        '
+        'MarcasTableAdapter
+        '
+        Me.MarcasTableAdapter.ClearBeforeFill = True
+        '
         'ProveedoresTableAdapter
         '
         Me.ProveedoresTableAdapter.ClearBeforeFill = True
@@ -314,7 +318,7 @@ Partial Class Alta_Producto
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(449, 244)
+        Me.ClientSize = New System.Drawing.Size(412, 225)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -338,20 +342,14 @@ Partial Class Alta_Producto
         Me.KeyPreview = True
         Me.Name = "Alta_Producto"
         Me.Text = "Alta_Producto"
-        CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MarcasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
-    Friend WithEvents ProductosBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProductosTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter
-    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents MarcasTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter
-    Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents TallaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents PrecioTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ColorTextBox As System.Windows.Forms.TextBox
@@ -364,6 +362,12 @@ Partial Class Alta_Producto
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ZapateriaDataSet As Zapateria.ZapateriaDataSet
+    Friend WithEvents ProductosBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ProductosTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter
+    Friend WithEvents TableAdapterManager As Zapateria.ZapateriaDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents MarcasTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter
+    Friend WithEvents MarcasBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents ProveedoresTableAdapter As Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter
+    Friend WithEvents ProveedoresBindingSource As System.Windows.Forms.BindingSource
 End Class

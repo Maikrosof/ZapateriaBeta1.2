@@ -53,40 +53,44 @@ Partial Class MostrarLoc
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ID_LocalidadLabel.Location = New System.Drawing.Point(12, 9)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 1
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'LocalidadLabel
         '
         LocalidadLabel.AutoSize = True
-        LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         LocalidadLabel.Location = New System.Drawing.Point(12, 35)
         LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.Size = New System.Drawing.Size(66, 13)
         LocalidadLabel.TabIndex = 3
         LocalidadLabel.Text = "Localidad:"
         '
         'ZonaLabel
         '
         ZonaLabel.AutoSize = True
-        ZonaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ZonaLabel.BackColor = System.Drawing.Color.Transparent
+        ZonaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         ZonaLabel.Location = New System.Drawing.Point(12, 61)
         ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.Size = New System.Drawing.Size(40, 13)
         ZonaLabel.TabIndex = 5
         ZonaLabel.Text = "Zona:"
         '
         'CPLabel
         '
         CPLabel.AutoSize = True
-        CPLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        CPLabel.BackColor = System.Drawing.Color.Transparent
+        CPLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         CPLabel.Location = New System.Drawing.Point(12, 87)
         CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.Size = New System.Drawing.Size(27, 13)
         CPLabel.TabIndex = 7
         CPLabel.Text = "CP:"
         '
@@ -119,7 +123,7 @@ Partial Class MostrarLoc
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(88, 6)
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(101, 6)
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 2
@@ -127,7 +131,7 @@ Partial Class MostrarLoc
         'LocalidadTextBox
         '
         Me.LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Localidad", True))
-        Me.LocalidadTextBox.Location = New System.Drawing.Point(88, 32)
+        Me.LocalidadTextBox.Location = New System.Drawing.Point(101, 32)
         Me.LocalidadTextBox.Name = "LocalidadTextBox"
         Me.LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.LocalidadTextBox.TabIndex = 4
@@ -135,7 +139,7 @@ Partial Class MostrarLoc
         'ZonaTextBox
         '
         Me.ZonaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "Zona", True))
-        Me.ZonaTextBox.Location = New System.Drawing.Point(88, 58)
+        Me.ZonaTextBox.Location = New System.Drawing.Point(101, 58)
         Me.ZonaTextBox.Name = "ZonaTextBox"
         Me.ZonaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ZonaTextBox.TabIndex = 6
@@ -143,14 +147,14 @@ Partial Class MostrarLoc
         'CPTextBox
         '
         Me.CPTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LocalidadBindingSource, "CP", True))
-        Me.CPTextBox.Location = New System.Drawing.Point(88, 84)
+        Me.CPTextBox.Location = New System.Drawing.Point(101, 84)
         Me.CPTextBox.Name = "CPTextBox"
         Me.CPTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CPTextBox.TabIndex = 8
         '
         'BtnPrincipio
         '
-        Me.BtnPrincipio.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnPrincipio.BackColor = System.Drawing.Color.Transparent
         Me.BtnPrincipio.BackgroundImage = CType(resources.GetObject("BtnPrincipio.BackgroundImage"), System.Drawing.Image)
         Me.BtnPrincipio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnPrincipio.Location = New System.Drawing.Point(15, 134)
@@ -161,7 +165,7 @@ Partial Class MostrarLoc
         '
         'BtnAtras
         '
-        Me.BtnAtras.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAtras.BackColor = System.Drawing.Color.Transparent
         Me.BtnAtras.BackgroundImage = CType(resources.GetObject("BtnAtras.BackgroundImage"), System.Drawing.Image)
         Me.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAtras.Location = New System.Drawing.Point(61, 134)
@@ -172,7 +176,7 @@ Partial Class MostrarLoc
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAdelante.BackColor = System.Drawing.Color.Transparent
         Me.BtnAdelante.BackgroundImage = CType(resources.GetObject("BtnAdelante.BackgroundImage"), System.Drawing.Image)
         Me.BtnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAdelante.Location = New System.Drawing.Point(107, 134)
@@ -183,7 +187,7 @@ Partial Class MostrarLoc
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnUltimo.BackColor = System.Drawing.Color.Transparent
         Me.BtnUltimo.BackgroundImage = CType(resources.GetObject("BtnUltimo.BackgroundImage"), System.Drawing.Image)
         Me.BtnUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnUltimo.Location = New System.Drawing.Point(153, 134)
@@ -195,6 +199,8 @@ Partial Class MostrarLoc
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(237, 97)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 43)
@@ -205,6 +211,8 @@ Partial Class MostrarLoc
         'BtnBuscar
         '
         Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnBuscar.Location = New System.Drawing.Point(237, 5)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 43)

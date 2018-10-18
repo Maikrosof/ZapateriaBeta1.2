@@ -32,7 +32,7 @@
 
     Private Sub Ventas_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then
-            Call Button1.Show()
+            Call Button1_Click(sender, e)
 
         End If
     End Sub
@@ -95,64 +95,64 @@
         fila2 = ProductosDataGridView.CurrentCellAddress.Y
         fila = Me.ProductosBindingSource.Find("ID_Zap", ProductosDataGridView.Item(0, fila2).Value()) 'me dice la posicion arranca de 0
         CodConsulta = ProductosDataGridView.Item(0, fila2).Value()
-        If fila = -1 Then
-            'no se encontro ultimo registro es -1
-            MsgBox("El registro no se encontro")
-        Else
-            'Se encontro
-            ProductosBindingSource.Position = fila ' Mover el cursor a la fila obtenida con esto muestro
-            aux = MsgBox("Quiere realizar esta venta Cod_Zap: " & CodConsulta, 32 + 1, "Vender")
-            If aux = 1 Then
-                If IsNumeric(TextBox5.Text) And Val(TextBox5.Text) > 0 Then
-                    importe = TextBox5.Text * Me.ProductosBindingSource.Current("Precio")
+            If fila = -1 Then
+                'no se encontro ultimo registro es -1
+                MsgBox("El registro no se encontro")
+            Else
+                'Se encontro
+                ProductosBindingSource.Position = fila ' Mover el cursor a la fila obtenida con esto muestro
+                aux = MsgBox("Quiere realizar esta venta Cod_Zap: " & CodConsulta, 32 + 1, "Vender")
+                If aux = 1 Then
+                    If IsNumeric(TextBox5.Text) And Val(TextBox5.Text) > 0 Then
+                        importe = TextBox5.Text * Me.ProductosBindingSource.Current("Precio")
 
 
-                    If ProductosBindingSource.Current("Stock") >= TextBox5.Text Then 'si true puedo vender
-                        montoabonado = Val(InputBox("INGRESE EL MONTO ABONADO"))
-                        If montoabonado >= importe Then
-                            Me.VentasBindingSource.AddNew()
-                            Me.VentasBindingSource.Current("ID_Zap") = ProductosBindingSource.Current("ID_Zap")
-                            Me.VentasBindingSource.Current("CantidadVend") = TextBox5.Text
-                            Me.VentasBindingSource.Current("Tot_Fac") = TextBox5.Text * Me.ProductosBindingSource.Current("Precio")
-                            Me.VentasBindingSource.Current("Fecha") = DateTimePicker1.Value
-                            Me.VentasBindingSource.EndEdit()
-                            Me.VentasTableAdapter.Update(Me.ZapateriaDataSet.Ventas)
-                            'Me.TableAdapterManager.UpdateAll(Me.FarmaciaDataSet) 'grabo en disco las dos tablas
-                            'esta sentencia no va sino corro el puntero de lugar
-                            '------------------------------------------
+                        If ProductosBindingSource.Current("Stock") >= TextBox5.Text Then 'si true puedo vender
+                            montoabonado = Val(InputBox("INGRESE EL MONTO ABONADO"))
+                            If montoabonado >= importe Then
+                                Me.VentasBindingSource.AddNew()
+                                Me.VentasBindingSource.Current("ID_Zap") = ProductosBindingSource.Current("ID_Zap")
+                                Me.VentasBindingSource.Current("CantidadVend") = TextBox5.Text
+                                Me.VentasBindingSource.Current("Tot_Fac") = TextBox5.Text * Me.ProductosBindingSource.Current("Precio")
+                                Me.VentasBindingSource.Current("Fecha") = DateTimePicker1.Value
+                                Me.VentasBindingSource.EndEdit()
+                                Me.VentasTableAdapter.Update(Me.ZapateriaDataSet.Ventas)
+                                'Me.TableAdapterManager.UpdateAll(Me.FarmaciaDataSet) 'grabo en disco las dos tablas
+                                'esta sentencia no va sino corro el puntero de lugar
+                                '------------------------------------------
 
-                            'aca trabajo sobre la tabla stock descuento la cantidad vendida
-                            Me.ProductosBindingSource.Current("Stock") = ProductosBindingSource.Current("Stock") - TextBox5.Text
+                                'aca trabajo sobre la tabla stock descuento la cantidad vendida
+                                Me.ProductosBindingSource.Current("Stock") = ProductosBindingSource.Current("Stock") - TextBox5.Text
 
 
-                            MsgBox("LA VENTA HA SIDO REALIZADA CON EXITO, EL IMPORTE ES DE :" & importe & " PESOS" & vbNewLine & "EL IMPORTE ABONADO ES DE: " & montoabonado & "PESOS" & vbNewLine & "EL VUELTO ES DE: " & montoabonado - importe & " PESOS")
-                            Me.ProductosBindingSource.EndEdit() 'cierro bd
-                            Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'grabo en disco las dos tablas
-                            Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos) 'Para actualizar en el otro formulario la grilla
-                            Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos) 'Actualizo la grilla stock
-                            Me.VentasTableAdapter.Fill(Me.ZapateriaDataSet.Ventas) 'actualizo la grilla ventas
+                                MsgBox("LA VENTA HA SIDO REALIZADA CON EXITO, EL IMPORTE ES DE :" & importe & " PESOS" & vbNewLine & "EL IMPORTE ABONADO ES DE: " & montoabonado & "PESOS" & vbNewLine & "EL VUELTO ES DE: " & montoabonado - importe & " PESOS")
+                                Me.ProductosBindingSource.EndEdit() 'cierro bd
+                                Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet) 'grabo en disco las dos tablas
+                                Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos) 'Para actualizar en el otro formulario la grilla
+                                Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos) 'Actualizo la grilla stock
+                                Me.VentasTableAdapter.Fill(Me.ZapateriaDataSet.Ventas) 'actualizo la grilla ventas
+                            Else
+                                MsgBox("ERROR: EL MONTO ABONADO ES MENOR AL IMPORTE DE LA COMPRA")
+                            End If
                         Else
-                            MsgBox("ERROR: EL MONTO ABONADO ES MENOR AL IMPORTE DE LA COMPRA")
+                            MsgBox("STOCK INSUFICIENTE, STOCK ACTUAL: " & ProductosBindingSource.Current("Stock") & " UNIDADES")
+                            'funcion limpiar textbox
+                            TextBox1.Clear()
+                            TextBox2.Clear()
+                            TextBox3.Clear()
+                            TextBox4.Clear()
+                            TextBox5.Clear()
+                            TextBox1.Focus()
+
                         End If
+
+
+
                     Else
-                        MsgBox("STOCK INSUFICIENTE, STOCK ACTUAL: " & ProductosBindingSource.Current("Stock") & " UNIDADES")
-                        'funcion limpiar textbox
-                        TextBox1.Clear()
-                        TextBox2.Clear()
-                        TextBox3.Clear()
-                        TextBox4.Clear()
-                        TextBox5.Clear()
-                        TextBox1.Focus()
-
+                        MsgBox("ERROR: INGRESE LA CANTIDAD DEL PRODUCTO DESEADA")
                     End If
-
-
-
-                Else
-                    MsgBox("ERROR: INGRESE LA CANTIDAD DEL PRODUCTO DESEADA")
                 End If
-                End If
-        End If
+            End If
     End Sub
 
     Private Sub ProductosDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs)

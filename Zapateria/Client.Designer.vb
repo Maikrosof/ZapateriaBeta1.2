@@ -82,90 +82,99 @@ Partial Class Client
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
-        ID_ClienteLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_ClienteLabel.Location = New System.Drawing.Point(17, 134)
+        ID_ClienteLabel.BackColor = System.Drawing.Color.Transparent
+        ID_ClienteLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_ClienteLabel.Location = New System.Drawing.Point(9, 134)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
-        ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
+        ID_ClienteLabel.Size = New System.Drawing.Size(67, 13)
         ID_ClienteLabel.TabIndex = 27
         ID_ClienteLabel.Text = "ID Cliente:"
         '
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_LocalidadLabel.Location = New System.Drawing.Point(17, 160)
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.Location = New System.Drawing.Point(9, 160)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 29
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NombreLabel.Location = New System.Drawing.Point(17, 186)
+        NombreLabel.BackColor = System.Drawing.Color.Transparent
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.Location = New System.Drawing.Point(9, 186)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.Size = New System.Drawing.Size(54, 13)
         NombreLabel.TabIndex = 31
         NombreLabel.Text = "Nombre:"
         '
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ApellidoLabel.Location = New System.Drawing.Point(17, 212)
+        ApellidoLabel.BackColor = System.Drawing.Color.Transparent
+        ApellidoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ApellidoLabel.Location = New System.Drawing.Point(9, 212)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
+        ApellidoLabel.Size = New System.Drawing.Size(56, 13)
         ApellidoLabel.TabIndex = 33
         ApellidoLabel.Text = "Apellido:"
         '
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(17, 239)
+        Fec_NacimientoLabel.BackColor = System.Drawing.Color.Transparent
+        Fec_NacimientoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(9, 239)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
-        Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
+        Fec_NacimientoLabel.Size = New System.Drawing.Size(99, 13)
         Fec_NacimientoLabel.TabIndex = 35
         Fec_NacimientoLabel.Text = "Fec Nacimiento:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DireccionLabel.Location = New System.Drawing.Point(17, 264)
+        DireccionLabel.BackColor = System.Drawing.Color.Transparent
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.Location = New System.Drawing.Point(9, 264)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.Size = New System.Drawing.Size(65, 13)
         DireccionLabel.TabIndex = 37
         DireccionLabel.Text = "Direccion:"
         '
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NroLabel.Location = New System.Drawing.Point(17, 290)
+        NroLabel.BackColor = System.Drawing.Color.Transparent
+        NroLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NroLabel.Location = New System.Drawing.Point(9, 290)
         NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.Size = New System.Drawing.Size(31, 13)
         NroLabel.TabIndex = 39
         NroLabel.Text = "Nro:"
         '
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        TelefonoLabel.Location = New System.Drawing.Point(17, 316)
+        TelefonoLabel.BackColor = System.Drawing.Color.Transparent
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.Location = New System.Drawing.Point(9, 316)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(61, 13)
         TelefonoLabel.TabIndex = 41
         TelefonoLabel.Text = "Telefono:"
         '
         'DNILabel
         '
         DNILabel.AutoSize = True
-        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DNILabel.Location = New System.Drawing.Point(17, 342)
+        DNILabel.BackColor = System.Drawing.Color.Transparent
+        DNILabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DNILabel.Location = New System.Drawing.Point(9, 342)
         DNILabel.Name = "DNILabel"
-        DNILabel.Size = New System.Drawing.Size(29, 13)
+        DNILabel.Size = New System.Drawing.Size(33, 13)
         DNILabel.TabIndex = 43
         DNILabel.Text = "DNI:"
         '
@@ -198,7 +207,7 @@ Partial Class Client
         'ID_ClienteTextBox
         '
         Me.ID_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "ID_Cliente", True))
-        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(107, 131)
+        Me.ID_ClienteTextBox.Location = New System.Drawing.Point(113, 131)
         Me.ID_ClienteTextBox.Name = "ID_ClienteTextBox"
         Me.ID_ClienteTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_ClienteTextBox.TabIndex = 28
@@ -206,7 +215,7 @@ Partial Class Client
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(107, 157)
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(113, 157)
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_LocalidadTextBox.TabIndex = 30
@@ -214,7 +223,7 @@ Partial Class Client
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(107, 183)
+        Me.NombreTextBox.Location = New System.Drawing.Point(113, 183)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 32
@@ -222,7 +231,7 @@ Partial Class Client
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(107, 209)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(113, 209)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ApellidoTextBox.TabIndex = 34
@@ -230,7 +239,7 @@ Partial Class Client
         'Fec_NacimientoDateTimePicker
         '
         Me.Fec_NacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ClientesBindingSource, "Fec_Nacimiento", True))
-        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(107, 235)
+        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(113, 235)
         Me.Fec_NacimientoDateTimePicker.Name = "Fec_NacimientoDateTimePicker"
         Me.Fec_NacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fec_NacimientoDateTimePicker.TabIndex = 36
@@ -238,7 +247,7 @@ Partial Class Client
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(107, 261)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(113, 261)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(200, 20)
         Me.DireccionTextBox.TabIndex = 38
@@ -246,7 +255,7 @@ Partial Class Client
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(107, 287)
+        Me.NroTextBox.Location = New System.Drawing.Point(113, 287)
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NroTextBox.TabIndex = 40
@@ -254,7 +263,7 @@ Partial Class Client
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(107, 313)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(113, 313)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TelefonoTextBox.TabIndex = 42
@@ -262,14 +271,14 @@ Partial Class Client
         'DNITextBox
         '
         Me.DNITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClientesBindingSource, "DNI", True))
-        Me.DNITextBox.Location = New System.Drawing.Point(107, 339)
+        Me.DNITextBox.Location = New System.Drawing.Point(113, 339)
         Me.DNITextBox.Name = "DNITextBox"
         Me.DNITextBox.Size = New System.Drawing.Size(200, 20)
         Me.DNITextBox.TabIndex = 44
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnUltimo.BackColor = System.Drawing.Color.Transparent
         Me.BtnUltimo.BackgroundImage = CType(resources.GetObject("BtnUltimo.BackgroundImage"), System.Drawing.Image)
         Me.BtnUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnUltimo.Location = New System.Drawing.Point(268, 380)
@@ -280,7 +289,7 @@ Partial Class Client
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAdelante.BackColor = System.Drawing.Color.Transparent
         Me.BtnAdelante.BackgroundImage = CType(resources.GetObject("BtnAdelante.BackgroundImage"), System.Drawing.Image)
         Me.BtnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAdelante.Location = New System.Drawing.Point(193, 380)
@@ -291,7 +300,7 @@ Partial Class Client
         '
         'BtnAtras
         '
-        Me.BtnAtras.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAtras.BackColor = System.Drawing.Color.Transparent
         Me.BtnAtras.BackgroundImage = CType(resources.GetObject("BtnAtras.BackgroundImage"), System.Drawing.Image)
         Me.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAtras.Location = New System.Drawing.Point(98, 380)
@@ -302,7 +311,7 @@ Partial Class Client
         '
         'BtnPrimero
         '
-        Me.BtnPrimero.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnPrimero.BackColor = System.Drawing.Color.Transparent
         Me.BtnPrimero.BackgroundImage = CType(resources.GetObject("BtnPrimero.BackgroundImage"), System.Drawing.Image)
         Me.BtnPrimero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnPrimero.Location = New System.Drawing.Point(20, 380)
@@ -382,6 +391,8 @@ Partial Class Client
         'BtnModificaciones
         '
         Me.BtnModificaciones.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnModificaciones.BackgroundImage = CType(resources.GetObject("BtnModificaciones.BackgroundImage"), System.Drawing.Image)
+        Me.BtnModificaciones.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnModificaciones.Location = New System.Drawing.Point(398, 34)
         Me.BtnModificaciones.Name = "BtnModificaciones"
         Me.BtnModificaciones.Size = New System.Drawing.Size(178, 62)
@@ -392,6 +403,8 @@ Partial Class Client
         'BtnEliminar
         '
         Me.BtnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnEliminar.BackgroundImage = CType(resources.GetObject("BtnEliminar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnEliminar.Location = New System.Drawing.Point(207, 34)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(176, 62)
@@ -402,6 +415,8 @@ Partial Class Client
         'BtnBuscar
         '
         Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnBuscar.Location = New System.Drawing.Point(592, 34)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(176, 62)
@@ -412,6 +427,8 @@ Partial Class Client
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(784, 34)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(176, 62)
@@ -422,6 +439,8 @@ Partial Class Client
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(12, 34)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 62)

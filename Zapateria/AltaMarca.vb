@@ -28,7 +28,7 @@
             Me.MarcasBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
             Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
-            Alta_Producto.MarcasTableAdapter.Fill(Alta_Producto.ZapateriaDataSet.Marcas)
+        Alta_Producto.MarcasTableAdapter.Fill(Alta_Producto.ZapateriaDataSet.Marcas)
             Me.MarcasBindingSource.MoveLast()
             MsgBox("Marca agregada a la lista")
             Me.MarcasBindingSource.AddNew()

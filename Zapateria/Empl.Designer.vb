@@ -90,110 +90,132 @@ Partial Class Empl
         'ID_EmpLabel
         '
         ID_EmpLabel.AutoSize = True
-        ID_EmpLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_EmpLabel.Location = New System.Drawing.Point(31, 92)
+        ID_EmpLabel.BackColor = System.Drawing.Color.Transparent
+        ID_EmpLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_EmpLabel.ForeColor = System.Drawing.Color.Black
+        ID_EmpLabel.Location = New System.Drawing.Point(20, 92)
         ID_EmpLabel.Name = "ID_EmpLabel"
-        ID_EmpLabel.Size = New System.Drawing.Size(45, 13)
+        ID_EmpLabel.Size = New System.Drawing.Size(52, 13)
         ID_EmpLabel.TabIndex = 31
         ID_EmpLabel.Text = "ID Emp:"
         '
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_LocalidadLabel.Location = New System.Drawing.Point(31, 118)
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.ForeColor = System.Drawing.Color.Black
+        ID_LocalidadLabel.Location = New System.Drawing.Point(20, 118)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 33
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'DNILabel
         '
         DNILabel.AutoSize = True
-        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DNILabel.Location = New System.Drawing.Point(31, 144)
+        DNILabel.BackColor = System.Drawing.Color.Transparent
+        DNILabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DNILabel.ForeColor = System.Drawing.Color.Black
+        DNILabel.Location = New System.Drawing.Point(20, 144)
         DNILabel.Name = "DNILabel"
-        DNILabel.Size = New System.Drawing.Size(29, 13)
+        DNILabel.Size = New System.Drawing.Size(33, 13)
         DNILabel.TabIndex = 35
         DNILabel.Text = "DNI:"
         '
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NombreLabel.Location = New System.Drawing.Point(31, 170)
+        NombreLabel.BackColor = System.Drawing.Color.Transparent
+        NombreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.ForeColor = System.Drawing.Color.Black
+        NombreLabel.Location = New System.Drawing.Point(20, 170)
         NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.Size = New System.Drawing.Size(54, 13)
         NombreLabel.TabIndex = 37
         NombreLabel.Text = "Nombre:"
         '
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ApellidoLabel.Location = New System.Drawing.Point(31, 196)
+        ApellidoLabel.BackColor = System.Drawing.Color.Transparent
+        ApellidoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ApellidoLabel.ForeColor = System.Drawing.Color.Black
+        ApellidoLabel.Location = New System.Drawing.Point(20, 196)
         ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
+        ApellidoLabel.Size = New System.Drawing.Size(56, 13)
         ApellidoLabel.TabIndex = 39
         ApellidoLabel.Text = "Apellido:"
         '
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(31, 223)
+        Fec_NacimientoLabel.BackColor = System.Drawing.Color.Transparent
+        Fec_NacimientoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fec_NacimientoLabel.ForeColor = System.Drawing.Color.Black
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(20, 223)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
-        Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
+        Fec_NacimientoLabel.Size = New System.Drawing.Size(99, 13)
         Fec_NacimientoLabel.TabIndex = 41
         Fec_NacimientoLabel.Text = "Fec Nacimiento:"
         '
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        DireccionLabel.Location = New System.Drawing.Point(31, 248)
+        DireccionLabel.BackColor = System.Drawing.Color.Transparent
+        DireccionLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DireccionLabel.ForeColor = System.Drawing.Color.Black
+        DireccionLabel.Location = New System.Drawing.Point(20, 248)
         DireccionLabel.Name = "DireccionLabel"
-        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.Size = New System.Drawing.Size(65, 13)
         DireccionLabel.TabIndex = 43
         DireccionLabel.Text = "Direccion:"
         '
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        NroLabel.Location = New System.Drawing.Point(31, 274)
+        NroLabel.BackColor = System.Drawing.Color.Transparent
+        NroLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NroLabel.ForeColor = System.Drawing.Color.Black
+        NroLabel.Location = New System.Drawing.Point(20, 274)
         NroLabel.Name = "NroLabel"
-        NroLabel.Size = New System.Drawing.Size(27, 13)
+        NroLabel.Size = New System.Drawing.Size(31, 13)
         NroLabel.TabIndex = 45
         NroLabel.Text = "Nro:"
         '
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        TelefonoLabel.Location = New System.Drawing.Point(31, 300)
+        TelefonoLabel.BackColor = System.Drawing.Color.Transparent
+        TelefonoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TelefonoLabel.ForeColor = System.Drawing.Color.Black
+        TelefonoLabel.Location = New System.Drawing.Point(20, 300)
         TelefonoLabel.Name = "TelefonoLabel"
-        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.Size = New System.Drawing.Size(61, 13)
         TelefonoLabel.TabIndex = 47
         TelefonoLabel.Text = "Telefono:"
         '
         'Fec_ContrLabel
         '
         Fec_ContrLabel.AutoSize = True
-        Fec_ContrLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Fec_ContrLabel.Location = New System.Drawing.Point(31, 327)
+        Fec_ContrLabel.BackColor = System.Drawing.Color.Transparent
+        Fec_ContrLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Fec_ContrLabel.ForeColor = System.Drawing.Color.Black
+        Fec_ContrLabel.Location = New System.Drawing.Point(20, 327)
         Fec_ContrLabel.Name = "Fec_ContrLabel"
-        Fec_ContrLabel.Size = New System.Drawing.Size(56, 13)
+        Fec_ContrLabel.Size = New System.Drawing.Size(66, 13)
         Fec_ContrLabel.TabIndex = 49
         Fec_ContrLabel.Text = "Fec Contr:"
         '
         'CargoLabel
         '
         CargoLabel.AutoSize = True
-        CargoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        CargoLabel.Location = New System.Drawing.Point(31, 352)
+        CargoLabel.BackColor = System.Drawing.Color.Transparent
+        CargoLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CargoLabel.ForeColor = System.Drawing.Color.Black
+        CargoLabel.Location = New System.Drawing.Point(20, 352)
         CargoLabel.Name = "CargoLabel"
-        CargoLabel.Size = New System.Drawing.Size(38, 13)
+        CargoLabel.Size = New System.Drawing.Size(44, 13)
         CargoLabel.TabIndex = 51
         CargoLabel.Text = "Cargo:"
         '
@@ -437,6 +459,8 @@ Partial Class Empl
         'BtnModificaciones
         '
         Me.BtnModificaciones.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnModificaciones.BackgroundImage = CType(resources.GetObject("BtnModificaciones.BackgroundImage"), System.Drawing.Image)
+        Me.BtnModificaciones.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnModificaciones.Location = New System.Drawing.Point(394, 12)
         Me.BtnModificaciones.Name = "BtnModificaciones"
         Me.BtnModificaciones.Size = New System.Drawing.Size(178, 62)
@@ -447,6 +471,8 @@ Partial Class Empl
         'BtnEliminar
         '
         Me.BtnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnEliminar.BackgroundImage = CType(resources.GetObject("BtnEliminar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnEliminar.Location = New System.Drawing.Point(203, 12)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(176, 62)
@@ -457,6 +483,8 @@ Partial Class Empl
         'BtnBuscar
         '
         Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.BackgroundImage = CType(resources.GetObject("BtnBuscar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnBuscar.Location = New System.Drawing.Point(588, 12)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(176, 62)
@@ -467,6 +495,8 @@ Partial Class Empl
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(780, 12)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(176, 62)
@@ -477,6 +507,8 @@ Partial Class Empl
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(8, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 62)

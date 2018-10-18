@@ -111,36 +111,34 @@
 
 
 
-    Private Sub MovimientosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MovimientosToolStripMenuItem.Click
 
-    End Sub
 
-    Private Sub PorproductoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorproductoToolStripMenuItem.Click
+    Private Sub PorproductoToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Buscar_Productos.Show()
 
     End Sub
 
-    Private Sub ProductosToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem2.Click
+    Private Sub ProductosToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Alta_Producto.Show()
 
     End Sub
 
-    Private Sub ProveedoresToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem2.Click
+    Private Sub ProveedoresToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltasProv.Show()
 
     End Sub
 
-    Private Sub ClientesToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem2.Click
+    Private Sub ClientesToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaCli.Show()
 
     End Sub
 
-    Private Sub EmpleadosToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpleadosToolStripMenuItem2.Click
+    Private Sub EmpleadosToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaEmpl.Show()
 
     End Sub
 
-    Private Sub LocalidadesToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem3.Click
+    Private Sub LocalidadesToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaLoc.Show()
 
     End Sub
@@ -149,55 +147,55 @@
 
     End Sub
 
-    Private Sub BusquedasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BuscarToolStripMenuItem.Click
+    Private Sub BusquedasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
-    Private Sub PorProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorProveedoresToolStripMenuItem.Click
+    Private Sub PorProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BuscarProv.Show()
 
     End Sub
 
-    Private Sub PorClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorClientesToolStripMenuItem.Click
+    Private Sub PorClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BuscarCli.Show()
 
     End Sub
 
-    Private Sub PorEmpleadosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorEmpleadosToolStripMenuItem.Click
+    Private Sub PorEmpleadosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         BuscarEmp.Show()
 
     End Sub
 
-    Private Sub PorLocalidadesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorLocalidadesToolStripMenuItem.Click
+    Private Sub PorLocalidadesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         MostrarLoc.Show()
 
     End Sub
 
-    Private Sub LocalidadesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem.Click
+    Private Sub LocalidadesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ElimLoc.Show()
     End Sub
 
-    Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem.Click
+    Private Sub MarcasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         AltaMarca.Show()
 
     End Sub
 
-    Private Sub ProveedoresToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem1.Click
+    Private Sub ProveedoresToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ModProv.Show()
 
     End Sub
 
-    Private Sub ClientesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem1.Click
+    Private Sub ClientesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ModClient.Show()
 
     End Sub
 
-    Private Sub EmpleadosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpleadosToolStripMenuItem1.Click
+    Private Sub EmpleadosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ModEmpl.Show()
 
     End Sub
 
-    Private Sub LocalidadesToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem2.Click
+    Private Sub LocalidadesToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ModLoc.Show()
 
     End Sub
@@ -205,5 +203,69 @@
     Private Sub BtnVenta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnVenta.Click
         Ventas.Show()
 
+    End Sub
+
+    Private Sub ProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductosToolStripMenuItem.Click
+        Alta_Producto.Show()
+    End Sub
+
+    Private Sub ProveedoresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem.Click
+        AltasProv.Show()
+    End Sub
+
+    Private Sub ClientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem.Click
+        AltaCli.Show()
+    End Sub
+
+    Private Sub EmpleadosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpleadosToolStripMenuItem.Click
+        AltaEmpl.Show()
+    End Sub
+
+    Private Sub LocalidadesToolStripMenuItem1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem1.Click
+        AltaLoc.Show()
+    End Sub
+
+    Private Sub MarcasToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarcasToolStripMenuItem1.Click
+        AltaMarca.Show()
+    End Sub
+
+    Private Sub PorProductoToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorProductoToolStripMenuItem1.Click
+        Buscar_Productos.Show()
+    End Sub
+
+    Private Sub PorProveedoresToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorProveedoresToolStripMenuItem1.Click
+        BuscarProv.Show()
+    End Sub
+
+    Private Sub PorClientesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorClientesToolStripMenuItem1.Click
+        BuscarCli.Show()
+    End Sub
+
+    Private Sub PorEmpleadosToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorEmpleadosToolStripMenuItem1.Click
+        BuscarEmp.Show()
+    End Sub
+
+    Private Sub PorLocalidadesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PorLocalidadesToolStripMenuItem1.Click
+        MostrarLoc.Show()
+    End Sub
+
+    Private Sub ProveedoresToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProveedoresToolStripMenuItem3.Click
+        ModProv.Show()
+    End Sub
+
+    Private Sub ClientesToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClientesToolStripMenuItem3.Click
+        ModClient.Show()
+    End Sub
+
+    Private Sub EmpleadosToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EmpleadosToolStripMenuItem3.Click
+        ModEmpl.Show()
+    End Sub
+
+    Private Sub LocalidadesToolStripMenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem4.Click
+        ModLoc.Show()
+    End Sub
+
+    Private Sub LocalidadesToolStripMenuItem5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LocalidadesToolStripMenuItem5.Click
+        ElimLoc.Show()
     End Sub
 End Class

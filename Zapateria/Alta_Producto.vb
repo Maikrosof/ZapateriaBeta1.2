@@ -14,6 +14,12 @@
         Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
         'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
         Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Proveedores' Puede moverla o quitarla según sea necesario.
+        Me.ProveedoresTableAdapter.Fill(Me.ZapateriaDataSet.Proveedores)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Marcas' Puede moverla o quitarla según sea necesario.
+        Me.MarcasTableAdapter.Fill(Me.ZapateriaDataSet.Marcas)
+        'TODO: esta línea de código carga datos en la tabla 'ZapateriaDataSet.Productos' Puede moverla o quitarla según sea necesario.
+        Me.ProductosTableAdapter.Fill(Me.ZapateriaDataSet.Productos)
         ' Me.MarcasBindingSource.AddNew()
         Me.ProductosBindingSource.AddNew()
     End Sub
@@ -75,5 +81,12 @@
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
         AltasProv.Show()
+    End Sub
+
+    Private Sub ProductosBindingNavigatorSaveItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Me.Validate()
+        Me.ProductosBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.ZapateriaDataSet)
+
     End Sub
 End Class

@@ -53,40 +53,44 @@ Partial Class ElimLoc
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ID_LocalidadLabel.Location = New System.Drawing.Point(45, 27)
+        ID_LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        ID_LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_LocalidadLabel.Location = New System.Drawing.Point(30, 27)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
-        ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
+        ID_LocalidadLabel.Size = New System.Drawing.Size(83, 13)
         ID_LocalidadLabel.TabIndex = 1
         ID_LocalidadLabel.Text = "ID Localidad:"
         '
         'LocalidadLabel
         '
         LocalidadLabel.AutoSize = True
-        LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        LocalidadLabel.Location = New System.Drawing.Point(45, 53)
+        LocalidadLabel.BackColor = System.Drawing.Color.Transparent
+        LocalidadLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        LocalidadLabel.Location = New System.Drawing.Point(30, 53)
         LocalidadLabel.Name = "LocalidadLabel"
-        LocalidadLabel.Size = New System.Drawing.Size(56, 13)
+        LocalidadLabel.Size = New System.Drawing.Size(66, 13)
         LocalidadLabel.TabIndex = 3
         LocalidadLabel.Text = "Localidad:"
         '
         'ZonaLabel
         '
         ZonaLabel.AutoSize = True
-        ZonaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        ZonaLabel.Location = New System.Drawing.Point(45, 79)
+        ZonaLabel.BackColor = System.Drawing.Color.Transparent
+        ZonaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ZonaLabel.Location = New System.Drawing.Point(30, 79)
         ZonaLabel.Name = "ZonaLabel"
-        ZonaLabel.Size = New System.Drawing.Size(35, 13)
+        ZonaLabel.Size = New System.Drawing.Size(40, 13)
         ZonaLabel.TabIndex = 5
         ZonaLabel.Text = "Zona:"
         '
         'CPLabel
         '
         CPLabel.AutoSize = True
-        CPLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        CPLabel.Location = New System.Drawing.Point(45, 105)
+        CPLabel.BackColor = System.Drawing.Color.Transparent
+        CPLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        CPLabel.Location = New System.Drawing.Point(30, 105)
         CPLabel.Name = "CPLabel"
-        CPLabel.Size = New System.Drawing.Size(24, 13)
+        CPLabel.Size = New System.Drawing.Size(27, 13)
         CPLabel.TabIndex = 7
         CPLabel.Text = "CP:"
         '
@@ -151,6 +155,8 @@ Partial Class ElimLoc
         'BtnEliminar
         '
         Me.BtnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnEliminar.BackgroundImage = CType(resources.GetObject("BtnEliminar.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEliminar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnEliminar.Location = New System.Drawing.Point(250, 27)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(75, 39)
@@ -160,7 +166,7 @@ Partial Class ElimLoc
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnUltimo.BackColor = System.Drawing.Color.Transparent
         Me.BtnUltimo.BackgroundImage = CType(resources.GetObject("BtnUltimo.BackgroundImage"), System.Drawing.Image)
         Me.BtnUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnUltimo.Location = New System.Drawing.Point(225, 158)
@@ -171,7 +177,7 @@ Partial Class ElimLoc
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAdelante.BackColor = System.Drawing.Color.Transparent
         Me.BtnAdelante.BackgroundImage = CType(resources.GetObject("BtnAdelante.BackgroundImage"), System.Drawing.Image)
         Me.BtnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAdelante.Location = New System.Drawing.Point(153, 158)
@@ -182,7 +188,7 @@ Partial Class ElimLoc
         '
         'BtnAtras
         '
-        Me.BtnAtras.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAtras.BackColor = System.Drawing.Color.Transparent
         Me.BtnAtras.BackgroundImage = CType(resources.GetObject("BtnAtras.BackgroundImage"), System.Drawing.Image)
         Me.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAtras.Location = New System.Drawing.Point(87, 158)
@@ -193,7 +199,7 @@ Partial Class ElimLoc
         '
         'BtnPrincipio
         '
-        Me.BtnPrincipio.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnPrincipio.BackColor = System.Drawing.Color.Transparent
         Me.BtnPrincipio.BackgroundImage = CType(resources.GetObject("BtnPrincipio.BackgroundImage"), System.Drawing.Image)
         Me.BtnPrincipio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnPrincipio.Location = New System.Drawing.Point(21, 158)
@@ -205,6 +211,8 @@ Partial Class ElimLoc
         'BtnVolver
         '
         Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.BackgroundImage = CType(resources.GetObject("BtnVolver.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BtnVolver.Location = New System.Drawing.Point(250, 83)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 39)

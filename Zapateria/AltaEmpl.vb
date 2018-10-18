@@ -55,4 +55,9 @@
             Call BtnVolver_Click(sender, e)
         End If
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        AltaLoc.Show()
+
+    End Sub
 End Class
