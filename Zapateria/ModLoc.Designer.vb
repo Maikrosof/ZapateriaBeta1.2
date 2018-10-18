@@ -23,6 +23,7 @@ Partial Class ModLoc
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModLoc))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
@@ -69,6 +70,7 @@ Partial Class ModLoc
         'LocalidadDataGridView
         '
         Me.LocalidadDataGridView.AutoGenerateColumns = False
+        Me.LocalidadDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.LocalidadDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.LocalidadDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.LocalidadDataGridView.DataSource = Me.LocalidadBindingSource
@@ -104,36 +106,40 @@ Partial Class ModLoc
         '
         'BtnBuscar
         '
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnBuscar.Location = New System.Drawing.Point(483, 27)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(112, 47)
         Me.BtnBuscar.TabIndex = 2
         Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(483, 200)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(112, 47)
         Me.BtnVolver.TabIndex = 3
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'BtnModificar
         '
+        Me.BtnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnModificar.Location = New System.Drawing.Point(483, 108)
         Me.BtnModificar.Name = "BtnModificar"
         Me.BtnModificar.Size = New System.Drawing.Size(112, 47)
         Me.BtnModificar.TabIndex = 4
         Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
+        Me.BtnModificar.UseVisualStyleBackColor = False
         '
         'ModLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(715, 300)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(610, 263)
         Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnBuscar)

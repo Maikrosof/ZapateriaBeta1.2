@@ -23,6 +23,7 @@ Partial Class BuscarEmp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarEmp))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.EmpleadosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -89,6 +90,7 @@ Partial Class BuscarEmp
         'EmpleadosDataGridView
         '
         Me.EmpleadosDataGridView.AutoGenerateColumns = False
+        Me.EmpleadosDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.EmpleadosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.EmpleadosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.EmpleadosDataGridView.DataSource = Me.EmpleadosBindingSource
@@ -166,12 +168,13 @@ Partial Class BuscarEmp
         '
         'BtnBuscar
         '
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnBuscar.Location = New System.Drawing.Point(171, 358)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(75, 23)
         Me.BtnBuscar.TabIndex = 40
         Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -200,17 +203,20 @@ Partial Class BuscarEmp
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(646, 324)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 52)
         Me.BtnVolver.TabIndex = 36
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'BuscarEmp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(779, 404)
         Me.Controls.Add(Me.BtnBuscar)
         Me.Controls.Add(Me.Label3)

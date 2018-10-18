@@ -29,6 +29,7 @@ Partial Class AltasProv
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AltasProv))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
@@ -58,6 +59,7 @@ Partial Class AltasProv
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_LocalidadLabel.Location = New System.Drawing.Point(26, 82)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
@@ -67,6 +69,7 @@ Partial Class AltasProv
         'Razon_SocialLabel
         '
         Razon_SocialLabel.AutoSize = True
+        Razon_SocialLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Razon_SocialLabel.Location = New System.Drawing.Point(26, 108)
         Razon_SocialLabel.Name = "Razon_SocialLabel"
         Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
@@ -76,6 +79,7 @@ Partial Class AltasProv
         'CUITLabel
         '
         CUITLabel.AutoSize = True
+        CUITLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         CUITLabel.Location = New System.Drawing.Point(26, 134)
         CUITLabel.Name = "CUITLabel"
         CUITLabel.Size = New System.Drawing.Size(35, 13)
@@ -85,6 +89,7 @@ Partial Class AltasProv
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
+        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DireccionLabel.Location = New System.Drawing.Point(26, 160)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
@@ -94,6 +99,7 @@ Partial Class AltasProv
         'NroLabel
         '
         NroLabel.AutoSize = True
+        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         NroLabel.Location = New System.Drawing.Point(26, 186)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
@@ -103,6 +109,7 @@ Partial Class AltasProv
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
+        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         TelefonoLabel.Location = New System.Drawing.Point(26, 212)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
@@ -181,21 +188,23 @@ Partial Class AltasProv
         '
         'BtnGuardar
         '
+        Me.BtnGuardar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnGuardar.Location = New System.Drawing.Point(29, 268)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
         Me.BtnGuardar.TabIndex = 15
         Me.BtnGuardar.Text = "Guardar"
-        Me.BtnGuardar.UseVisualStyleBackColor = True
+        Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(143, 268)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
         Me.BtnVolver.TabIndex = 16
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'CmbLocalidad
         '
@@ -216,6 +225,7 @@ Partial Class AltasProv
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(11, 26)
         Me.Label1.Name = "Label1"
@@ -227,7 +237,9 @@ Partial Class AltasProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(317, 325)
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(258, 325)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CmbLocalidad)
         Me.Controls.Add(Me.BtnVolver)

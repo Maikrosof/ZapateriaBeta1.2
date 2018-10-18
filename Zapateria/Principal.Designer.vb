@@ -23,8 +23,8 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.BtnVenta = New System.Windows.Forms.Button()
-        Me.BtnCompras = New System.Windows.Forms.Button()
         Me.BtnProducto = New System.Windows.Forms.Button()
         Me.BtnProveedor = New System.Windows.Forms.Button()
         Me.BtnCliente = New System.Windows.Forms.Button()
@@ -72,6 +72,7 @@ Partial Class Principal
         Me.ConfiguracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CómoFuncionaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.ClientesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ZapateriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmpleadosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,70 +82,80 @@ Partial Class Principal
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VentasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnVenta
         '
-        Me.BtnVenta.Location = New System.Drawing.Point(30, 107)
+        Me.BtnVenta.BackColor = System.Drawing.Color.White
+        Me.BtnVenta.BackgroundImage = CType(resources.GetObject("BtnVenta.BackgroundImage"), System.Drawing.Image)
+        Me.BtnVenta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnVenta.Location = New System.Drawing.Point(14, 65)
         Me.BtnVenta.Name = "BtnVenta"
-        Me.BtnVenta.Size = New System.Drawing.Size(134, 67)
+        Me.BtnVenta.Size = New System.Drawing.Size(320, 82)
         Me.BtnVenta.TabIndex = 0
         Me.BtnVenta.Text = "Ventas[F1]"
-        Me.BtnVenta.UseVisualStyleBackColor = True
-        '
-        'BtnCompras
-        '
-        Me.BtnCompras.Location = New System.Drawing.Point(187, 107)
-        Me.BtnCompras.Name = "BtnCompras"
-        Me.BtnCompras.Size = New System.Drawing.Size(134, 67)
-        Me.BtnCompras.TabIndex = 1
-        Me.BtnCompras.Text = "Compras[F2]"
-        Me.BtnCompras.UseVisualStyleBackColor = True
+        Me.BtnVenta.UseVisualStyleBackColor = False
         '
         'BtnProducto
         '
-        Me.BtnProducto.Location = New System.Drawing.Point(30, 192)
+        Me.BtnProducto.BackColor = System.Drawing.Color.White
+        Me.BtnProducto.BackgroundImage = CType(resources.GetObject("BtnProducto.BackgroundImage"), System.Drawing.Image)
+        Me.BtnProducto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnProducto.Location = New System.Drawing.Point(14, 177)
         Me.BtnProducto.Name = "BtnProducto"
-        Me.BtnProducto.Size = New System.Drawing.Size(134, 67)
+        Me.BtnProducto.Size = New System.Drawing.Size(157, 82)
         Me.BtnProducto.TabIndex = 2
-        Me.BtnProducto.Text = "Productos[F3]"
-        Me.BtnProducto.UseVisualStyleBackColor = True
+        Me.BtnProducto.Text = "Productos[F2]"
+        Me.BtnProducto.UseVisualStyleBackColor = False
         '
         'BtnProveedor
         '
-        Me.BtnProveedor.Location = New System.Drawing.Point(187, 192)
+        Me.BtnProveedor.BackColor = System.Drawing.Color.White
+        Me.BtnProveedor.BackgroundImage = CType(resources.GetObject("BtnProveedor.BackgroundImage"), System.Drawing.Image)
+        Me.BtnProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnProveedor.Location = New System.Drawing.Point(179, 178)
         Me.BtnProveedor.Name = "BtnProveedor"
-        Me.BtnProveedor.Size = New System.Drawing.Size(134, 67)
+        Me.BtnProveedor.Size = New System.Drawing.Size(157, 82)
         Me.BtnProveedor.TabIndex = 3
-        Me.BtnProveedor.Text = "Proveedores[F4]"
-        Me.BtnProveedor.UseVisualStyleBackColor = True
+        Me.BtnProveedor.Text = "Proveedores[F3]"
+        Me.BtnProveedor.UseVisualStyleBackColor = False
         '
         'BtnCliente
         '
-        Me.BtnCliente.Location = New System.Drawing.Point(30, 276)
+        Me.BtnCliente.BackColor = System.Drawing.Color.White
+        Me.BtnCliente.BackgroundImage = CType(resources.GetObject("BtnCliente.BackgroundImage"), System.Drawing.Image)
+        Me.BtnCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnCliente.Location = New System.Drawing.Point(14, 265)
         Me.BtnCliente.Name = "BtnCliente"
-        Me.BtnCliente.Size = New System.Drawing.Size(134, 67)
+        Me.BtnCliente.Size = New System.Drawing.Size(157, 82)
         Me.BtnCliente.TabIndex = 4
-        Me.BtnCliente.Text = "Clientes[F5]"
-        Me.BtnCliente.UseVisualStyleBackColor = True
+        Me.BtnCliente.Text = "Clientes[F4]"
+        Me.BtnCliente.UseVisualStyleBackColor = False
         '
         'BtnEmpleados
         '
-        Me.BtnEmpleados.Location = New System.Drawing.Point(187, 276)
+        Me.BtnEmpleados.BackColor = System.Drawing.Color.White
+        Me.BtnEmpleados.BackgroundImage = CType(resources.GetObject("BtnEmpleados.BackgroundImage"), System.Drawing.Image)
+        Me.BtnEmpleados.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnEmpleados.Location = New System.Drawing.Point(177, 265)
         Me.BtnEmpleados.Name = "BtnEmpleados"
-        Me.BtnEmpleados.Size = New System.Drawing.Size(134, 67)
+        Me.BtnEmpleados.Size = New System.Drawing.Size(157, 82)
         Me.BtnEmpleados.TabIndex = 5
-        Me.BtnEmpleados.Text = "Empleados[F6]"
-        Me.BtnEmpleados.UseVisualStyleBackColor = True
+        Me.BtnEmpleados.Text = "Empleados[F5]"
+        Me.BtnEmpleados.UseVisualStyleBackColor = False
         '
         'BtnSalir
         '
-        Me.BtnSalir.Location = New System.Drawing.Point(30, 381)
+        Me.BtnSalir.BackColor = System.Drawing.Color.White
+        Me.BtnSalir.BackgroundImage = CType(resources.GetObject("BtnSalir.BackgroundImage"), System.Drawing.Image)
+        Me.BtnSalir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnSalir.Location = New System.Drawing.Point(12, 377)
         Me.BtnSalir.Name = "BtnSalir"
-        Me.BtnSalir.Size = New System.Drawing.Size(134, 47)
+        Me.BtnSalir.Size = New System.Drawing.Size(320, 60)
         Me.BtnSalir.TabIndex = 6
         Me.BtnSalir.Text = "Salir[Esc]"
-        Me.BtnSalir.UseVisualStyleBackColor = True
+        Me.BtnSalir.UseVisualStyleBackColor = False
         '
         'ClientesBindingSource
         '
@@ -228,15 +239,17 @@ Partial Class Principal
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackgroundImage = CType(resources.GetObject("MenuStrip1.BackgroundImage"), System.Drawing.Image)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MovimientosToolStripMenuItem, Me.ConfiguracionesToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(876, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(868, 24)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'MovimientosToolStripMenuItem
         '
+        Me.MovimientosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(114, Byte), Integer))
         Me.MovimientosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.BuscarToolStripMenuItem, Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem})
         Me.MovimientosToolStripMenuItem.Name = "MovimientosToolStripMenuItem"
         Me.MovimientosToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
@@ -244,132 +257,174 @@ Partial Class Principal
         '
         'AgregarToolStripMenuItem
         '
+        Me.AgregarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("AgregarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.AgregarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem2, Me.ProveedoresToolStripMenuItem2, Me.ClientesToolStripMenuItem2, Me.EmpleadosToolStripMenuItem2, Me.LocalidadesToolStripMenuItem3, Me.MarcasToolStripMenuItem})
+        Me.AgregarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
-        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AgregarToolStripMenuItem.Text = "Agregar"
         '
         'ProductosToolStripMenuItem2
         '
+        Me.ProductosToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ProductosToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.ProductosToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ProductosToolStripMenuItem2.Name = "ProductosToolStripMenuItem2"
-        Me.ProductosToolStripMenuItem2.Size = New System.Drawing.Size(139, 22)
+        Me.ProductosToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ProductosToolStripMenuItem2.Text = "Productos"
         '
         'ProveedoresToolStripMenuItem2
         '
+        Me.ProveedoresToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ProveedoresToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.ProveedoresToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ProveedoresToolStripMenuItem2.Name = "ProveedoresToolStripMenuItem2"
-        Me.ProveedoresToolStripMenuItem2.Size = New System.Drawing.Size(139, 22)
+        Me.ProveedoresToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ProveedoresToolStripMenuItem2.Text = "Proveedores"
         '
         'ClientesToolStripMenuItem2
         '
+        Me.ClientesToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("ClientesToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.ClientesToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientesToolStripMenuItem2.Name = "ClientesToolStripMenuItem2"
-        Me.ClientesToolStripMenuItem2.Size = New System.Drawing.Size(139, 22)
+        Me.ClientesToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ClientesToolStripMenuItem2.Text = "Clientes"
         '
         'EmpleadosToolStripMenuItem2
         '
+        Me.EmpleadosToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("EmpleadosToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.EmpleadosToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.EmpleadosToolStripMenuItem2.Name = "EmpleadosToolStripMenuItem2"
-        Me.EmpleadosToolStripMenuItem2.Size = New System.Drawing.Size(139, 22)
+        Me.EmpleadosToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.EmpleadosToolStripMenuItem2.Text = "Empleados"
         '
         'LocalidadesToolStripMenuItem3
         '
+        Me.LocalidadesToolStripMenuItem3.BackgroundImage = CType(resources.GetObject("LocalidadesToolStripMenuItem3.BackgroundImage"), System.Drawing.Image)
+        Me.LocalidadesToolStripMenuItem3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LocalidadesToolStripMenuItem3.Name = "LocalidadesToolStripMenuItem3"
-        Me.LocalidadesToolStripMenuItem3.Size = New System.Drawing.Size(139, 22)
+        Me.LocalidadesToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.LocalidadesToolStripMenuItem3.Text = "Localidades"
         '
         'MarcasToolStripMenuItem
         '
+        Me.MarcasToolStripMenuItem.BackgroundImage = CType(resources.GetObject("MarcasToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.MarcasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.MarcasToolStripMenuItem.Name = "MarcasToolStripMenuItem"
-        Me.MarcasToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.MarcasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MarcasToolStripMenuItem.Text = "Marcas"
         '
         'BuscarToolStripMenuItem
         '
+        Me.BuscarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("BuscarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.BuscarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PorproductoToolStripMenuItem, Me.PorProveedoresToolStripMenuItem, Me.PorClientesToolStripMenuItem, Me.PorEmpleadosToolStripMenuItem, Me.PorLocalidadesToolStripMenuItem})
+        Me.BuscarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BuscarToolStripMenuItem.Name = "BuscarToolStripMenuItem"
-        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BuscarToolStripMenuItem.Text = "Buscar"
         '
         'PorproductoToolStripMenuItem
         '
+        Me.PorproductoToolStripMenuItem.BackgroundImage = CType(resources.GetObject("PorproductoToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.PorproductoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PorproductoToolStripMenuItem.Name = "PorproductoToolStripMenuItem"
         Me.PorproductoToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.PorproductoToolStripMenuItem.Text = "Por Producto"
         '
         'PorProveedoresToolStripMenuItem
         '
+        Me.PorProveedoresToolStripMenuItem.BackgroundImage = CType(resources.GetObject("PorProveedoresToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.PorProveedoresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PorProveedoresToolStripMenuItem.Name = "PorProveedoresToolStripMenuItem"
         Me.PorProveedoresToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.PorProveedoresToolStripMenuItem.Text = "Por Proveedores"
         '
         'PorClientesToolStripMenuItem
         '
+        Me.PorClientesToolStripMenuItem.BackgroundImage = CType(resources.GetObject("PorClientesToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.PorClientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PorClientesToolStripMenuItem.Name = "PorClientesToolStripMenuItem"
         Me.PorClientesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.PorClientesToolStripMenuItem.Text = "Por Clientes"
         '
         'PorEmpleadosToolStripMenuItem
         '
+        Me.PorEmpleadosToolStripMenuItem.BackgroundImage = CType(resources.GetObject("PorEmpleadosToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.PorEmpleadosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PorEmpleadosToolStripMenuItem.Name = "PorEmpleadosToolStripMenuItem"
         Me.PorEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.PorEmpleadosToolStripMenuItem.Text = "Por Empleados"
         '
         'PorLocalidadesToolStripMenuItem
         '
+        Me.PorLocalidadesToolStripMenuItem.BackgroundImage = CType(resources.GetObject("PorLocalidadesToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.PorLocalidadesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.PorLocalidadesToolStripMenuItem.Name = "PorLocalidadesToolStripMenuItem"
         Me.PorLocalidadesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.PorLocalidadesToolStripMenuItem.Text = "Por Localidades"
         '
         'ModificarToolStripMenuItem
         '
+        Me.ModificarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ModificarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.ModificarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem1, Me.ProveedoresToolStripMenuItem1, Me.ClientesToolStripMenuItem1, Me.EmpleadosToolStripMenuItem1, Me.LocalidadesToolStripMenuItem2})
+        Me.ModificarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'ProductosToolStripMenuItem1
         '
+        Me.ProductosToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ProductosToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.ProductosToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ProductosToolStripMenuItem1.Name = "ProductosToolStripMenuItem1"
-        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ProductosToolStripMenuItem1.Text = "Productos"
         '
         'ProveedoresToolStripMenuItem1
         '
+        Me.ProveedoresToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ProveedoresToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.ProveedoresToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ProveedoresToolStripMenuItem1.Name = "ProveedoresToolStripMenuItem1"
-        Me.ProveedoresToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.ProveedoresToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ProveedoresToolStripMenuItem1.Text = "Proveedores"
         '
         'ClientesToolStripMenuItem1
         '
+        Me.ClientesToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("ClientesToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.ClientesToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientesToolStripMenuItem1.Name = "ClientesToolStripMenuItem1"
-        Me.ClientesToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.ClientesToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.ClientesToolStripMenuItem1.Text = "Clientes"
         '
         'EmpleadosToolStripMenuItem1
         '
+        Me.EmpleadosToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("EmpleadosToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.EmpleadosToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.EmpleadosToolStripMenuItem1.Name = "EmpleadosToolStripMenuItem1"
-        Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(139, 22)
+        Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.EmpleadosToolStripMenuItem1.Text = "Empleados"
         '
         'LocalidadesToolStripMenuItem2
         '
+        Me.LocalidadesToolStripMenuItem2.BackgroundImage = CType(resources.GetObject("LocalidadesToolStripMenuItem2.BackgroundImage"), System.Drawing.Image)
+        Me.LocalidadesToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LocalidadesToolStripMenuItem2.Name = "LocalidadesToolStripMenuItem2"
-        Me.LocalidadesToolStripMenuItem2.Size = New System.Drawing.Size(139, 22)
+        Me.LocalidadesToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.LocalidadesToolStripMenuItem2.Text = "Localidades"
         '
         'EliminarToolStripMenuItem
         '
+        Me.EliminarToolStripMenuItem.BackgroundImage = CType(resources.GetObject("EliminarToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.EliminarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LocalidadesToolStripMenuItem})
+        Me.EliminarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'LocalidadesToolStripMenuItem
         '
+        Me.LocalidadesToolStripMenuItem.BackgroundImage = CType(resources.GetObject("LocalidadesToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.LocalidadesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.LocalidadesToolStripMenuItem.Name = "LocalidadesToolStripMenuItem"
-        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
+        Me.LocalidadesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LocalidadesToolStripMenuItem.Text = "Localidades"
         '
         'ConfiguracionesToolStripMenuItem
@@ -387,21 +442,37 @@ Partial Class Principal
         '
         'CómoFuncionaToolStripMenuItem
         '
+        Me.CómoFuncionaToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CómoFuncionaToolStripMenuItem.BackgroundImage = CType(resources.GetObject("CómoFuncionaToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.CómoFuncionaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.CómoFuncionaToolStripMenuItem.Name = "CómoFuncionaToolStripMenuItem"
         Me.CómoFuncionaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.CómoFuncionaToolStripMenuItem.Text = "¿Cómo funciona?"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox1.Location = New System.Drawing.Point(338, 41)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(574, 446)
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(876, 454)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(114, Byte), Integer))
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(868, 485)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BtnSalir)
         Me.Controls.Add(Me.BtnEmpleados)
         Me.Controls.Add(Me.BtnCliente)
         Me.Controls.Add(Me.BtnProveedor)
         Me.Controls.Add(Me.BtnProducto)
-        Me.Controls.Add(Me.BtnCompras)
         Me.Controls.Add(Me.BtnVenta)
         Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
@@ -418,12 +489,12 @@ Partial Class Principal
         CType(Me.VentasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents BtnVenta As System.Windows.Forms.Button
-    Friend WithEvents BtnCompras As System.Windows.Forms.Button
     Friend WithEvents BtnProducto As System.Windows.Forms.Button
     Friend WithEvents BtnProveedor As System.Windows.Forms.Button
     Friend WithEvents BtnCliente As System.Windows.Forms.Button
@@ -471,5 +542,6 @@ Partial Class Principal
     Friend WithEvents LocalidadesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CómoFuncionaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MarcasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

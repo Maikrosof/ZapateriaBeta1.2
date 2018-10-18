@@ -25,6 +25,7 @@ Partial Class AltaMarca
         Me.components = New System.ComponentModel.Container()
         Dim MarcaLabel As System.Windows.Forms.Label
         Dim OrigenLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AltaMarca))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.MarcasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MarcasTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.MarcasTableAdapter()
@@ -42,6 +43,7 @@ Partial Class AltaMarca
         'MarcaLabel
         '
         MarcaLabel.AutoSize = True
+        MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         MarcaLabel.Location = New System.Drawing.Point(12, 9)
         MarcaLabel.Name = "MarcaLabel"
         MarcaLabel.Size = New System.Drawing.Size(40, 13)
@@ -51,6 +53,7 @@ Partial Class AltaMarca
         'OrigenLabel
         '
         OrigenLabel.AutoSize = True
+        OrigenLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         OrigenLabel.Location = New System.Drawing.Point(12, 35)
         OrigenLabel.Name = "OrigenLabel"
         OrigenLabel.Size = New System.Drawing.Size(41, 13)
@@ -101,26 +104,29 @@ Partial Class AltaMarca
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(181, 7)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(69, 44)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Agregar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Location = New System.Drawing.Point(256, 7)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(69, 44)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Volver"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'AltaMarca
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(335, 65)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

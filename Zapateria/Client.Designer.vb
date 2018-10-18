@@ -32,6 +32,7 @@ Partial Class Client
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim DNILabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Client))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClientesTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ClientesTableAdapter()
@@ -81,6 +82,7 @@ Partial Class Client
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
+        ID_ClienteLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_ClienteLabel.Location = New System.Drawing.Point(17, 134)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
         ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
@@ -90,6 +92,7 @@ Partial Class Client
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_LocalidadLabel.Location = New System.Drawing.Point(17, 160)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
@@ -99,6 +102,7 @@ Partial Class Client
         'NombreLabel
         '
         NombreLabel.AutoSize = True
+        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         NombreLabel.Location = New System.Drawing.Point(17, 186)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(47, 13)
@@ -108,6 +112,7 @@ Partial Class Client
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
+        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ApellidoLabel.Location = New System.Drawing.Point(17, 212)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(47, 13)
@@ -117,6 +122,7 @@ Partial Class Client
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
+        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Fec_NacimientoLabel.Location = New System.Drawing.Point(17, 239)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
         Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
@@ -126,6 +132,7 @@ Partial Class Client
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
+        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DireccionLabel.Location = New System.Drawing.Point(17, 264)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
@@ -135,6 +142,7 @@ Partial Class Client
         'NroLabel
         '
         NroLabel.AutoSize = True
+        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         NroLabel.Location = New System.Drawing.Point(17, 290)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
@@ -144,6 +152,7 @@ Partial Class Client
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
+        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         TelefonoLabel.Location = New System.Drawing.Point(17, 316)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
@@ -153,6 +162,7 @@ Partial Class Client
         'DNILabel
         '
         DNILabel.AutoSize = True
+        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DNILabel.Location = New System.Drawing.Point(17, 342)
         DNILabel.Name = "DNILabel"
         DNILabel.Size = New System.Drawing.Size(29, 13)
@@ -259,46 +269,56 @@ Partial Class Client
         '
         'BtnUltimo
         '
-        Me.BtnUltimo.Location = New System.Drawing.Point(257, 380)
+        Me.BtnUltimo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnUltimo.BackgroundImage = CType(resources.GetObject("BtnUltimo.BackgroundImage"), System.Drawing.Image)
+        Me.BtnUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BtnUltimo.Location = New System.Drawing.Point(268, 380)
         Me.BtnUltimo.Name = "BtnUltimo"
-        Me.BtnUltimo.Size = New System.Drawing.Size(50, 27)
+        Me.BtnUltimo.Size = New System.Drawing.Size(39, 38)
         Me.BtnUltimo.TabIndex = 48
-        Me.BtnUltimo.Text = ">>"
-        Me.BtnUltimo.UseVisualStyleBackColor = True
+        Me.BtnUltimo.UseVisualStyleBackColor = False
         '
         'BtnAdelante
         '
-        Me.BtnAdelante.Location = New System.Drawing.Point(173, 380)
+        Me.BtnAdelante.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAdelante.BackgroundImage = CType(resources.GetObject("BtnAdelante.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BtnAdelante.Location = New System.Drawing.Point(193, 380)
         Me.BtnAdelante.Name = "BtnAdelante"
-        Me.BtnAdelante.Size = New System.Drawing.Size(53, 27)
+        Me.BtnAdelante.Size = New System.Drawing.Size(39, 38)
         Me.BtnAdelante.TabIndex = 47
-        Me.BtnAdelante.Text = ">"
-        Me.BtnAdelante.UseVisualStyleBackColor = True
+        Me.BtnAdelante.UseVisualStyleBackColor = False
         '
         'BtnAtras
         '
-        Me.BtnAtras.Location = New System.Drawing.Point(90, 380)
+        Me.BtnAtras.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAtras.BackgroundImage = CType(resources.GetObject("BtnAtras.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BtnAtras.Location = New System.Drawing.Point(98, 380)
         Me.BtnAtras.Name = "BtnAtras"
-        Me.BtnAtras.Size = New System.Drawing.Size(54, 27)
+        Me.BtnAtras.Size = New System.Drawing.Size(39, 38)
         Me.BtnAtras.TabIndex = 46
-        Me.BtnAtras.Text = "<"
-        Me.BtnAtras.UseVisualStyleBackColor = True
+        Me.BtnAtras.UseVisualStyleBackColor = False
         '
         'BtnPrimero
         '
-        Me.BtnPrimero.Location = New System.Drawing.Point(9, 380)
+        Me.BtnPrimero.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnPrimero.BackgroundImage = CType(resources.GetObject("BtnPrimero.BackgroundImage"), System.Drawing.Image)
+        Me.BtnPrimero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BtnPrimero.Location = New System.Drawing.Point(20, 380)
         Me.BtnPrimero.Name = "BtnPrimero"
-        Me.BtnPrimero.Size = New System.Drawing.Size(55, 27)
+        Me.BtnPrimero.Size = New System.Drawing.Size(39, 38)
         Me.BtnPrimero.TabIndex = 45
-        Me.BtnPrimero.Text = "<<"
-        Me.BtnPrimero.UseVisualStyleBackColor = True
+        Me.BtnPrimero.UseVisualStyleBackColor = False
         '
         'ClientesDataGridView
         '
         Me.ClientesDataGridView.AutoGenerateColumns = False
+        Me.ClientesDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ClientesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.ClientesDataGridView.DataSource = Me.ClientesBindingSource
+        Me.ClientesDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientesDataGridView.Location = New System.Drawing.Point(324, 112)
         Me.ClientesDataGridView.Name = "ClientesDataGridView"
         Me.ClientesDataGridView.Size = New System.Drawing.Size(638, 295)
@@ -361,54 +381,60 @@ Partial Class Client
         '
         'BtnModificaciones
         '
+        Me.BtnModificaciones.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnModificaciones.Location = New System.Drawing.Point(398, 34)
         Me.BtnModificaciones.Name = "BtnModificaciones"
         Me.BtnModificaciones.Size = New System.Drawing.Size(178, 62)
         Me.BtnModificaciones.TabIndex = 53
         Me.BtnModificaciones.Text = "Modificaciones[F3]"
-        Me.BtnModificaciones.UseVisualStyleBackColor = True
+        Me.BtnModificaciones.UseVisualStyleBackColor = False
         '
         'BtnEliminar
         '
+        Me.BtnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnEliminar.Location = New System.Drawing.Point(207, 34)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(176, 62)
         Me.BtnEliminar.TabIndex = 52
         Me.BtnEliminar.Text = "Eliminar[F2]"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
+        Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'BtnBuscar
         '
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnBuscar.Location = New System.Drawing.Point(592, 34)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(176, 62)
         Me.BtnBuscar.TabIndex = 51
         Me.BtnBuscar.Text = "Busquedas[F4]"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(784, 34)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(176, 62)
         Me.BtnVolver.TabIndex = 50
         Me.BtnVolver.Text = "Volver[Esc]"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(12, 34)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 62)
         Me.Button1.TabIndex = 49
         Me.Button1.Text = "Agregar[F1]"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(969, 446)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(969, 436)
         Me.Controls.Add(Me.BtnModificaciones)
         Me.Controls.Add(Me.BtnEliminar)
         Me.Controls.Add(Me.BtnBuscar)

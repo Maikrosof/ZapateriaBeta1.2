@@ -26,6 +26,7 @@ Partial Class AltaLoc
         Dim LocalidadLabel As System.Windows.Forms.Label
         Dim ZonaLabel As System.Windows.Forms.Label
         Dim CPLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AltaLoc))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
@@ -46,6 +47,7 @@ Partial Class AltaLoc
         'LocalidadLabel
         '
         LocalidadLabel.AutoSize = True
+        LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         LocalidadLabel.Location = New System.Drawing.Point(58, 101)
         LocalidadLabel.Name = "LocalidadLabel"
         LocalidadLabel.Size = New System.Drawing.Size(56, 13)
@@ -55,6 +57,7 @@ Partial Class AltaLoc
         'ZonaLabel
         '
         ZonaLabel.AutoSize = True
+        ZonaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ZonaLabel.Location = New System.Drawing.Point(58, 127)
         ZonaLabel.Name = "ZonaLabel"
         ZonaLabel.Size = New System.Drawing.Size(35, 13)
@@ -64,6 +67,7 @@ Partial Class AltaLoc
         'CPLabel
         '
         CPLabel.AutoSize = True
+        CPLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         CPLabel.Location = New System.Drawing.Point(58, 153)
         CPLabel.Name = "CPLabel"
         CPLabel.Size = New System.Drawing.Size(24, 13)
@@ -122,25 +126,28 @@ Partial Class AltaLoc
         '
         'BtnGuardar
         '
+        Me.BtnGuardar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnGuardar.Location = New System.Drawing.Point(39, 217)
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
         Me.BtnGuardar.TabIndex = 9
         Me.BtnGuardar.Text = "Guardar"
-        Me.BtnGuardar.UseVisualStyleBackColor = True
+        Me.BtnGuardar.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(155, 217)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 23)
         Me.BtnVolver.TabIndex = 10
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(21, 32)
         Me.Label1.Name = "Label1"
@@ -152,6 +159,7 @@ Partial Class AltaLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(305, 274)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)

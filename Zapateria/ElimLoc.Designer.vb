@@ -27,6 +27,7 @@ Partial Class ElimLoc
         Dim LocalidadLabel As System.Windows.Forms.Label
         Dim ZonaLabel As System.Windows.Forms.Label
         Dim CPLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ElimLoc))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.LocalidadBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LocalidadTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.LocalidadTableAdapter()
@@ -52,6 +53,7 @@ Partial Class ElimLoc
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_LocalidadLabel.Location = New System.Drawing.Point(45, 27)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
@@ -61,6 +63,7 @@ Partial Class ElimLoc
         'LocalidadLabel
         '
         LocalidadLabel.AutoSize = True
+        LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         LocalidadLabel.Location = New System.Drawing.Point(45, 53)
         LocalidadLabel.Name = "LocalidadLabel"
         LocalidadLabel.Size = New System.Drawing.Size(56, 13)
@@ -70,6 +73,7 @@ Partial Class ElimLoc
         'ZonaLabel
         '
         ZonaLabel.AutoSize = True
+        ZonaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ZonaLabel.Location = New System.Drawing.Point(45, 79)
         ZonaLabel.Name = "ZonaLabel"
         ZonaLabel.Size = New System.Drawing.Size(35, 13)
@@ -79,6 +83,7 @@ Partial Class ElimLoc
         'CPLabel
         '
         CPLabel.AutoSize = True
+        CPLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         CPLabel.Location = New System.Drawing.Point(45, 105)
         CPLabel.Name = "CPLabel"
         CPLabel.Size = New System.Drawing.Size(24, 13)
@@ -145,63 +150,74 @@ Partial Class ElimLoc
         '
         'BtnEliminar
         '
-        Me.BtnEliminar.Location = New System.Drawing.Point(279, 27)
+        Me.BtnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnEliminar.Location = New System.Drawing.Point(250, 27)
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(75, 39)
         Me.BtnEliminar.TabIndex = 9
         Me.BtnEliminar.Text = "Eliminar"
-        Me.BtnEliminar.UseVisualStyleBackColor = True
+        Me.BtnEliminar.UseVisualStyleBackColor = False
         '
         'BtnUltimo
         '
+        Me.BtnUltimo.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnUltimo.BackgroundImage = CType(resources.GetObject("BtnUltimo.BackgroundImage"), System.Drawing.Image)
+        Me.BtnUltimo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnUltimo.Location = New System.Drawing.Point(225, 158)
         Me.BtnUltimo.Name = "BtnUltimo"
-        Me.BtnUltimo.Size = New System.Drawing.Size(42, 23)
+        Me.BtnUltimo.Size = New System.Drawing.Size(39, 40)
         Me.BtnUltimo.TabIndex = 16
-        Me.BtnUltimo.Text = ">>"
-        Me.BtnUltimo.UseVisualStyleBackColor = True
+        Me.BtnUltimo.UseVisualStyleBackColor = False
         '
         'BtnAdelante
         '
+        Me.BtnAdelante.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAdelante.BackgroundImage = CType(resources.GetObject("BtnAdelante.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAdelante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAdelante.Location = New System.Drawing.Point(153, 158)
         Me.BtnAdelante.Name = "BtnAdelante"
-        Me.BtnAdelante.Size = New System.Drawing.Size(42, 23)
+        Me.BtnAdelante.Size = New System.Drawing.Size(42, 40)
         Me.BtnAdelante.TabIndex = 15
-        Me.BtnAdelante.Text = ">"
-        Me.BtnAdelante.UseVisualStyleBackColor = True
+        Me.BtnAdelante.UseVisualStyleBackColor = False
         '
         'BtnAtras
         '
+        Me.BtnAtras.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnAtras.BackgroundImage = CType(resources.GetObject("BtnAtras.BackgroundImage"), System.Drawing.Image)
+        Me.BtnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnAtras.Location = New System.Drawing.Point(87, 158)
         Me.BtnAtras.Name = "BtnAtras"
-        Me.BtnAtras.Size = New System.Drawing.Size(42, 23)
+        Me.BtnAtras.Size = New System.Drawing.Size(42, 40)
         Me.BtnAtras.TabIndex = 14
-        Me.BtnAtras.Text = "<"
-        Me.BtnAtras.UseVisualStyleBackColor = True
+        Me.BtnAtras.UseVisualStyleBackColor = False
         '
         'BtnPrincipio
         '
+        Me.BtnPrincipio.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnPrincipio.BackgroundImage = CType(resources.GetObject("BtnPrincipio.BackgroundImage"), System.Drawing.Image)
+        Me.BtnPrincipio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.BtnPrincipio.Location = New System.Drawing.Point(21, 158)
         Me.BtnPrincipio.Name = "BtnPrincipio"
-        Me.BtnPrincipio.Size = New System.Drawing.Size(42, 23)
+        Me.BtnPrincipio.Size = New System.Drawing.Size(42, 40)
         Me.BtnPrincipio.TabIndex = 13
-        Me.BtnPrincipio.Text = "<<"
-        Me.BtnPrincipio.UseVisualStyleBackColor = True
+        Me.BtnPrincipio.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(279, 83)
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.Location = New System.Drawing.Point(250, 83)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(75, 39)
         Me.BtnVolver.TabIndex = 17
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'ElimLoc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 193)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(343, 210)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnUltimo)
         Me.Controls.Add(Me.BtnAdelante)

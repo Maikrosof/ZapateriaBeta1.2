@@ -32,6 +32,7 @@ Partial Class Buscar_Productos
         Dim StockLabel As System.Windows.Forms.Label
         Dim ModeloLabel As System.Windows.Forms.Label
         Dim ID_ProveedorLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Buscar_Productos))
         Me.BtnVolver = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -76,6 +77,7 @@ Partial Class Buscar_Productos
         'ID_ZapLabel
         '
         ID_ZapLabel.AutoSize = True
+        ID_ZapLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_ZapLabel.Location = New System.Drawing.Point(11, 15)
         ID_ZapLabel.Name = "ID_ZapLabel"
         ID_ZapLabel.Size = New System.Drawing.Size(43, 13)
@@ -85,6 +87,7 @@ Partial Class Buscar_Productos
         'ID_MarcaLabel
         '
         ID_MarcaLabel.AutoSize = True
+        ID_MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_MarcaLabel.Location = New System.Drawing.Point(11, 41)
         ID_MarcaLabel.Name = "ID_MarcaLabel"
         ID_MarcaLabel.Size = New System.Drawing.Size(54, 13)
@@ -94,6 +97,7 @@ Partial Class Buscar_Productos
         'TallaLabel
         '
         TallaLabel.AutoSize = True
+        TallaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         TallaLabel.Location = New System.Drawing.Point(11, 119)
         TallaLabel.Name = "TallaLabel"
         TallaLabel.Size = New System.Drawing.Size(33, 13)
@@ -103,6 +107,7 @@ Partial Class Buscar_Productos
         'PrecioLabel
         '
         PrecioLabel.AutoSize = True
+        PrecioLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         PrecioLabel.Location = New System.Drawing.Point(11, 145)
         PrecioLabel.Name = "PrecioLabel"
         PrecioLabel.Size = New System.Drawing.Size(40, 13)
@@ -112,6 +117,7 @@ Partial Class Buscar_Productos
         'ColorLabel
         '
         ColorLabel.AutoSize = True
+        ColorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ColorLabel.Location = New System.Drawing.Point(11, 171)
         ColorLabel.Name = "ColorLabel"
         ColorLabel.Size = New System.Drawing.Size(34, 13)
@@ -121,6 +127,7 @@ Partial Class Buscar_Productos
         'EstiloLabel
         '
         EstiloLabel.AutoSize = True
+        EstiloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         EstiloLabel.Location = New System.Drawing.Point(11, 197)
         EstiloLabel.Name = "EstiloLabel"
         EstiloLabel.Size = New System.Drawing.Size(35, 13)
@@ -130,6 +137,7 @@ Partial Class Buscar_Productos
         'StockLabel
         '
         StockLabel.AutoSize = True
+        StockLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         StockLabel.Location = New System.Drawing.Point(11, 223)
         StockLabel.Name = "StockLabel"
         StockLabel.Size = New System.Drawing.Size(38, 13)
@@ -139,6 +147,7 @@ Partial Class Buscar_Productos
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
+        ModeloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ModeloLabel.Location = New System.Drawing.Point(11, 93)
         ModeloLabel.Name = "ModeloLabel"
         ModeloLabel.Size = New System.Drawing.Size(45, 13)
@@ -148,6 +157,7 @@ Partial Class Buscar_Productos
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
+        ID_ProveedorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_ProveedorLabel.Location = New System.Drawing.Point(11, 67)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
         ID_ProveedorLabel.Size = New System.Drawing.Size(73, 13)
@@ -156,12 +166,13 @@ Partial Class Buscar_Productos
         '
         'BtnVolver
         '
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BtnVolver.Location = New System.Drawing.Point(599, 179)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(166, 61)
         Me.BtnVolver.TabIndex = 3
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
@@ -250,6 +261,7 @@ Partial Class Buscar_Productos
         'ProductosDataGridView
         '
         Me.ProductosDataGridView.AutoGenerateColumns = False
+        Me.ProductosDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
@@ -335,6 +347,8 @@ Partial Class Buscar_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(777, 252)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.ProductosDataGridView)

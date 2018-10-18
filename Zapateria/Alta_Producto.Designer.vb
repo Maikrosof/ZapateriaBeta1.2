@@ -69,6 +69,7 @@ Partial Class Alta_Producto
         'ID_MarcaLabel
         '
         ID_MarcaLabel.AutoSize = True
+        ID_MarcaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_MarcaLabel.Location = New System.Drawing.Point(23, 16)
         ID_MarcaLabel.Name = "ID_MarcaLabel"
         ID_MarcaLabel.Size = New System.Drawing.Size(40, 13)
@@ -78,6 +79,7 @@ Partial Class Alta_Producto
         'ID_ProveedorLabel
         '
         ID_ProveedorLabel.AutoSize = True
+        ID_ProveedorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_ProveedorLabel.Location = New System.Drawing.Point(23, 42)
         ID_ProveedorLabel.Name = "ID_ProveedorLabel"
         ID_ProveedorLabel.Size = New System.Drawing.Size(59, 13)
@@ -87,6 +89,7 @@ Partial Class Alta_Producto
         'TallaLabel
         '
         TallaLabel.AutoSize = True
+        TallaLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         TallaLabel.Location = New System.Drawing.Point(23, 93)
         TallaLabel.Name = "TallaLabel"
         TallaLabel.Size = New System.Drawing.Size(33, 13)
@@ -96,6 +99,7 @@ Partial Class Alta_Producto
         'PrecioLabel
         '
         PrecioLabel.AutoSize = True
+        PrecioLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         PrecioLabel.Location = New System.Drawing.Point(23, 119)
         PrecioLabel.Name = "PrecioLabel"
         PrecioLabel.Size = New System.Drawing.Size(40, 13)
@@ -105,6 +109,7 @@ Partial Class Alta_Producto
         'ColorLabel
         '
         ColorLabel.AutoSize = True
+        ColorLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ColorLabel.Location = New System.Drawing.Point(23, 145)
         ColorLabel.Name = "ColorLabel"
         ColorLabel.Size = New System.Drawing.Size(34, 13)
@@ -114,6 +119,7 @@ Partial Class Alta_Producto
         'EstiloLabel
         '
         EstiloLabel.AutoSize = True
+        EstiloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         EstiloLabel.Location = New System.Drawing.Point(23, 171)
         EstiloLabel.Name = "EstiloLabel"
         EstiloLabel.Size = New System.Drawing.Size(35, 13)
@@ -123,6 +129,7 @@ Partial Class Alta_Producto
         'StockLabel
         '
         StockLabel.AutoSize = True
+        StockLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         StockLabel.Location = New System.Drawing.Point(23, 197)
         StockLabel.Name = "StockLabel"
         StockLabel.Size = New System.Drawing.Size(38, 13)
@@ -132,6 +139,7 @@ Partial Class Alta_Producto
         'ModeloLabel
         '
         ModeloLabel.AutoSize = True
+        ModeloLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ModeloLabel.Location = New System.Drawing.Point(23, 68)
         ModeloLabel.Name = "ModeloLabel"
         ModeloLabel.Size = New System.Drawing.Size(45, 13)
@@ -215,21 +223,25 @@ Partial Class Alta_Producto
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.Location = New System.Drawing.Point(268, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(135, 73)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button2.Location = New System.Drawing.Point(268, 140)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(135, 74)
         Me.Button2.TabIndex = 18
         Me.Button2.Text = "Volver"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'ModeloTextBox
         '
@@ -252,10 +264,11 @@ Partial Class Alta_Producto
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.Location = New System.Drawing.Point(208, 10)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(24, 25)
@@ -264,10 +277,11 @@ Partial Class Alta_Producto
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
         Me.Button4.Location = New System.Drawing.Point(208, 36)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(24, 25)
@@ -299,7 +313,8 @@ Partial Class Alta_Producto
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(449, 259)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(449, 244)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)

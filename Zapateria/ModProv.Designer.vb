@@ -29,6 +29,7 @@ Partial Class ModProv
         Dim DireccionLabel As System.Windows.Forms.Label
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModProv))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProveedoresTableAdapter()
@@ -68,7 +69,8 @@ Partial Class ModProv
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(31, 101)
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_LocalidadLabel.Location = New System.Drawing.Point(30, 82)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 3
@@ -77,7 +79,8 @@ Partial Class ModProv
         'Razon_SocialLabel
         '
         Razon_SocialLabel.AutoSize = True
-        Razon_SocialLabel.Location = New System.Drawing.Point(31, 127)
+        Razon_SocialLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Razon_SocialLabel.Location = New System.Drawing.Point(30, 108)
         Razon_SocialLabel.Name = "Razon_SocialLabel"
         Razon_SocialLabel.Size = New System.Drawing.Size(73, 13)
         Razon_SocialLabel.TabIndex = 5
@@ -86,7 +89,8 @@ Partial Class ModProv
         'CUITLabel
         '
         CUITLabel.AutoSize = True
-        CUITLabel.Location = New System.Drawing.Point(31, 153)
+        CUITLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        CUITLabel.Location = New System.Drawing.Point(30, 134)
         CUITLabel.Name = "CUITLabel"
         CUITLabel.Size = New System.Drawing.Size(35, 13)
         CUITLabel.TabIndex = 7
@@ -95,7 +99,8 @@ Partial Class ModProv
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(31, 179)
+        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DireccionLabel.Location = New System.Drawing.Point(30, 160)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
         DireccionLabel.TabIndex = 9
@@ -104,7 +109,8 @@ Partial Class ModProv
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(31, 205)
+        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        NroLabel.Location = New System.Drawing.Point(30, 186)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
         NroLabel.TabIndex = 11
@@ -113,7 +119,8 @@ Partial Class ModProv
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(31, 231)
+        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        TelefonoLabel.Location = New System.Drawing.Point(30, 212)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
         TelefonoLabel.TabIndex = 13
@@ -152,7 +159,7 @@ Partial Class ModProv
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(110, 98)
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(109, 79)
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ID_LocalidadTextBox.TabIndex = 4
@@ -160,7 +167,7 @@ Partial Class ModProv
         'Razon_SocialTextBox
         '
         Me.Razon_SocialTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Razon_Social", True))
-        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(110, 124)
+        Me.Razon_SocialTextBox.Location = New System.Drawing.Point(109, 105)
         Me.Razon_SocialTextBox.Name = "Razon_SocialTextBox"
         Me.Razon_SocialTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Razon_SocialTextBox.TabIndex = 6
@@ -168,7 +175,7 @@ Partial Class ModProv
         'CUITTextBox
         '
         Me.CUITTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "CUIT", True))
-        Me.CUITTextBox.Location = New System.Drawing.Point(110, 150)
+        Me.CUITTextBox.Location = New System.Drawing.Point(109, 131)
         Me.CUITTextBox.Name = "CUITTextBox"
         Me.CUITTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CUITTextBox.TabIndex = 8
@@ -176,7 +183,7 @@ Partial Class ModProv
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(110, 176)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(109, 157)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
         Me.DireccionTextBox.TabIndex = 10
@@ -184,7 +191,7 @@ Partial Class ModProv
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(110, 202)
+        Me.NroTextBox.Location = New System.Drawing.Point(109, 183)
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NroTextBox.TabIndex = 12
@@ -192,7 +199,7 @@ Partial Class ModProv
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProveedoresBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(110, 228)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(109, 209)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.TelefonoTextBox.TabIndex = 14
@@ -205,10 +212,11 @@ Partial Class ModProv
         'ProveedoresDataGridView
         '
         Me.ProveedoresDataGridView.AutoGenerateColumns = False
+        Me.ProveedoresDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.ProveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProveedoresDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.ProveedoresDataGridView.DataSource = Me.ProveedoresBindingSource
-        Me.ProveedoresDataGridView.Location = New System.Drawing.Point(235, 45)
+        Me.ProveedoresDataGridView.Location = New System.Drawing.Point(235, 9)
         Me.ProveedoresDataGridView.Name = "ProveedoresDataGridView"
         Me.ProveedoresDataGridView.Size = New System.Drawing.Size(638, 220)
         Me.ProveedoresDataGridView.TabIndex = 14
@@ -259,8 +267,9 @@ Partial Class ModProv
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 18)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(197, 19)
         Me.Label1.TabIndex = 25
@@ -268,36 +277,40 @@ Partial Class ModProv
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(16, 292)
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.Location = New System.Drawing.Point(16, 252)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(117, 55)
         Me.BtnBuscar.TabIndex = 26
         Me.BtnBuscar.Text = "Buscar por CUIT"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'BtnModificar
         '
-        Me.BtnModificar.Location = New System.Drawing.Point(164, 292)
+        Me.BtnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnModificar.Location = New System.Drawing.Point(164, 252)
         Me.BtnModificar.Name = "BtnModificar"
         Me.BtnModificar.Size = New System.Drawing.Size(117, 55)
         Me.BtnModificar.TabIndex = 27
         Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
+        Me.BtnModificar.UseVisualStyleBackColor = False
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(756, 292)
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.Location = New System.Drawing.Point(756, 252)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(117, 55)
         Me.BtnVolver.TabIndex = 28
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'ModProv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(898, 359)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(875, 312)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.BtnBuscar)

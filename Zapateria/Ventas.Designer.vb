@@ -24,6 +24,7 @@ Partial Class Ventas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ventas))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -143,23 +144,25 @@ Partial Class Ventas
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(706, 420)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(185, 52)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "Volver"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(515, 210)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(173, 100)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Vender"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'ZapateriaDataSet
         '
@@ -199,6 +202,8 @@ Partial Class Ventas
         'ProductosDataGridView
         '
         Me.ProductosDataGridView.AutoGenerateColumns = False
+        Me.ProductosDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.ProductosDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
@@ -293,6 +298,8 @@ Partial Class Ventas
         'VentasDataGridView
         '
         Me.VentasDataGridView.AutoGenerateColumns = False
+        Me.VentasDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
+        Me.VentasDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.VentasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.VentasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
         Me.VentasDataGridView.DataSource = Me.VentasBindingSource
@@ -347,6 +354,7 @@ Partial Class Ventas
         '
         'Label4
         '
+        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(229, 214)
         Me.Label4.Name = "Label4"
@@ -384,13 +392,14 @@ Partial Class Ventas
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(706, 356)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(185, 52)
         Me.Button3.TabIndex = 21
         Me.Button3.Text = "Gestion de ventas"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -418,6 +427,7 @@ Partial Class Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(901, 480)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)

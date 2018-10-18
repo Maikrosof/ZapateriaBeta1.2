@@ -83,7 +83,7 @@
         Empl.Show()
     End Sub
 
-    Private Sub BtnCompras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCompras.Click
+    Private Sub BtnCompras_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
 
@@ -92,16 +92,16 @@
         If e.KeyCode = Keys.F1 Then
             Ventas.Show()
         End If
-        If e.KeyCode = Keys.F3 Then
+        If e.KeyCode = Keys.F2 Then
             Principal_Producto.Show()
         End If
-        If e.KeyCode = Keys.F4 Then
+        If e.KeyCode = Keys.F3 Then
             Prov.Show()
         End If
-        If e.KeyCode = Keys.F5 Then
+        If e.KeyCode = Keys.F4 Then
             Client.Show()
         End If
-        If e.KeyCode = Keys.F6 Then
+        If e.KeyCode = Keys.F5 Then
             Empl.Show()
         End If
         If e.KeyCode = Keys.Escape Then

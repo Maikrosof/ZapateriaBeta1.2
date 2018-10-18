@@ -34,6 +34,7 @@ Partial Class ModEmpl
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim Fec_ContrLabel As System.Windows.Forms.Label
         Dim CargoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ModEmpl))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.EmpleadosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmpleadosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.EmpleadosTableAdapter()
@@ -87,7 +88,8 @@ Partial Class ModEmpl
         'ID_EmpLabel
         '
         ID_EmpLabel.AutoSize = True
-        ID_EmpLabel.Location = New System.Drawing.Point(15, 73)
+        ID_EmpLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_EmpLabel.Location = New System.Drawing.Point(15, 60)
         ID_EmpLabel.Name = "ID_EmpLabel"
         ID_EmpLabel.Size = New System.Drawing.Size(45, 13)
         ID_EmpLabel.TabIndex = 2
@@ -96,7 +98,8 @@ Partial Class ModEmpl
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
-        ID_LocalidadLabel.Location = New System.Drawing.Point(15, 99)
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ID_LocalidadLabel.Location = New System.Drawing.Point(15, 86)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
         ID_LocalidadLabel.TabIndex = 4
@@ -105,7 +108,8 @@ Partial Class ModEmpl
         'DNILabel
         '
         DNILabel.AutoSize = True
-        DNILabel.Location = New System.Drawing.Point(15, 125)
+        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DNILabel.Location = New System.Drawing.Point(15, 112)
         DNILabel.Name = "DNILabel"
         DNILabel.Size = New System.Drawing.Size(29, 13)
         DNILabel.TabIndex = 6
@@ -114,7 +118,8 @@ Partial Class ModEmpl
         'NombreLabel
         '
         NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(15, 151)
+        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        NombreLabel.Location = New System.Drawing.Point(15, 138)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(47, 13)
         NombreLabel.TabIndex = 8
@@ -123,7 +128,8 @@ Partial Class ModEmpl
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(15, 177)
+        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        ApellidoLabel.Location = New System.Drawing.Point(15, 164)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(47, 13)
         ApellidoLabel.TabIndex = 10
@@ -132,7 +138,8 @@ Partial Class ModEmpl
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
-        Fec_NacimientoLabel.Location = New System.Drawing.Point(15, 204)
+        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Fec_NacimientoLabel.Location = New System.Drawing.Point(15, 191)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
         Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
         Fec_NacimientoLabel.TabIndex = 12
@@ -141,7 +148,8 @@ Partial Class ModEmpl
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
-        DireccionLabel.Location = New System.Drawing.Point(15, 229)
+        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        DireccionLabel.Location = New System.Drawing.Point(15, 216)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
         DireccionLabel.TabIndex = 14
@@ -150,7 +158,8 @@ Partial Class ModEmpl
         'NroLabel
         '
         NroLabel.AutoSize = True
-        NroLabel.Location = New System.Drawing.Point(15, 255)
+        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        NroLabel.Location = New System.Drawing.Point(15, 242)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
         NroLabel.TabIndex = 16
@@ -159,7 +168,8 @@ Partial Class ModEmpl
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
-        TelefonoLabel.Location = New System.Drawing.Point(15, 281)
+        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        TelefonoLabel.Location = New System.Drawing.Point(15, 268)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
         TelefonoLabel.TabIndex = 18
@@ -168,7 +178,8 @@ Partial Class ModEmpl
         'Fec_ContrLabel
         '
         Fec_ContrLabel.AutoSize = True
-        Fec_ContrLabel.Location = New System.Drawing.Point(15, 308)
+        Fec_ContrLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Fec_ContrLabel.Location = New System.Drawing.Point(15, 295)
         Fec_ContrLabel.Name = "Fec_ContrLabel"
         Fec_ContrLabel.Size = New System.Drawing.Size(56, 13)
         Fec_ContrLabel.TabIndex = 20
@@ -177,7 +188,8 @@ Partial Class ModEmpl
         'CargoLabel
         '
         CargoLabel.AutoSize = True
-        CargoLabel.Location = New System.Drawing.Point(15, 333)
+        CargoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        CargoLabel.Location = New System.Drawing.Point(15, 320)
         CargoLabel.Name = "CargoLabel"
         CargoLabel.Size = New System.Drawing.Size(38, 13)
         CargoLabel.TabIndex = 22
@@ -216,10 +228,11 @@ Partial Class ModEmpl
         'EmpleadosDataGridView
         '
         Me.EmpleadosDataGridView.AutoGenerateColumns = False
+        Me.EmpleadosDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.EmpleadosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.EmpleadosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.EmpleadosDataGridView.DataSource = Me.EmpleadosBindingSource
-        Me.EmpleadosDataGridView.Location = New System.Drawing.Point(330, 70)
+        Me.EmpleadosDataGridView.Location = New System.Drawing.Point(330, 57)
         Me.EmpleadosDataGridView.Name = "EmpleadosDataGridView"
         Me.EmpleadosDataGridView.Size = New System.Drawing.Size(628, 280)
         Me.EmpleadosDataGridView.TabIndex = 1
@@ -299,7 +312,7 @@ Partial Class ModEmpl
         'ID_EmpTextBox
         '
         Me.ID_EmpTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "ID_Emp", True))
-        Me.ID_EmpTextBox.Location = New System.Drawing.Point(105, 70)
+        Me.ID_EmpTextBox.Location = New System.Drawing.Point(105, 57)
         Me.ID_EmpTextBox.Name = "ID_EmpTextBox"
         Me.ID_EmpTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_EmpTextBox.TabIndex = 3
@@ -307,7 +320,7 @@ Partial Class ModEmpl
         'ID_LocalidadTextBox
         '
         Me.ID_LocalidadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "ID_Localidad", True))
-        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(105, 96)
+        Me.ID_LocalidadTextBox.Location = New System.Drawing.Point(105, 83)
         Me.ID_LocalidadTextBox.Name = "ID_LocalidadTextBox"
         Me.ID_LocalidadTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_LocalidadTextBox.TabIndex = 5
@@ -315,7 +328,7 @@ Partial Class ModEmpl
         'DNITextBox
         '
         Me.DNITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "DNI", True))
-        Me.DNITextBox.Location = New System.Drawing.Point(105, 122)
+        Me.DNITextBox.Location = New System.Drawing.Point(105, 109)
         Me.DNITextBox.Name = "DNITextBox"
         Me.DNITextBox.Size = New System.Drawing.Size(200, 20)
         Me.DNITextBox.TabIndex = 7
@@ -323,7 +336,7 @@ Partial Class ModEmpl
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Nombre", True))
-        Me.NombreTextBox.Location = New System.Drawing.Point(105, 148)
+        Me.NombreTextBox.Location = New System.Drawing.Point(105, 135)
         Me.NombreTextBox.Name = "NombreTextBox"
         Me.NombreTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NombreTextBox.TabIndex = 9
@@ -331,7 +344,7 @@ Partial Class ModEmpl
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Apellido", True))
-        Me.ApellidoTextBox.Location = New System.Drawing.Point(105, 174)
+        Me.ApellidoTextBox.Location = New System.Drawing.Point(105, 161)
         Me.ApellidoTextBox.Name = "ApellidoTextBox"
         Me.ApellidoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ApellidoTextBox.TabIndex = 11
@@ -339,7 +352,7 @@ Partial Class ModEmpl
         'Fec_NacimientoDateTimePicker
         '
         Me.Fec_NacimientoDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.EmpleadosBindingSource, "Fec_Nacimiento", True))
-        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(105, 200)
+        Me.Fec_NacimientoDateTimePicker.Location = New System.Drawing.Point(105, 187)
         Me.Fec_NacimientoDateTimePicker.Name = "Fec_NacimientoDateTimePicker"
         Me.Fec_NacimientoDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fec_NacimientoDateTimePicker.TabIndex = 13
@@ -347,7 +360,7 @@ Partial Class ModEmpl
         'DireccionTextBox
         '
         Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Direccion", True))
-        Me.DireccionTextBox.Location = New System.Drawing.Point(105, 226)
+        Me.DireccionTextBox.Location = New System.Drawing.Point(105, 213)
         Me.DireccionTextBox.Name = "DireccionTextBox"
         Me.DireccionTextBox.Size = New System.Drawing.Size(200, 20)
         Me.DireccionTextBox.TabIndex = 15
@@ -355,7 +368,7 @@ Partial Class ModEmpl
         'NroTextBox
         '
         Me.NroTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Nro", True))
-        Me.NroTextBox.Location = New System.Drawing.Point(105, 252)
+        Me.NroTextBox.Location = New System.Drawing.Point(105, 239)
         Me.NroTextBox.Name = "NroTextBox"
         Me.NroTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NroTextBox.TabIndex = 17
@@ -363,7 +376,7 @@ Partial Class ModEmpl
         'TelefonoTextBox
         '
         Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Telefono", True))
-        Me.TelefonoTextBox.Location = New System.Drawing.Point(105, 278)
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(105, 265)
         Me.TelefonoTextBox.Name = "TelefonoTextBox"
         Me.TelefonoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TelefonoTextBox.TabIndex = 19
@@ -371,7 +384,7 @@ Partial Class ModEmpl
         'Fec_ContrDateTimePicker
         '
         Me.Fec_ContrDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.EmpleadosBindingSource, "Fec_Contr", True))
-        Me.Fec_ContrDateTimePicker.Location = New System.Drawing.Point(105, 304)
+        Me.Fec_ContrDateTimePicker.Location = New System.Drawing.Point(105, 291)
         Me.Fec_ContrDateTimePicker.Name = "Fec_ContrDateTimePicker"
         Me.Fec_ContrDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Fec_ContrDateTimePicker.TabIndex = 21
@@ -379,7 +392,7 @@ Partial Class ModEmpl
         'CargoTextBox
         '
         Me.CargoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EmpleadosBindingSource, "Cargo", True))
-        Me.CargoTextBox.Location = New System.Drawing.Point(105, 330)
+        Me.CargoTextBox.Location = New System.Drawing.Point(105, 317)
         Me.CargoTextBox.Name = "CargoTextBox"
         Me.CargoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.CargoTextBox.TabIndex = 23
@@ -387,8 +400,9 @@ Partial Class ModEmpl
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 22)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(191, 19)
         Me.Label1.TabIndex = 33
@@ -396,36 +410,40 @@ Partial Class ModEmpl
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(828, 372)
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.Location = New System.Drawing.Point(828, 359)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(117, 55)
         Me.BtnVolver.TabIndex = 36
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'BtnModificar
         '
-        Me.BtnModificar.Location = New System.Drawing.Point(154, 372)
+        Me.BtnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnModificar.Location = New System.Drawing.Point(154, 359)
         Me.BtnModificar.Name = "BtnModificar"
         Me.BtnModificar.Size = New System.Drawing.Size(117, 55)
         Me.BtnModificar.TabIndex = 35
         Me.BtnModificar.Text = "Modificar"
-        Me.BtnModificar.UseVisualStyleBackColor = True
+        Me.BtnModificar.UseVisualStyleBackColor = False
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(6, 372)
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.Location = New System.Drawing.Point(6, 359)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(117, 55)
         Me.BtnBuscar.TabIndex = 34
         Me.BtnBuscar.Text = "Buscar por DNI"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'ModEmpl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(970, 439)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(962, 422)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.BtnModificar)
         Me.Controls.Add(Me.BtnBuscar)

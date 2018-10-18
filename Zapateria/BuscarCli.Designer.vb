@@ -32,6 +32,7 @@ Partial Class BuscarCli
         Dim NroLabel As System.Windows.Forms.Label
         Dim TelefonoLabel As System.Windows.Forms.Label
         Dim DNILabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BuscarCli))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ClientesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClientesTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ClientesTableAdapter()
@@ -64,6 +65,7 @@ Partial Class BuscarCli
         'ID_ClienteLabel
         '
         ID_ClienteLabel.AutoSize = True
+        ID_ClienteLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_ClienteLabel.Location = New System.Drawing.Point(28, 63)
         ID_ClienteLabel.Name = "ID_ClienteLabel"
         ID_ClienteLabel.Size = New System.Drawing.Size(56, 13)
@@ -73,6 +75,7 @@ Partial Class BuscarCli
         'ID_LocalidadLabel
         '
         ID_LocalidadLabel.AutoSize = True
+        ID_LocalidadLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ID_LocalidadLabel.Location = New System.Drawing.Point(28, 89)
         ID_LocalidadLabel.Name = "ID_LocalidadLabel"
         ID_LocalidadLabel.Size = New System.Drawing.Size(70, 13)
@@ -82,6 +85,7 @@ Partial Class BuscarCli
         'NombreLabel
         '
         NombreLabel.AutoSize = True
+        NombreLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         NombreLabel.Location = New System.Drawing.Point(28, 115)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(47, 13)
@@ -91,6 +95,7 @@ Partial Class BuscarCli
         'ApellidoLabel
         '
         ApellidoLabel.AutoSize = True
+        ApellidoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         ApellidoLabel.Location = New System.Drawing.Point(28, 141)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(47, 13)
@@ -100,6 +105,7 @@ Partial Class BuscarCli
         'Fec_NacimientoLabel
         '
         Fec_NacimientoLabel.AutoSize = True
+        Fec_NacimientoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Fec_NacimientoLabel.Location = New System.Drawing.Point(28, 168)
         Fec_NacimientoLabel.Name = "Fec_NacimientoLabel"
         Fec_NacimientoLabel.Size = New System.Drawing.Size(84, 13)
@@ -109,6 +115,7 @@ Partial Class BuscarCli
         'DireccionLabel
         '
         DireccionLabel.AutoSize = True
+        DireccionLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DireccionLabel.Location = New System.Drawing.Point(28, 193)
         DireccionLabel.Name = "DireccionLabel"
         DireccionLabel.Size = New System.Drawing.Size(55, 13)
@@ -118,6 +125,7 @@ Partial Class BuscarCli
         'NroLabel
         '
         NroLabel.AutoSize = True
+        NroLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         NroLabel.Location = New System.Drawing.Point(28, 219)
         NroLabel.Name = "NroLabel"
         NroLabel.Size = New System.Drawing.Size(27, 13)
@@ -127,6 +135,7 @@ Partial Class BuscarCli
         'TelefonoLabel
         '
         TelefonoLabel.AutoSize = True
+        TelefonoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         TelefonoLabel.Location = New System.Drawing.Point(28, 245)
         TelefonoLabel.Name = "TelefonoLabel"
         TelefonoLabel.Size = New System.Drawing.Size(52, 13)
@@ -136,6 +145,7 @@ Partial Class BuscarCli
         'DNILabel
         '
         DNILabel.AutoSize = True
+        DNILabel.BackColor = System.Drawing.SystemColors.ButtonHighlight
         DNILabel.Location = New System.Drawing.Point(28, 271)
         DNILabel.Name = "DNILabel"
         DNILabel.Size = New System.Drawing.Size(29, 13)
@@ -226,12 +236,13 @@ Partial Class BuscarCli
         '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(312, 71)
+        Me.BtnBuscar.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnBuscar.Location = New System.Drawing.Point(257, 55)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(102, 39)
         Me.BtnBuscar.TabIndex = 26
         Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
         'TextBox9
         '
@@ -242,16 +253,18 @@ Partial Class BuscarCli
         '
         'BtnVolver
         '
-        Me.BtnVolver.Location = New System.Drawing.Point(312, 227)
+        Me.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BtnVolver.Location = New System.Drawing.Point(257, 244)
         Me.BtnVolver.Name = "BtnVolver"
         Me.BtnVolver.Size = New System.Drawing.Size(102, 39)
         Me.BtnVolver.TabIndex = 28
         Me.BtnVolver.Text = "Volver"
-        Me.BtnVolver.UseVisualStyleBackColor = True
+        Me.BtnVolver.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
@@ -263,7 +276,9 @@ Partial Class BuscarCli
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(538, 312)
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(379, 312)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnVolver)
         Me.Controls.Add(Me.TextBox9)

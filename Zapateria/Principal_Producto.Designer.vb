@@ -23,6 +23,7 @@ Partial Class Principal_Producto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal_Producto))
         Me.ZapateriaDataSet = New Zapateria.ZapateriaDataSet()
         Me.ProductosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProductosTableAdapter = New Zapateria.ZapateriaDataSetTableAdapters.ProductosTableAdapter()
@@ -93,9 +94,11 @@ Partial Class Principal_Producto
         'ProductosDataGridView
         '
         Me.ProductosDataGridView.AutoGenerateColumns = False
+        Me.ProductosDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.ProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
         Me.ProductosDataGridView.DataSource = Me.ProductosBindingSource
+        Me.ProductosDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ProductosDataGridView.Location = New System.Drawing.Point(0, 1)
         Me.ProductosDataGridView.Name = "ProductosDataGridView"
         Me.ProductosDataGridView.Size = New System.Drawing.Size(815, 306)
@@ -152,48 +155,53 @@ Partial Class Principal_Producto
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Location = New System.Drawing.Point(0, 313)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(128, 71)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Agregar[F1]"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Location = New System.Drawing.Point(134, 313)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(128, 71)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Eliminar[F2]"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button3.Location = New System.Drawing.Point(268, 313)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(128, 71)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Modificar[F3]"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button4.Location = New System.Drawing.Point(402, 354)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(160, 30)
         Me.Button4.TabIndex = 6
         Me.Button4.Text = "Busqueda Personalizada[F4]"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button5.Location = New System.Drawing.Point(687, 313)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(128, 71)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Salir[Esc]"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'MarcasBindingSource
         '
@@ -215,6 +223,7 @@ Partial Class Principal_Producto
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(415, 313)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(133, 13)
@@ -223,26 +232,29 @@ Partial Class Principal_Producto
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button6.Location = New System.Drawing.Point(569, 313)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(112, 35)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "Ventas"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Button7
         '
+        Me.Button7.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button7.Location = New System.Drawing.Point(569, 349)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(112, 35)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "Compras"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Principal_Producto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(815, 388)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)

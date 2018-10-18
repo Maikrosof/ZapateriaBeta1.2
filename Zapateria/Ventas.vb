@@ -32,7 +32,8 @@
 
     Private Sub Ventas_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         If e.KeyCode = Keys.Escape Then
-            Close()
+            Call Button1.Show()
+
         End If
     End Sub
 
